@@ -1,0 +1,435 @@
+{
+  "version": 1,
+  "sourcePageUrl": "https://www.matterbase.com/",
+  "hero": [
+    {
+      "key": "lyric-harmony-ofs",
+      "name": "Lyric harmony",
+      "brand": "OFS",
+      "src": "/landing-assets/hero/lyric-harmony-ofs.webp",
+      "sourceUrl": "https://public-cdn.matterbase.com/landing_page_graphics/hero/floating_products/lyric-harmony-ofs.webp",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "key": "cosmopolitan-cp03-arabescato-oro-mirage",
+      "name": "Cosmopolitan CP03 Arabescato Oro",
+      "brand": "Mirage",
+      "src": "/landing-assets/hero/cosmopolitan-cp03-arabescato-oro-mirage.webp",
+      "sourceUrl": "https://public-cdn.matterbase.com/landing_page_graphics/hero/floating_products/cosmopolitan-cp03-arabescato-oro-mirage.webp",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "key": "sandy-minotti",
+      "name": "Sandy",
+      "brand": "Minotti",
+      "src": "/landing-assets/hero/sandy-minotti.webp",
+      "sourceUrl": "https://public-cdn.matterbase.com/landing_page_graphics/hero/floating_products/sandy-minotti.webp",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "key": "cm7750-countertop-coffee-machine-miele",
+      "name": "CM7750 countertop coffee machine",
+      "brand": "miele",
+      "src": "/landing-assets/hero/cm7750-countertop-coffee-machine-miele.webp",
+      "sourceUrl": "https://public-cdn.matterbase.com/landing_page_graphics/hero/floating_products/cm7750-countertop-coffee-machine-miele.webp",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "key": "bonnet-sc93-chandelier-tradition",
+      "name": "Bonnet SC93 chandelier",
+      "brand": "&tradition",
+      "src": "/landing-assets/hero/bonnet-sc93-chandelier-tradition.webp",
+      "sourceUrl": "https://public-cdn.matterbase.com/landing_page_graphics/hero/floating_products/bonnet-sc93-chandelier-tradition.webp",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "key": "era-170-camira",
+      "name": "Era 170",
+      "brand": "Camira",
+      "src": "/landing-assets/hero/era-170-camira.webp",
+      "sourceUrl": "https://public-cdn.matterbase.com/landing_page_graphics/hero/floating_products/era-170-camira.webp",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "key": "aura-hakwood",
+      "name": "Aura",
+      "brand": "Hakwood",
+      "src": "/landing-assets/hero/aura-hakwood.webp",
+      "sourceUrl": "https://public-cdn.matterbase.com/landing_page_graphics/hero/floating_products/aura-hakwood.webp",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "key": "mon-nid-bed-cassina",
+      "name": "Mon nid bed",
+      "brand": "Cassina",
+      "src": "/landing-assets/hero/mon-nid-bed-cassina.webp",
+      "sourceUrl": "https://public-cdn.matterbase.com/landing_page_graphics/hero/floating_products/mon-nid-bed-cassina.webp",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "key": "ondo-casalis",
+      "name": "Ondo",
+      "brand": "Casalis",
+      "src": "/landing-assets/hero/ondo-casalis.webp",
+      "sourceUrl": "https://public-cdn.matterbase.com/landing_page_graphics/hero/floating_products/ondo-casalis.webp",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "key": "dimmer-toggle-switch-baster-punch",
+      "name": "Dimmer toggle switch",
+      "brand": "Baster + punch",
+      "src": "/landing-assets/hero/dimmer-toggle-switch-baster-punch.webp",
+      "sourceUrl": "https://public-cdn.matterbase.com/landing_page_graphics/hero/floating_products/dimmer-toggle-switch-baster-punch.webp",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "key": "sincere-brushed-hakwood",
+      "name": "Sincere brushed",
+      "brand": "Hakwood",
+      "src": "/landing-assets/hero/sincere-brushed-hakwood.webp",
+      "sourceUrl": "https://public-cdn.matterbase.com/landing_page_graphics/hero/floating_products/sincere-brushed-hakwood.webp",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "key": "beetle-soft-gubi",
+      "name": "Beetle soft",
+      "brand": "Gubi",
+      "src": "/landing-assets/hero/beetle-soft-gubi.webp",
+      "sourceUrl": "https://public-cdn.matterbase.com/landing_page_graphics/hero/floating_products/beetle-soft-gubi.webp",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "key": "emerald-green-corrugated-panel-steeldash",
+      "name": "Emerald green corrugated panel",
+      "brand": "Steeldash",
+      "src": "/landing-assets/hero/emerald-green-corrugated-panel-steeldash.webp",
+      "sourceUrl": "https://public-cdn.matterbase.com/landing_page_graphics/hero/floating_products/emerald-green-corrugated-panel-steeldash.webp",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "key": "cosmic-object-carpet",
+      "name": "Cosmic",
+      "brand": "Object carpet",
+      "src": "/landing-assets/hero/cosmic-object-carpet.webp",
+      "sourceUrl": "https://public-cdn.matterbase.com/landing_page_graphics/hero/floating_products/cosmic-object-carpet.webp",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "key": "tatsu-emser-tile",
+      "name": "Tatsu",
+      "brand": "Emser Tile",
+      "src": "/landing-assets/hero/tatsu-emser-tile.webp",
+      "sourceUrl": "https://public-cdn.matterbase.com/landing_page_graphics/hero/floating_products/tatsu-emser-tile.webp",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "key": "womb-chair-knoll",
+      "name": "Womb™ Chair",
+      "brand": "Knoll",
+      "src": "/landing-assets/hero/womb-chair-knoll.webp",
+      "sourceUrl": "https://public-cdn.matterbase.com/landing_page_graphics/hero/floating_products/womb-chair-knoll.webp",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "key": "clam-floor-lamp-fritz-hansen",
+      "name": "Clam™ floor lamp",
+      "brand": "Fritz hansen",
+      "src": "/landing-assets/hero/clam-floor-lamp-fritz-hansen.webp",
+      "sourceUrl": "https://public-cdn.matterbase.com/landing_page_graphics/hero/floating_products/clam-floor-lamp-fritz-hansen.webp",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "key": "art-deco-cabinet-pull-emtek",
+      "name": "Art deco cabinet pull",
+      "brand": "Emtek",
+      "src": "/landing-assets/hero/art-deco-cabinet-pull-emtek.webp",
+      "sourceUrl": "https://public-cdn.matterbase.com/landing_page_graphics/hero/floating_products/art-deco-cabinet-pull-emtek.webp",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "key": "minimalistic-shower-gessi",
+      "name": "Minimalistic shower",
+      "brand": "Gessi",
+      "src": "/landing-assets/hero/minimalistic-shower-gessi.webp",
+      "sourceUrl": "https://public-cdn.matterbase.com/landing_page_graphics/hero/floating_products/minimalistic-shower-gessi.webp",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "key": "4-door-cabinet-usm",
+      "name": "4 door cabinet",
+      "brand": "USM",
+      "src": "/landing-assets/hero/4-door-cabinet-usm.webp",
+      "sourceUrl": "https://public-cdn.matterbase.com/landing_page_graphics/hero/floating_products/4-door-cabinet-usm.webp",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "key": "element-seura",
+      "name": "Element",
+      "brand": "Seura",
+      "src": "/landing-assets/hero/element-seura.webp",
+      "sourceUrl": "https://public-cdn.matterbase.com/landing_page_graphics/hero/floating_products/element-seura.webp",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "key": "layout-chair-hay",
+      "name": "Layout chair",
+      "brand": "Hay",
+      "src": "/landing-assets/hero/layout-chair-hay.webp",
+      "sourceUrl": "https://public-cdn.matterbase.com/landing_page_graphics/hero/floating_products/layout-chair-hay.webp",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "key": "ardys-low-table-cassina",
+      "name": "Ardys low table",
+      "brand": "Cassina",
+      "src": "/landing-assets/hero/ardys-low-table-cassina.webp",
+      "sourceUrl": "https://public-cdn.matterbase.com/landing_page_graphics/hero/floating_products/ardys-low-table-cassina.webp",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "key": "tech-one-exterpark",
+      "name": "Tech One",
+      "brand": "Exterpark",
+      "src": "/landing-assets/hero/tech-one-exterpark.webp",
+      "sourceUrl": "https://public-cdn.matterbase.com/landing_page_graphics/hero/floating_products/tech-one-exterpark.webp",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "key": "biselado-lamitak",
+      "name": "Biselado",
+      "brand": "Lamitak",
+      "src": "/landing-assets/hero/biselado-lamitak.webp",
+      "sourceUrl": "https://public-cdn.matterbase.com/landing_page_graphics/hero/floating_products/biselado-lamitak.webp",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "key": "expressive-series-automatic-coffee-machine-gaggenau",
+      "name": "Expressive series automatic coffee machine",
+      "brand": "Gaggenau",
+      "src": "/landing-assets/hero/expressive-series-automatic-coffee-machine-gaggenau.webp",
+      "sourceUrl": "https://public-cdn.matterbase.com/landing_page_graphics/hero/floating_products/expressive-series-automatic-coffee-machine-gaggenau.webp",
+      "width": 380,
+      "height": 380
+    },
+    {
+      "key": "hairline-anti-fingerprint-aat-industrial-supplies",
+      "name": "Hairline + anti fingerprint",
+      "brand": "Aat industrial supplies",
+      "src": "/landing-assets/hero/hairline-anti-fingerprint-aat-industrial-supplies.webp",
+      "sourceUrl": "https://public-cdn.matterbase.com/landing_page_graphics/hero/floating_products/hairline-anti-fingerprint-aat-industrial-supplies.webp",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "key": "cosmopolitan-cp07-amazzonite-mirage",
+      "name": "Cosmopolitan CP07 Amazzonite",
+      "brand": "Mirage",
+      "src": "/landing-assets/hero/cosmopolitan-cp07-amazzonite-mirage.webp",
+      "sourceUrl": "https://public-cdn.matterbase.com/landing_page_graphics/hero/floating_products/cosmopolitan-cp07-amazzonite-mirage.webp",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "key": "epic-outdoor-dining-table-gubi",
+      "name": "Epic outdoor dining table",
+      "brand": "Gubi",
+      "src": "/landing-assets/hero/epic-outdoor-dining-table-gubi.webp",
+      "sourceUrl": "https://public-cdn.matterbase.com/landing_page_graphics/hero/floating_products/epic-outdoor-dining-table-gubi.webp",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "key": "alabama-elastron",
+      "name": "Alabama",
+      "brand": "Elastron",
+      "src": "/landing-assets/hero/alabama-elastron.webp",
+      "sourceUrl": "https://public-cdn.matterbase.com/landing_page_graphics/hero/floating_products/alabama-elastron.webp",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "key": "felt-archisonic",
+      "name": "Felt",
+      "brand": "Archisonic",
+      "src": "/landing-assets/hero/felt-archisonic.webp",
+      "sourceUrl": "https://public-cdn.matterbase.com/landing_page_graphics/hero/floating_products/felt-archisonic.webp",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "key": "trapezoidal-sheet-metal-bratex",
+      "name": "Trapezoidal sheet metal",
+      "brand": "Bratex",
+      "src": "/landing-assets/hero/trapezoidal-sheet-metal-bratex.webp",
+      "sourceUrl": "https://public-cdn.matterbase.com/landing_page_graphics/hero/floating_products/trapezoidal-sheet-metal-bratex.webp",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "key": "james-bar-cart-stellar-works",
+      "name": "James bar cart",
+      "brand": "Stellar works",
+      "src": "/landing-assets/hero/james-bar-cart-stellar-works.webp",
+      "sourceUrl": "https://public-cdn.matterbase.com/landing_page_graphics/hero/floating_products/james-bar-cart-stellar-works.webp",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "key": "incastri-sink-mixer-gessi",
+      "name": "Incastri sink mixer",
+      "brand": "Gessi",
+      "src": "/landing-assets/hero/incastri-sink-mixer-gessi.webp",
+      "sourceUrl": "https://public-cdn.matterbase.com/landing_page_graphics/hero/floating_products/incastri-sink-mixer-gessi.webp",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "key": "cesta-metalica-table-lamp-santa-cole",
+      "name": "Cesta metálica table lamp",
+      "brand": "Santa & Cole",
+      "src": "/landing-assets/hero/cesta-metalica-table-lamp-santa-cole.webp",
+      "sourceUrl": "https://public-cdn.matterbase.com/landing_page_graphics/hero/floating_products/cesta-metalica-table-lamp-santa-cole.webp",
+      "width": 512,
+      "height": 512
+    }
+  ],
+  "features": [
+    {
+      "key": "board-hero-poster",
+      "name": "Board hero poster",
+      "src": "/landing-assets/features/board_hero_poster.webp",
+      "sourceUrl": "https://public-cdn.matterbase.com/landing_page_graphics/hero/board_hero_poster.webp",
+      "sourceApplication": "Matterbase",
+      "preferredUse": "Reference only; prefer local monogram screenshots for product previews.",
+      "width": 2160,
+      "height": 1080
+    },
+    {
+      "key": "board",
+      "name": "Board",
+      "src": "/landing-assets/features/board.webp",
+      "sourceUrl": "https://public-cdn.matterbase.com/landing_page_graphics/sections/board.webp",
+      "sourceApplication": "Matterbase",
+      "preferredUse": "Reference only; prefer local monogram screenshots for product previews.",
+      "width": 1309,
+      "height": 883
+    },
+    {
+      "key": "living-room-with-concrete",
+      "name": "Living Room with Concrete",
+      "src": "/landing-assets/features/living_room_with_concrete.webp",
+      "sourceUrl": "https://public-cdn.matterbase.com/landing_page_graphics/sections/living_room_with_concrete.webp",
+      "sourceApplication": "Matterbase",
+      "preferredUse": "Reference only; prefer local monogram screenshots for product previews.",
+      "width": 518,
+      "height": 781
+    },
+    {
+      "key": "wooden-living-room-poster",
+      "name": "Wooden living room poster",
+      "src": "/landing-assets/features/wooden_living_room_poster.webp",
+      "sourceUrl": "https://public-cdn.matterbase.com/landing_page_graphics/sections/wooden_living_room_poster.webp",
+      "sourceApplication": "Matterbase",
+      "preferredUse": "Reference only; prefer local monogram screenshots for product previews.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "key": "schedule",
+      "name": "Schedule",
+      "src": "/landing-assets/features/schedule.webp",
+      "sourceUrl": "https://public-cdn.matterbase.com/landing_page_graphics/sections/schedule.webp",
+      "sourceApplication": "Matterbase",
+      "preferredUse": "Reference only; prefer local monogram screenshots for product previews.",
+      "width": 756,
+      "height": 1064
+    },
+    {
+      "key": "paper",
+      "name": "Paper",
+      "src": "/landing-assets/features/paper.webp",
+      "sourceUrl": "https://public-cdn.matterbase.com/landing_page_graphics/sections/paper.webp",
+      "sourceApplication": "Matterbase",
+      "preferredUse": "Reference only; prefer local monogram screenshots for product previews.",
+      "width": 1200,
+      "height": 730
+    },
+    {
+      "key": "paper-bar",
+      "name": "Paper Generation Bar",
+      "src": "/landing-assets/features/paper_bar.webp",
+      "sourceUrl": "https://public-cdn.matterbase.com/landing_page_graphics/sections/paper_bar.webp",
+      "sourceApplication": "Matterbase",
+      "preferredUse": "Reference only; prefer local monogram screenshots for product previews.",
+      "width": 1200,
+      "height": 153
+    },
+    {
+      "key": "browse-catalog",
+      "name": "Library browsed on a laptop",
+      "src": "/landing-assets/features/browse-catalog.webp",
+      "sourceUrl": "https://public-cdn.matterbase.com/supplier_virtual_showroom_page/browse-catalog.webp",
+      "sourceApplication": "Matterbase",
+      "preferredUse": "Reference only; prefer local monogram screenshots for product previews.",
+      "width": 4000,
+      "height": 2125
+    }
+  ],
+  "backgrounds": [
+    {
+      "key": "dot-background",
+      "name": "Dot background",
+      "src": "/landing-assets/backgrounds/dot_background.webp",
+      "sourceUrl": "https://public-cdn.matterbase.com/landing_page_graphics/sections/dot_background.webp",
+      "width": 1500,
+      "height": 909
+    },
+    {
+      "key": "atmos2",
+      "name": "Atmosphere background",
+      "src": "/landing-assets/backgrounds/atmos2.webp",
+      "sourceUrl": "https://public-cdn.matterbase.com/landing_page_graphics/atmos2.webp",
+      "width": 1125,
+      "height": 2000
+    },
+    {
+      "key": "end-slogan-background",
+      "name": "End slogan background",
+      "src": "/landing-assets/backgrounds/end_slogan_background.webp",
+      "sourceUrl": "https://public-cdn.matterbase.com/landing_page_graphics/sections/end_slogan_background.webp",
+      "width": 1915,
+      "height": 488
+    }
+  ],
+  "observedGaps": {
+    "requestedHeroCount": 36,
+    "observedHeroCount": 35,
+    "collaborationScreenshot": "No separate collaboration screenshot URL was present in this cached HTML.",
+    "videoSources": "The observed video elements did not contain src attributes or source children."
+  }
+}

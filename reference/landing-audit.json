@@ -1,0 +1,636 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-16T18:48:54.246175+00:00",
+  "source": "https://www.matterbase.com/",
+  "scope": "공개 비로그인 랜딩 구조·목적지 조사. 기능 구현 완료나 원본 동등성 인증이 아님.",
+  "method": {
+    "primaryOnly": true,
+    "webOpenUsed": true,
+    "publicHTMLRead": true,
+    "publicHTMLReferencedCodeRead": true,
+    "CUAUsed": false,
+    "authenticatedSessionUsed": false,
+    "formsSubmitted": false,
+    "bookingsMade": false,
+    "paidFeaturesActivated": false
+  },
+  "sources": {
+    "homepage": {
+      "url": "https://www.matterbase.com/",
+      "publicHtmlSha256": "81945c186b309349efef0a7a462602dea086e60e14f1c10d471912892ba8ff50",
+      "publicHtmlBytes": 270508,
+      "publicSourceArtifact": "/private/tmp/monogram-public-landing-source.html"
+    },
+    "requestDemo": {
+      "url": "https://www.matterbase.com/request-demo",
+      "httpStatus": 200,
+      "publicHtmlSha256": "3922d97d7f9171ef486972e4b3e6af752df68462ebc7ccbf36a4da4981f1accb",
+      "publicHtmlBytes": 111296
+    },
+    "supplierLanding": {
+      "url": "https://www.matterbase.com/virtual-showroom",
+      "httpStatus": 200,
+      "publicHtmlSha256": "536b06b9f694a26a54e99ee676671ead61540908bbe9206ce91a2bdb182e18a3",
+      "publicHtmlBytes": 287648
+    },
+    "code": {
+      "landing": {
+        "url": "https://www.matterbase.com/_next/static/chunks/1d8zbn8ltuf9c.js",
+        "sha256": "3ce5d64e9602e691d727304b930487487713ebb6406bb73814e1b262634e9b78",
+        "evidenceKind": "Public HTML-referenced static JavaScript; read only, not executed by this audit"
+      },
+      "ctaAndFooter": {
+        "url": "https://www.matterbase.com/_next/static/chunks/3v2om54dufq8_.js",
+        "sha256": "bfbe2ef5a7f451df11e3399779f45eb5541447250277c0a20f7d1e7a1550ceef",
+        "evidenceKind": "Public HTML-referenced static JavaScript; read only, not executed by this audit"
+      },
+      "contact": {
+        "url": "https://www.matterbase.com/_next/static/chunks/005mnvdicamcg.js",
+        "sha256": "c5d0449641180851830dd5d3591a387f3df7396ed1949d70c4bd0a3679d8b0e6",
+        "evidenceKind": "Public HTML-referenced static JavaScript; read only, not executed by this audit"
+      },
+      "locale": {
+        "url": "https://www.matterbase.com/_next/static/chunks/3ej5b6y9hc7iz.js",
+        "sha256": "9b93393b5e0ce5bfbdff81e6fb5efff6ccaeadbb4b6d70e20326b5ab6ffec86e",
+        "evidenceKind": "Public HTML-referenced static JavaScript; read only, not executed by this audit"
+      }
+    },
+    "webReadPages": [
+      "https://www.matterbase.com/",
+      "https://www.matterbase.com/catalog",
+      "https://www.matterbase.com/request-demo",
+      "https://www.matterbase.com/material-board",
+      "https://www.matterbase.com/schedule",
+      "https://www.matterbase.com/material-samples",
+      "https://www.matterbase.com/pricing",
+      "https://www.matterbase.com/articles",
+      "https://www.matterbase.com/about",
+      "https://www.matterbase.com/privacy-statement",
+      "https://www.matterbase.com/terms-of-use"
+    ]
+  },
+  "sections": [
+    {
+      "order": 0,
+      "id": "header",
+      "structure": "로고·Products·Explore, 중앙 검색, 로그인·가입",
+      "evidence": "current_public_HTML",
+      "links": [
+        {
+          "label": "Products",
+          "url": "https://www.matterbase.com/catalog",
+          "location": "header",
+          "evidence": "homepage HTML anchor href"
+        },
+        {
+          "label": "Log in",
+          "url": "https://www.matterbase.com/login",
+          "location": "header",
+          "evidence": "homepage HTML anchor href"
+        },
+        {
+          "label": "Sign up",
+          "url": "https://www.matterbase.com/register",
+          "location": "header",
+          "evidence": "homepage HTML anchor href"
+        }
+      ],
+      "menu": {
+        "label": "Explore",
+        "groups": {
+          "Features": [
+            {
+              "label": "Material Board",
+              "url": "https://www.matterbase.com/material-board",
+              "location": "Explore / Features",
+              "evidence": "homepage HTML anchor href"
+            },
+            {
+              "label": "Schedule",
+              "url": "https://www.matterbase.com/schedule",
+              "location": "Explore / Features",
+              "evidence": "homepage HTML anchor href"
+            },
+            {
+              "label": "Virtual Samples",
+              "url": "https://www.matterbase.com/material-samples",
+              "location": "Explore / Features",
+              "evidence": "homepage HTML anchor href"
+            }
+          ],
+          "Resources": [
+            {
+              "label": "Pricing",
+              "url": "https://www.matterbase.com/pricing",
+              "location": "Explore / Resources",
+              "evidence": "homepage HTML anchor href"
+            },
+            {
+              "label": "Articles",
+              "url": "https://www.matterbase.com/articles",
+              "location": "Explore / Resources",
+              "evidence": "homepage HTML anchor href"
+            }
+          ]
+        },
+        "release": "v2.5.9"
+      },
+      "search": {
+        "inputLabel": "Describe what you are sourcing",
+        "tools": [
+          "Search by image",
+          "Colorway filter"
+        ],
+        "runtimeSearchNotInvoked": true
+      },
+      "mobileControl": "Open menu"
+    },
+    {
+      "order": 1,
+      "id": "hero",
+      "structure": "제품 모자이크 배경과 중앙 제목·CTA",
+      "headline": "Find the right material for your next project",
+      "evidence": "current_public_HTML_and_landing_code",
+      "mosaic": {
+        "sourceProductCount": 35,
+        "renderedGridRepeatsProducts": true,
+        "presentation": "제품 이미지·이름·브랜드가 반복 배치됨",
+        "productAnchorHrefObserved": false,
+        "runtimeAnimationNotExecuted": true
+      },
+      "ctaLabels": [
+        "Join for free",
+        "Request Demo"
+      ]
+    },
+    {
+      "order": 2,
+      "id": "used-by",
+      "label": "Used by designers at",
+      "structure": "회사 로고 가로 반복 띠",
+      "uniqueLogoCount": 22,
+      "evidence": "current_public_HTML",
+      "claimOwner": "원본 서비스의 고객 주장. monogram 사용 사실로 옮기지 않음."
+    },
+    {
+      "order": 3,
+      "id": "agentic-search",
+      "label": "Agentic Search",
+      "status": "Coming soon",
+      "structure": "검색 개념 애니메이션과 짧은 소개",
+      "evidence": "current_public_HTML",
+      "functionalAvailability": "예고 표시. 동작하는 에이전트 검색으로 확정하지 않음."
+    },
+    {
+      "order": 4,
+      "id": "studio-workflow",
+      "label": "Your Studio Workflow",
+      "structure": "제품 기능 세 블록과 큰 화면·영상 자료",
+      "evidence": "current_public_HTML",
+      "blocks": [
+        {
+          "label": "Material Board",
+          "media": "보드·실내 예시",
+          "link": {
+            "label": "More about board",
+            "url": "https://www.matterbase.com/material-board",
+            "location": "workflow",
+            "evidence": "homepage HTML anchor href"
+          }
+        },
+        {
+          "label": "Schedule",
+          "media": "사양표 화면",
+          "link": {
+            "label": "More about schedule",
+            "url": "https://www.matterbase.com/schedule",
+            "location": "workflow",
+            "evidence": "homepage HTML anchor href"
+          }
+        },
+        {
+          "label": "Matter AI",
+          "media": "Paper 화면·생성 바 이미지",
+          "anchorHrefObserved": false,
+          "note": "Paper라는 이미지 설명만으로 별도 현행 Paper 경로를 확정하지 않음."
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "id": "material-library",
+      "label": "Material Library",
+      "structure": "소개·카탈로그 CTA·네 분류 카드·노트북 화면",
+      "evidence": "current_public_HTML",
+      "cta": {
+        "label": "Browse the library",
+        "url": "https://www.matterbase.com/catalog",
+        "location": "library",
+        "evidence": "homepage HTML anchor href"
+      },
+      "categories": [
+        {
+          "label": "Materials",
+          "url": "https://www.matterbase.com/catalog/material",
+          "location": "library",
+          "evidence": "homepage HTML anchor href"
+        },
+        {
+          "label": "Furniture",
+          "url": "https://www.matterbase.com/catalog/furniture",
+          "location": "library",
+          "evidence": "homepage HTML anchor href"
+        },
+        {
+          "label": "Lighting",
+          "url": "https://www.matterbase.com/catalog/lighting",
+          "location": "library",
+          "evidence": "homepage HTML anchor href"
+        },
+        {
+          "label": "Hardware",
+          "url": "https://www.matterbase.com/catalog/hardware",
+          "location": "library",
+          "evidence": "homepage HTML anchor href"
+        }
+      ]
+    },
+    {
+      "order": 6,
+      "id": "brand-partners",
+      "label": "Brand Partners",
+      "structure": "브랜드 로고 가로 루프",
+      "evidence": "current_public_HTML_referenced_client_code",
+      "serverRendered": false,
+      "clientOnlyDeclaration": "ssr:false",
+      "uniqueBrands": 15,
+      "links": [
+        {
+          "label": "22 system",
+          "url": "https://www.matterbase.com/catalog/brand/-22_system-29"
+        },
+        {
+          "label": "And Tradition",
+          "url": "https://www.matterbase.com/catalog/brand/&tradition-14"
+        },
+        {
+          "label": "Bobbi Beck",
+          "url": "https://www.matterbase.com/catalog/brand/bobbi-beck-10"
+        },
+        {
+          "label": "Buster & Punch",
+          "url": "https://www.matterbase.com/catalog/brand/buster-+-punch-19"
+        },
+        {
+          "label": "Casalis",
+          "url": "https://www.matterbase.com/catalog/brand/casalis-3"
+        },
+        {
+          "label": "Ceragni",
+          "url": "https://www.matterbase.com/catalog/brand/ceragni-16"
+        },
+        {
+          "label": "Fritz Hansen",
+          "url": "https://www.matterbase.com/catalog/brand/fritz-hansen-33"
+        },
+        {
+          "label": "Gessi",
+          "url": "https://www.matterbase.com/catalog/brand/gessi-11"
+        },
+        {
+          "label": "Gubi",
+          "url": "https://www.matterbase.com/catalog/brand/gubi-44"
+        },
+        {
+          "label": "Impact Acoustic",
+          "url": "https://www.matterbase.com/catalog/brand/impact-acoustic-1"
+        },
+        {
+          "label": "Lamitak",
+          "url": "https://www.matterbase.com/catalog/brand/lamitak-13"
+        },
+        {
+          "label": "Lapitec",
+          "url": "https://www.matterbase.com/catalog/brand/lapitec-12"
+        },
+        {
+          "label": "Minotti",
+          "url": "https://www.matterbase.com/catalog/brand/minotti-31"
+        },
+        {
+          "label": "Object Carpet",
+          "url": "https://www.matterbase.com/catalog/brand/object-carpet-43"
+        },
+        {
+          "label": "WallyArt",
+          "url": "https://www.matterbase.com/catalog/brand/wallyart-2"
+        }
+      ],
+      "note": "SSR 텍스트에는 없으나 해당 랜딩 코드가 명시한 클라이언트 섹션."
+    },
+    {
+      "order": 7,
+      "id": "shared-curation",
+      "label": "Curate materials together",
+      "structure": "원형·궤도 그래픽과 멤버 아바타 모형",
+      "evidence": "current_public_HTML",
+      "anchorHrefObserved": false,
+      "availability": "마케팅 소개. 실제 팀 초대 권한은 이 섹션만으로 확정하지 않음."
+    },
+    {
+      "order": 8,
+      "id": "testimonials",
+      "structure": "고객 후기 카드 묶음",
+      "cardCount": 9,
+      "layoutEvidence": "HTML classes: 1 column mobile, 2 small, 4 large",
+      "evidence": "current_public_HTML",
+      "quotesCopied": false,
+      "claimOwner": "원본의 후기. monogram의 실제 고객 후기·추천으로 재표시하지 않음."
+    },
+    {
+      "order": 9,
+      "id": "closing-cta",
+      "structure": "큰 제목과 가입 버튼",
+      "ctaLabel": "Sign up for Matterbase",
+      "evidence": "current_public_HTML_and_shared_CTA_code"
+    },
+    {
+      "order": 10,
+      "id": "footer",
+      "structure": "로고·소셜·언어·사이트 링크·정책·연락·쿠키·큰 워드마크",
+      "evidence": "current_public_HTML",
+      "links": [
+        {
+          "label": "Material Board",
+          "url": "https://www.matterbase.com/material-board",
+          "location": "footer",
+          "evidence": "homepage HTML anchor href"
+        },
+        {
+          "label": "Schedule",
+          "url": "https://www.matterbase.com/schedule",
+          "location": "footer",
+          "evidence": "homepage HTML anchor href"
+        },
+        {
+          "label": "Virtual Samples",
+          "url": "https://www.matterbase.com/material-samples",
+          "location": "footer",
+          "evidence": "homepage HTML anchor href"
+        },
+        {
+          "label": "Articles",
+          "url": "https://www.matterbase.com/articles",
+          "location": "footer",
+          "evidence": "homepage HTML anchor href"
+        },
+        {
+          "label": "About",
+          "url": "https://www.matterbase.com/about",
+          "location": "footer",
+          "evidence": "homepage HTML anchor href"
+        },
+        {
+          "label": "Pricing",
+          "url": "https://www.matterbase.com/pricing",
+          "location": "footer",
+          "evidence": "homepage HTML anchor href"
+        },
+        {
+          "label": "For Suppliers",
+          "url": "https://www.matterbase.com/virtual-showroom",
+          "location": "footer",
+          "evidence": "homepage HTML anchor href"
+        },
+        {
+          "label": "Privacy",
+          "url": "https://www.matterbase.com/privacy-statement",
+          "location": "footer",
+          "evidence": "homepage HTML anchor href"
+        },
+        {
+          "label": "Terms",
+          "url": "https://www.matterbase.com/terms-of-use",
+          "location": "footer",
+          "evidence": "homepage HTML anchor href"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/matterbasemedia/",
+          "location": "footer",
+          "evidence": "homepage HTML anchor href"
+        },
+        {
+          "label": "Facebook",
+          "url": "https://www.facebook.com/matterbasemedia",
+          "location": "footer",
+          "evidence": "homepage HTML anchor href"
+        }
+      ],
+      "actionButtons": [
+        "Language",
+        "Contact us",
+        "Cookie"
+      ]
+    }
+  ],
+  "sectionCount": 11,
+  "ctaAndUtilityActions": [
+    {
+      "labels": [
+        "Join for free",
+        "Sign up for Matterbase"
+      ],
+      "evidenceKind": "current_public_CTA_code",
+      "source": "ctaAndFooter",
+      "desktop": {
+        "minWidthPx": 1024,
+        "action": "open registration dialog",
+        "handler": "setDialogRegisterOpen(true)"
+      },
+      "mobile": {
+        "maxWidthExclusivePx": 1024,
+        "action": "navigate",
+        "url": "https://www.matterbase.com/register"
+      },
+      "interactionNotInvoked": true
+    },
+    {
+      "label": "Request Demo",
+      "evidenceKind": "current_public_HTML_anchor_and_destination_GET",
+      "url": "https://www.matterbase.com/request-demo",
+      "desktopClass": "max-md:hidden on hero demo link",
+      "formSubmitted": false
+    },
+    {
+      "label": "Contact us",
+      "evidenceKind": "current_public_footer_and_contact_code",
+      "action": "contact dialog",
+      "fields": [
+        "name",
+        "email",
+        "company",
+        "subject",
+        "message"
+      ],
+      "submitLabel": "Send Message",
+      "declaredApiPath": "api/v1/contact/submit",
+      "submissionNotInvoked": true,
+      "notAnEmailHref": true
+    },
+    {
+      "label": "Cookie",
+      "evidenceKind": "current_public_footer_code",
+      "action": "reopen consent banner",
+      "handler": "reopenConsentBanner()",
+      "conditional": "로그인 사용자는 해당 버튼을 렌더하지 않음",
+      "preferenceNotChanged": true
+    },
+    {
+      "label": "Language",
+      "evidenceKind": "current_public_locale_code",
+      "options": [
+        {
+          "label": "English",
+          "home": "https://www.matterbase.com/"
+        },
+        {
+          "label": "简体中文",
+          "home": "https://www.matterbase.com/zh"
+        }
+      ],
+      "translatedPathAllowlist": [
+        "/",
+        "/pricing",
+        "/material-board",
+        "/material-samples",
+        "/request-demo"
+      ],
+      "otherRouteSwitchFallback": "선택한 언어의 홈",
+      "preferenceNotChanged": true
+    }
+  ],
+  "faq": {
+    "homepageSectionObserved": false,
+    "homepageHTMLContainsFAQ": false,
+    "separateFeaturePagesWithFAQ": [
+      "https://www.matterbase.com/material-board",
+      "https://www.matterbase.com/schedule"
+    ],
+    "note": "홈에 FAQ 블록을 추가하면 원본 홈 구조의 복제가 아닌 추가 구성임."
+  },
+  "pricing": {
+    "homepagePricingCardsObserved": false,
+    "entryPoints": [
+      "Explore / Resources",
+      "Footer"
+    ],
+    "destination": "https://www.matterbase.com/pricing",
+    "billingToggles": [
+      "Monthly",
+      "Annual"
+    ],
+    "monthlyPricesUSD": {
+      "Free": 0,
+      "Starter": 8,
+      "Plus": 25,
+      "Studio": 60
+    },
+    "plusTrialAdvertisedDays": 10,
+    "StudioAvailability": "Coming soon",
+    "educationLink": "https://www.matterbase.com/pricing/education",
+    "educationAdvertisedMonthlyUSD": 16,
+    "paidActionsNotInvoked": true
+  },
+  "destinationDetails": {
+    "requestDemo": {
+      "url": "https://www.matterbase.com/request-demo",
+      "heading": "Contact our Sales Team",
+      "requiredFields": [
+        "firstName",
+        "lastName",
+        "email",
+        "jobTitle",
+        "company",
+        "companySize",
+        "country",
+        "reason"
+      ],
+      "optionalFields": [
+        "phone",
+        "moreDetails"
+      ],
+      "marketingConsentCheckbox": true,
+      "submitLabel": "Submit Request",
+      "agreementLinks": [
+        "https://www.matterbase.com/privacy-policy",
+        "https://www.matterbase.com/terms-and-conditions"
+      ],
+      "submitted": false,
+      "agreementLinkResolution": [
+        {
+          "requested": "https://www.matterbase.com/privacy-policy",
+          "resolved": "https://www.matterbase.com/privacy-statement",
+          "httpStatus": 200
+        },
+        {
+          "requested": "https://www.matterbase.com/terms-and-conditions",
+          "resolved": "https://www.matterbase.com/terms-of-use",
+          "httpStatus": 200
+        }
+      ]
+    },
+    "supplier": {
+      "url": "https://www.matterbase.com/virtual-showroom",
+      "setupAccountExternalHref": "https://docs.google.com/forms/d/e/1FAIpQLSdIdHlOou0cWMTSVDZvGRd-p8-qao0WYP93J2_JRI734xgfBg/viewform",
+      "bookCallExternalHref": "https://calendly.com/matterbase/30min",
+      "externalFormsOrCalendarNotOpened": true
+    }
+  },
+  "policyLinks": [
+    {
+      "label": "Privacy",
+      "url": "https://www.matterbase.com/privacy-statement",
+      "pageTitle": "Privacy Statement",
+      "evidence": "홈 href와 실제 정책 본문 웹 읽기",
+      "topics": [
+        "개인정보 수집·이용",
+        "공급사 정보",
+        "연동·쿠키",
+        "계정·업로드·Clipper 내용"
+      ],
+      "longPolicyTextCopied": false,
+      "observedAlias": "https://www.matterbase.com/privacy-policy"
+    },
+    {
+      "label": "Terms",
+      "url": "https://www.matterbase.com/terms-of-use",
+      "pageTitle": "Terms of Use",
+      "evidence": "홈 href와 실제 약관 본문 웹 읽기",
+      "identifiedOperator": "Matterbase Group Limited",
+      "topics": [
+        "서비스 이용",
+        "보안·개인정보",
+        "사용자·라이선스 콘텐츠",
+        "공유·게시",
+        "지식재산",
+        "이용 제한"
+      ],
+      "longPolicyTextCopied": false,
+      "observedAlias": "https://www.matterbase.com/terms-and-conditions"
+    }
+  ],
+  "policyBoundary": "두 링크는 원본 운영자의 문서이며 monogram 자체 약관·정책으로 확정하거나 전재하지 않음.",
+  "uncertainties": [
+    "런타임 클릭·애니메이션·모달 실제 제출 결과는 이번 웹/HTML 조사에서 실행하지 않음.",
+    "일부 웹 도구의 로그인·분류·데모 목적지 캐시는 오래된 헤더를 포함함. 현재 홈 href와 새 HTTP HTML을 목적지 근거로 우선함.",
+    "홈의 Used by·후기는 원본의 마케팅 주장으로 기록하며 독립 검증된 고객·추천으로 취급하지 않음.",
+    "공개 예고·코드 존재만으로 로그인·유료 기능 활성화를 확정하지 않음."
+  ],
+  "preservation": {
+    "catalogReadOnly": true,
+    "catalogProductCount": 445,
+    "catalogSha256AtAudit": "ee88387923d07c5d60f615af14833cf127e75e650d2dfa2745d142df34669c56",
+    "onlyRepositoryFileWritten": "reference/landing-audit.json"
+  }
+}

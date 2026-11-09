@@ -1,0 +1,992 @@
+{
+  "observedDate": "2026-10-16",
+  "referenceProductCount": 47,
+  "completeCatalog": false,
+  "notes": [
+    "Only observed public cards were imported.",
+    "No unobserved price, specifications, variant names or original 3D geometry are invented.",
+    "Product color is an image average for the local preview, not a manufacturer color specification."
+  ],
+  "assets": [
+    {
+      "file": "public/assets/cd33833ca5f9add3.woff2",
+      "source": "https://www.matterbase.com/_next/static/media/1b99372b3eaef0c8-s.p.1gsd1jahc5dg_.woff2",
+      "kind": "font"
+    },
+    {
+      "file": "public/assets/1bd280f0b3a63ca4.woff2",
+      "source": "https://www.matterbase.com/_next/static/media/5e5dfa9e86f764b8-s.p.22x-ws2e_cdqh.woff2",
+      "kind": "font"
+    },
+    {
+      "file": "public/assets/eb262816516c037d.woff2",
+      "source": "https://www.matterbase.com/_next/static/media/8c2eb9ceedecfc8e-s.p.23aeddxv5enbo.woff2",
+      "kind": "font"
+    },
+    {
+      "file": "public/assets/8deb6145ee079702.woff2",
+      "source": "https://www.matterbase.com/_next/static/media/GeistMono_Variable.p.0iy569vnmknd-.woff2",
+      "kind": "font"
+    },
+    {
+      "file": "public/assets/e2b2c1f150bdce6f.woff2",
+      "source": "https://www.matterbase.com/_next/static/media/Geist_Variable-s.p.03oqkqkevsckn.woff2",
+      "kind": "font"
+    },
+    {
+      "file": "public/assets/a3c0f97f54989e6a.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F7e281af1-9e56-4ccd-b870-3b5a19d7d57c%2F10132356_FRT_F300-Lounge-Chair_Pastel-Green_SoernsenLeather-Dunes%252C-21003-Black.png.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/f97ff41a4f5111cb.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F86abda22-46d3-42fc-b860-cb15b1546f32-CLAY%2520CL10%2520GRACE.jpg&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/b65fce5871ff011c.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2Fff55443a-fd43-4c6d-99d8-70c53a764ca6-43818_z_PILOTIS_CERAMIC.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/66b540bc3ec3eed3.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F55a6392f-8685-4f10-8e95-054d9ab80dc9-interpret_umber_2mx2m_ashlar.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/a5d94b33632c3043.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2Fb66ecca1-f4eb-4c14-80ec-34a616b520c7-580.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/32ce1aa7ce709d52.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F69f8a1cd-5599-4a4d-a0ea-0a577c81c083-%25C3%25A8%25C2%259E%25C2%25A2%25C3%25A5%25C2%25B9%25C2%2595%25C3%25A6%25C2%2588%25C2%25AA%25C3%25A5%25C2%259C%25C2%2596%25202024-09-05%2520%25C3%25A4%25C2%25B8%25C2%258B%25C3%25A5%25C2%258D%25C2%25883.19.44.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/87743b072c65500c.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F43e4320e-b460-4bc0-a103-6cf1b79398d3%2F%25C3%25A8%25C2%259E%25C2%25A2%25C3%25A5%25C2%25B9%25C2%2595%25C3%25A6%25C2%2588%25C2%25AA%25C3%25A5%25C2%259C%25C2%2596%25202025-11-16%2520%25C3%25A4%25C2%25B8%25C2%258B%25C3%25A5%25C2%258D%25C2%258810.56.24.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/2d0f17229a3eec27.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F8d9f06ee-0de2-47a6-b2ae-79cb07d1f8e5%2Fcorian_provence_nuwood.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/0526091496f2adb8.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F3271a983-d3bc-4a13-889d-a07dac5b77c4-gold09l-ondo.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/0fb8ed4f6e3e2a85.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F8c3617e1-99bb-489f-a51f-1bf3a27b1ce1-%25C3%25A8%25C2%259E%25C2%25A2%25C3%25A5%25C2%25B9%25C2%2595%25C3%25A6%25C2%2588%25C2%25AA%25C3%25A5%25C2%259C%25C2%2596%25202024-09-11%2520%25C3%25A4%25C2%25B8%25C2%258B%25C3%25A5%25C2%258D%25C2%25889.47.14.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/70929e5fe1632dfd.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2Fba3b2205-6680-4de2-b501-40553e8bc492%2FCover-armchair-green-Muuto-5000x5000-hi-res1_8.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/898fa63f272a45e4.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2Ff935d4f1-fb98-4fce-b804-f9ba982d78f9-a30.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/7133dc7218a3fbea.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2Fbc4cf1b3-12e5-474c-a078-3831017d68c7-Albon-white-Swatch.jpg&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/f24e6cb19f9bbe57.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2Fd74dae92-d0f5-4321-80ce-da7b7cf86066-Tripod-Table-Lamp-HM9_Black_Side_light-1200x1600pp.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/85ab422aa557e907.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2Fa11edbaf-ce29-4703-bd53-3853599ac4a5-CLAY%2520CL09%2520GLEE.jpg&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/07338fe7026ca41b.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F4af2b923-b2b4-445d-9298-ce6fcbdf9ebc-Burgundy.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/8d939dec006a05b3.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F34f20f58-0512-45ef-a94f-b077305fd14f-JEWELS%2520JW02%2520CALACATTA%2520REALE.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/f5606c8e5608ab85.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F0222ad94-0277-401e-ae89-96ba1ce218d4%2FMidst-table-140-dark-oiled-oak-dark-red-muuto_5000x5000_8.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/8c48e55e75a11671.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2Fe38d024b-222f-43a9-b4ec-346a044a2d4e-p.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/8c94f2ccd8c24863.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F6d822322-88e9-4260-b884-ca7a45eb680e-43775_z_JASON_01.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/6ac8cd7e9d7b2d96.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F51e7ad26-585b-43b9-96c0-79ef6634ee39-Pebble-rug-200x300-cm-pale-rose-Muuto-5000x5000-hi-res_8.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/c7f852d67d1dace8.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F49cd99eb-e595-4a5e-9aa7-7940fbc0095d-interpret_lead_2mx2m_ashlar.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/c95a08682d69790f.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F4c1f2c59-1ca3-4d12-a723-c3a655f2795f-Cloud.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/45a8682685f30563.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F4a9de39d-e1a2-4e90-971e-6312774050ae-06.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/4779d86eaefa7dc6.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F70d99a6f-78b1-4417-ba1e-28e43e3e64f4-Collective.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/500b41c19f6a9690.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2Fe9175759-b155-47c5-8c92-5c45a91a0166-464_Electric%2520Orange_2_web.jpg&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/98e846d3bbfab0f6.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F614e8989-3010-480b-abe7-a23eb4e5730e-lamitak_wy_1263d_baro_noce_vida_4x8.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/ab4dcc128349ab6c.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2Fe0c9fe9e-9385-4a05-aaca-6862b32453b1-FC158_image_1.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/434873b051ae0f13.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2Fde704fee-9083-4aef-9cc1-8e8f467bbb32-Clarity.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/8c10fc02f1c0f502.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2Fed592835-988d-4550-a2c7-7d61924b3bf6-Nero%2520Antracite%2520-%2520Vesuvio.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/9faae472eefaa275.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F4aa3d61f-deae-4f07-a016-62dc16b6e0c3%2Fdupont_corian_arrowroot.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/d3763f79f9ff6f3f.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F18f7761d-b1ad-41c2-9810-46b12b841a61-v19.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/26471e78c0d98069.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F4c695467-be15-4133-a3a3-54d2af7393d1-IMG_0016.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/b479870668873f48.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F9908aa70-52b3-4d6f-8c4e-3eb7aeb9c55e-lamitak_wy_1282d_runa_nevada_elm.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/0931ab177af2d07a.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2Fcf9f5f1d-8267-4808-9205-df5120af21fd%2Fconcept_two-panter-7211-jpg-48471-47236.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/2c80d99d2b8918d0.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F6a1ea333-4abd-434b-9beb-f8b8a6670ef1%2Fcanyon-mate-0724-jpg-30570-24407.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/b21eca0e151413af.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F8b1a7483-8bb4-482e-afd8-717cefb43f52-Radiate.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/f9655c7e7096bd4b.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2Fc74ca60a-b442-404f-98ee-cf1474eab506-s12.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/c36c0e760aff77d8.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F88ec39cf-7478-48c0-9233-6344a744101e-Bianco%2520Vittoria%2520-%2520Lithos.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/eedfb8388976a991.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F84cfa9ee-99a9-452e-b7ad-9a6a7ea787ce-Array-grey-cat.jpg&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/8adc438d72eb6a82.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F2d34474a-bcea-4242-9cf3-a21eaaa47f12-Rise.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/62e6385c220f995e.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2Fceb99781-3069-41f7-af3c-3ea11ae0d2ae-410_Winter%2520Sky_2_web.jpg&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/afc3d3d4d474ee09.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2Ff48c55a7-fb46-4b91-90d9-95c30bbe709e-9e544f.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/0faa70986ce2c908.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F1d5317f9-68c1-4f3f-a14a-bae376f557da-08.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/022a01a8da714fad.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F776e0659-25c4-4a72-b0a4-9083fc824c73-Bianco%2520Olimpia_Satin.jpg&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/fd3607d352292165.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2Fb64954fa-be43-4c72-b9e7-2a4ebf13f0f9-01.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/3615600f147d9873.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F5860a0d1-a800-4936-84c6-09fd6858201c-140.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/9b05481098616892.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F9867a923-12db-4fd2-8bdf-f79d718ef4e3-43741_z_ETHAN.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/d17deeacad707783.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F855fb959-590b-4175-8e44-a47ee472940c%2FTwo-layer-pendant-37-black-muuto-hi-res_8.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/163347939eb623ff.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2Fc6f14ad8-c897-449c-bb0c-5a079bbb0d63-Bianco%2520Serena_Satin.jpg&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/cb14e94ab4de9d45.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2Fd2a1d372-0afd-424b-aed0-8e5943bcc7a2-846_Sunshine_1_web.jpg&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/23e920084b7fca8b.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F238c1b66-0e9d-4c48-a467-3cd486dac74b-Nuvem%2520smooth.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/d420f74a9fb4f32b.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2Fc6867327-76b6-4bec-9cca-7977c466843b-textura-iconic-stone.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/59f058c3e68a2f19.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F577754ee-0d38-42ad-abb6-96e195a16ab1-CSX31_TILE.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/d851a91ea5253d56.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F1ac6505c-bd82-4262-91af-97b292b823d4-Feather.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/d6f0bf828fdc3b14.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F319235b9-dbb2-4293-9d48-022fbda245c4-JEWELS%2520JW03%2520ROYAL.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/96c07f336e21f60c.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2Fd62fad3e-1d91-42b5-b99f-640668f16647-NORR%2520RR06%2520HAV.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/ec048bf696a561f2.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F3980da22-d5e0-45d2-bca3-fc5773319947%2F10132335_FRT_F300-Lounge-Chair_Alabaster-White_Dedar%252C-Alouette-Red-006.png.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/58ad6642582ce173.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F3548494d-b7c6-4bf7-b99b-3d5cce7d3eff-c21.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/00469c549806a5f5.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F9c1c5011-e10d-4d80-ab2f-668e305a3469-150.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/b1c850535d918946.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F2dbc0a8e-04a3-431f-815b-ff2660afbeac-103_Cloud_1_web.jpg&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/9057b1525ab59b3a.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F3d616f26-e7d7-43e7-ac1e-f125ca73a702-600.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/1a6ea4bb20c60257.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2Ff6776620-b5c9-4ed9-b393-f25f4610a051-Bianco%2520Atena_Satin.jpg&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/4088b4884b19188b.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F7e193aee-4dec-41f0-8e84-e9ecef710375%2FUnder-The-Bell-55-grey-Muuto-5000x5000-hi-res_8.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/dbfda3888a3b4242.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F4d45970d-c3f6-4d40-b62f-c4c8c922c12f-09.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/891926ef332dc4f2.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F39139bc1-0069-4e04-8e8a-046c2c3987d0-Bianco%2520Polare%2520-%2520Satin.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/2dbba0df63385c6b.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F9e98317e-bc3f-4eb2-b556-22f0de7a6944%2Fpattern_terrazzo_laguna.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/fb6668cfdcae5bc2.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F67eae008-0e01-4a81-b0b2-d278a114a11c-bb.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/3fc056b8aea0000d.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2Fcd298c24-ffe5-4bde-b80c-706a1c7455d0-%25C3%25A8%25C2%259E%25C2%25A2%25C3%25A5%25C2%25B9%25C2%2595%25C3%25A6%25C2%2588%25C2%25AA%25C3%25A5%25C2%259C%25C2%2596%25202024-09-11%2520%25C3%25A4%25C2%25B8%25C2%258B%25C3%25A5%25C2%258D%25C2%25888.18.41.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/0d0383789c019fd7.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2Fcba5629a-c0aa-4664-b141-ba4b6bff812a%2FMidst-table-140-grey-marble-grey-muuto-5000x5000_8.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/35e8f2b9afdd318f.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2Fac7e10cb-ae27-4a10-b7d1-e299a3693c02-Arla-Green%2520r.jpg&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/ee7c0cdfa680f0b0.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F671f9ee5-474c-48a8-8de6-080a40290f7a-B.png&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/41367166ae8b8452.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2Feb29eedd-f1d3-40f6-8bf0-787f9abbec6e-s08.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/0c12995fbcce1da2.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F6cc889b4-89d3-4adc-a72f-44e0bc6b46b4-interpret_nickel_2mx2m_ashlar.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/f03a286f96be399d.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F1a574305-3dbb-49c0-aea4-e4d7b2be30fe-12.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/9500d08d2e0c3a43.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2Fedf10d5b-a11b-4f40-b830-f39f6d80e5d0-43659_z_YVES_ROUND_01.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/3b471b6a84a09140.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F95bb698f-7683-49a7-bea1-98f276e36110-%25C3%25A8%25C2%259E%25C2%25A2%25C3%25A5%25C2%25B9%25C2%2595%25C3%25A6%25C2%2588%25C2%25AA%25C3%25A5%25C2%259C%25C2%2596%25202024-09-11%2520%25C3%25A4%25C2%25B8%25C2%258B%25C3%25A5%25C2%258D%25C2%25889.42.55.webp&w=640&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/3a53a90c0845fa30.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F4a9de39d-e1a2-4e90-971e-6312774050ae-06.webp&w=256&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/aa00a74f46c5b12a.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F70d99a6f-78b1-4417-ba1e-28e43e3e64f4-Collective.webp&w=256&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/744260b61a243d54.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2Fe0c9fe9e-9385-4a05-aaca-6862b32453b1-FC158_image_1.webp&w=256&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/7ea098686944e5c1.webp",
+      "source": "https://www.matterbase.com/_next/image?url=https%3A%2F%2Fcdn.matterbase.com%2F88ec39cf-7478-48c0-9233-6344a744101e-Bianco%2520Vittoria%2520-%2520Lithos.webp&w=256&q=75",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/96c6038aff901734.webp",
+      "source": "inline-svg:96c6038aff901734",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/caaadbdd90433dc8.webp",
+      "source": "inline-svg:caaadbdd90433dc8",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/6f6c260b615dcf7d.webp",
+      "source": "inline-svg:6f6c260b615dcf7d",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/74f909884a647ec2.webp",
+      "source": "inline-svg:74f909884a647ec2",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/9e59d40510a0c8fd.webp",
+      "source": "inline-svg:9e59d40510a0c8fd",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/1723971b5795640f.webp",
+      "source": "inline-svg:1723971b5795640f",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/659331776b43c841.webp",
+      "source": "inline-svg:659331776b43c841",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/831b5758b553682b.webp",
+      "source": "inline-svg:831b5758b553682b",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/57d2a8a2c620f5a3.webp",
+      "source": "inline-svg:57d2a8a2c620f5a3",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/94d81fe11f7aaaf9.webp",
+      "source": "inline-svg:94d81fe11f7aaaf9",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/6b7d0b25f14cbe07.webp",
+      "source": "inline-svg:6b7d0b25f14cbe07",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/d01f0df87e4811a9.webp",
+      "source": "inline-svg:d01f0df87e4811a9",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/449098f7a3a1d263.webp",
+      "source": "inline-svg:449098f7a3a1d263",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/d67bdc1a85f33875.webp",
+      "source": "inline-svg:d67bdc1a85f33875",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/ccb9c639f3f73e32.webp",
+      "source": "inline-svg:ccb9c639f3f73e32",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/334126b585c5c645.webp",
+      "source": "inline-svg:334126b585c5c645",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/75487323dcc565a7.webp",
+      "source": "inline-svg:75487323dcc565a7",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/7f20db0f4a9f5c81.webp",
+      "source": "inline-svg:7f20db0f4a9f5c81",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/b29b68785f462fdf.webp",
+      "source": "inline-svg:b29b68785f462fdf",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/384b44d5056c79a6.webp",
+      "source": "inline-svg:384b44d5056c79a6",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/3ed7a3804500c156.webp",
+      "source": "inline-svg:3ed7a3804500c156",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/ee63852f3333a972.webp",
+      "source": "inline-svg:ee63852f3333a972",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/9d565b8286228baf.webp",
+      "source": "inline-svg:9d565b8286228baf",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/96097278df894bbc.webp",
+      "source": "inline-svg:96097278df894bbc",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/056c60c00594c1b1.webp",
+      "source": "inline-svg:056c60c00594c1b1",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/e65628ba730a29bd.webp",
+      "source": "inline-svg:e65628ba730a29bd",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/29677bd3d5b7b26f.webp",
+      "source": "inline-svg:29677bd3d5b7b26f",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/1029b6a841cc74d2.webp",
+      "source": "inline-svg:1029b6a841cc74d2",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/8ec14a9fe5042231.webp",
+      "source": "inline-svg:8ec14a9fe5042231",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/677eceb7586c0280.webp",
+      "source": "inline-svg:677eceb7586c0280",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/da3a201ed7fe17bd.webp",
+      "source": "inline-svg:da3a201ed7fe17bd",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/22bdd69a28c74ea0.webp",
+      "source": "inline-svg:22bdd69a28c74ea0",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/dd25ed26ac762d33.webp",
+      "source": "inline-svg:dd25ed26ac762d33",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/5ebc0846aa70989a.webp",
+      "source": "inline-svg:5ebc0846aa70989a",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/a6d503ecc7d18ce5.webp",
+      "source": "inline-svg:a6d503ecc7d18ce5",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/082256db50eecda6.webp",
+      "source": "inline-svg:082256db50eecda6",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/45874395e39af892.webp",
+      "source": "inline-svg:45874395e39af892",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/76cd1a742d91c03e.webp",
+      "source": "inline-svg:76cd1a742d91c03e",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/dcf8314bdd5d9ad4.webp",
+      "source": "inline-svg:dcf8314bdd5d9ad4",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/b8db1780561ff690.webp",
+      "source": "inline-svg:b8db1780561ff690",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/60538cf04f5457fb.webp",
+      "source": "inline-svg:60538cf04f5457fb",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/2d4be56773a44a10.webp",
+      "source": "inline-svg:2d4be56773a44a10",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/34cfc12ddc8f8f05.webp",
+      "source": "inline-svg:34cfc12ddc8f8f05",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/2b3092900c6d6766.webp",
+      "source": "inline-svg:2b3092900c6d6766",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/1f9cb1d7c013b44d.webp",
+      "source": "inline-svg:1f9cb1d7c013b44d",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/28b201fc55a98b4a.webp",
+      "source": "inline-svg:28b201fc55a98b4a",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/77297cfe54a918d1.webp",
+      "source": "inline-svg:77297cfe54a918d1",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/fc87cc977f4bb7ff.webp",
+      "source": "inline-svg:fc87cc977f4bb7ff",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/3a49a0f38ff1c954.webp",
+      "source": "inline-svg:3a49a0f38ff1c954",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/2f6f4742ed312225.webp",
+      "source": "inline-svg:2f6f4742ed312225",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/9af6567d98d9bbf4.webp",
+      "source": "inline-svg:9af6567d98d9bbf4",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/147b333575d7352b.webp",
+      "source": "inline-svg:147b333575d7352b",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/b169bf2a37190570.webp",
+      "source": "inline-svg:b169bf2a37190570",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/0e2dc614da37a85d.webp",
+      "source": "inline-svg:0e2dc614da37a85d",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/f51fe77256fc32f2.webp",
+      "source": "inline-svg:f51fe77256fc32f2",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/94ac40cd67faf851.webp",
+      "source": "inline-svg:94ac40cd67faf851",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/3bb95e6c53b4be8e.webp",
+      "source": "inline-svg:3bb95e6c53b4be8e",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/c76df5a6d76bc917.webp",
+      "source": "inline-svg:c76df5a6d76bc917",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/299a9d2db05c663e.webp",
+      "source": "inline-svg:299a9d2db05c663e",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/95e7e39b91369489.webp",
+      "source": "inline-svg:95e7e39b91369489",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/824d1a3e015c368b.webp",
+      "source": "inline-svg:824d1a3e015c368b",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/3018670a2f25a732.webp",
+      "source": "inline-svg:3018670a2f25a732",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/766b5824cb292ab7.webp",
+      "source": "inline-svg:766b5824cb292ab7",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/4e104fbe90b8e15b.webp",
+      "source": "inline-svg:4e104fbe90b8e15b",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/7645749d87817d3f.webp",
+      "source": "inline-svg:7645749d87817d3f",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/03199769fca9b5ad.webp",
+      "source": "inline-svg:03199769fca9b5ad",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/b7a8ae2a9b5a900c.webp",
+      "source": "inline-svg:b7a8ae2a9b5a900c",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/0dfdcb50dfa84fab.webp",
+      "source": "inline-svg:0dfdcb50dfa84fab",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/978bef99fdac8915.webp",
+      "source": "inline-svg:978bef99fdac8915",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/38e514817064fefc.webp",
+      "source": "inline-svg:38e514817064fefc",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/70c601163dbb3268.webp",
+      "source": "inline-svg:70c601163dbb3268",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/674188dc2a56da0b.webp",
+      "source": "inline-svg:674188dc2a56da0b",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/8caf332be634ea4d.webp",
+      "source": "inline-svg:8caf332be634ea4d",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/37707b5ceaeb445a.webp",
+      "source": "inline-svg:37707b5ceaeb445a",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/07e51db25bc8a4f1.webp",
+      "source": "inline-svg:07e51db25bc8a4f1",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/ffed32550d39a999.webp",
+      "source": "inline-svg:ffed32550d39a999",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/a5a020d9a455a2be.webp",
+      "source": "inline-svg:a5a020d9a455a2be",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/4235c542a42b6620.webp",
+      "source": "inline-svg:4235c542a42b6620",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/3c97912fad159cd3.webp",
+      "source": "inline-svg:3c97912fad159cd3",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/fadc3da99096e5a9.webp",
+      "source": "inline-svg:fadc3da99096e5a9",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/8129e70c00f477c6.webp",
+      "source": "inline-svg:8129e70c00f477c6",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/9bb3f809e05763f6.webp",
+      "source": "inline-svg:9bb3f809e05763f6",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/54a5656d139b43f9.webp",
+      "source": "inline-svg:54a5656d139b43f9",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/155a150b73d1a970.webp",
+      "source": "inline-svg:155a150b73d1a970",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/f3ebf8c6f5b36169.webp",
+      "source": "inline-svg:f3ebf8c6f5b36169",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/d170b76faeb7cb65.webp",
+      "source": "inline-svg:d170b76faeb7cb65",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/566c3c5f35cdf97c.webp",
+      "source": "inline-svg:566c3c5f35cdf97c",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/3a02db76bf035661.webp",
+      "source": "inline-svg:3a02db76bf035661",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/574448fc33553fe7.webp",
+      "source": "inline-svg:574448fc33553fe7",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/1b1d6a799b906978.webp",
+      "source": "inline-svg:1b1d6a799b906978",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/9b707c31d55a5fb3.webp",
+      "source": "inline-svg:9b707c31d55a5fb3",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/7727f29890ccb61f.webp",
+      "source": "inline-svg:7727f29890ccb61f",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/e8012d3838991104.webp",
+      "source": "inline-svg:e8012d3838991104",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/c99142aa42959afd.webp",
+      "source": "inline-svg:c99142aa42959afd",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/decd3036f39bcaa0.webp",
+      "source": "inline-svg:decd3036f39bcaa0",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/6d9963cbbd4ce24b.webp",
+      "source": "inline-svg:6d9963cbbd4ce24b",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/c1b9c81b141529fb.webp",
+      "source": "inline-svg:c1b9c81b141529fb",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/03402dc67f59a138.webp",
+      "source": "inline-svg:03402dc67f59a138",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/7869e45db7845d7e.webp",
+      "source": "inline-svg:7869e45db7845d7e",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/630b90f26899058f.webp",
+      "source": "inline-svg:630b90f26899058f",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/e3c99824db1d79bf.webp",
+      "source": "inline-svg:e3c99824db1d79bf",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/ef96acdda5960c43.webp",
+      "source": "inline-svg:ef96acdda5960c43",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/748160c288290a4b.webp",
+      "source": "inline-svg:748160c288290a4b",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/5fc7fda237bbfa90.webp",
+      "source": "inline-svg:5fc7fda237bbfa90",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/720bbb3453ff0766.webp",
+      "source": "inline-svg:720bbb3453ff0766",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/fa766b5909b6bc84.webp",
+      "source": "inline-svg:fa766b5909b6bc84",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/08241c82f2f291ee.webp",
+      "source": "inline-svg:08241c82f2f291ee",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/ecbd1e912dbc4d96.webp",
+      "source": "inline-svg:ecbd1e912dbc4d96",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/81fe4408e546ea20.webp",
+      "source": "inline-svg:81fe4408e546ea20",
+      "kind": "image"
+    },
+    {
+      "file": "public/assets/a28992c3b1932150.webp",
+      "source": "inline-svg:a28992c3b1932150",
+      "kind": "image"
+    }
+  ]
+}

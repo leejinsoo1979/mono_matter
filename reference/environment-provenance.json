@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-16T17:38:50.940983+00:00",
+  "assets": [
+    {
+      "file": "public/environments/studio.hdr",
+      "source": "https://www.matterbase.com/hdri/studio_small_08_1k_highlight_compressed.hdr",
+      "kind": "HDR image-based-lighting environment",
+      "sha256": "d6f65b260185b839bf53b845da9a6258689ad6d525d2cabb5f1ab1ca6d15af46",
+      "bytes": 1466464,
+      "verification": "Local file SHA-256 matches the source asset hash supplied and verified by the root agent.",
+      "usedBy": [
+        "src/components/BoardEditor.tsx",
+        "src/components/ProductPreview.tsx"
+      ]
+    }
+  ],
+  "scope": "One observed source lighting environment. This does not establish pixel-level lighting, camera or rendering equivalence."
+}

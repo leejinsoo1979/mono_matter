@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>monogram web clipper</title><link rel="stylesheet" href="popup.css"></head>
+<body>
+  <header><img src="icons/monogram.png" alt=""><strong>monogram</strong><span>Web clipper</span></header>
+  <main>
+    <h1>Bring a product into your library.</h1>
+    <p class="muted">Read the current page, review the details, then continue in monogram.</p>
+    <button id="extract" class="secondary">Extract from this page</button>
+    <p id="status" class="status" role="status" aria-live="polite">The current page is read only when you click Extract.</p>
+    <form id="product-form" hidden>
+      <label>Product name<input id="name" required maxlength="500"></label>
+      <label>Brand<input id="brand" maxlength="300"></label>
+      <div class="price-row"><label>Price, if listed<input id="price" inputmode="decimal" type="number" min="0" step="any" placeholder="Price on request"></label><label>Currency<input id="currency" maxlength="10" placeholder="USD"></label></div>
+      <label>Image URL<input id="image" type="url" placeholder="https://…"></label>
+      <label>Description<textarea id="description" rows="3" maxlength="20000"></textarea></label>
+      <label>Source page<input id="source" type="url" required readonly></label>
+      <button type="submit" id="save">Save to monogram <span aria-hidden="true">↗</span></button>
+      <p class="fine">Your workspace opens for final review. Nothing is saved to its library until you confirm there.</p>
+    </form>
+    <details><summary>Workspace address</summary><div class="settings"><label>monogram URL<input id="workspace" type="url" value="http://127.0.0.1:5188" placeholder="http://127.0.0.1:5188"></label><button id="save-settings" class="secondary">Save address</button></div></details>
+    <footer>No background collection. No cookies or account tokens. No external API calls.</footer>
+  </main>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

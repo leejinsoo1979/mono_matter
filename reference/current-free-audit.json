@@ -1,0 +1,740 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-16T15:23:56.934604+00:00",
+  "referenceVersionObserved": "v2.5.9",
+  "purpose": "Read-only discovery follow-up for full feature parity; not a certificate of full equivalence.",
+  "status": "partial_authenticated_settings_observed_other_roles_and_routes_pending",
+  "safetyBoundary": {
+    "mutationsPerformed": false,
+    "accountCreation": false,
+    "credentialAccess": false,
+    "payments": false,
+    "aiCreditsSpent": false,
+    "requestsOrMessagesSent": false,
+    "existingRootTabsModified": false
+  },
+  "sessionBoundary": {
+    "availableBrowser1": "Chrome profile authenticated state was logged out",
+    "browser2": "The exposed browser2 was a Chrome extension rather than the root agent IAB. New-tab creation rejected because extension-created tabs must be active.",
+    "iabEntry": "The explicit iab entry was unavailable in this subagent tool session.",
+    "consequence": "This subagent could not independently open the authenticated surface. The root agent supplied live IAB observations of the current Free account Menu and Settings; they are explicitly attributed below. Library, Projects and Style Passport remain without a complete live audit."
+  },
+  "sources": {
+    "navigation": {
+      "kind": "current_public_page_loaded_javascript",
+      "sourcePage": "https://www.matterbase.com/p/460",
+      "url": "https://www.matterbase.com/_next/static/chunks/1b9zau-zc7ux_.js",
+      "sha256": "637fd82028c3056674131718386310907e625f94a1e5cbf6ecd676a81c7e0482"
+    },
+    "settings": {
+      "kind": "current_public_page_loaded_javascript",
+      "sourcePage": "https://www.matterbase.com/p/460",
+      "url": "https://www.matterbase.com/_next/static/chunks/02-bf254hpdvq.js",
+      "sha256": "7b6a8adc7f16754925790650d2cdb267932c14b550c184c04a9242ae359f3df2"
+    },
+    "settingsTabs": {
+      "kind": "current_public_page_loaded_javascript",
+      "sourcePage": "https://www.matterbase.com/p/460",
+      "url": "https://www.matterbase.com/_next/static/chunks/2-kx-3a7vnl90.js",
+      "sha256": "4a160707914e661f7fb520fbe962bf5c3413e78df74602267c544431951a8d01"
+    },
+    "libraryAccess": {
+      "kind": "current_public_page_loaded_javascript",
+      "sourcePage": "https://www.matterbase.com/p/460",
+      "url": "https://www.matterbase.com/_next/static/chunks/2i0-dawznwkxh.js",
+      "sha256": "451b1fb9bc25ed95531a6d2940be7f59d40b239a6d5790a2574ba69d9cd07468"
+    },
+    "planLimits": {
+      "kind": "current_public_page_loaded_javascript",
+      "sourcePage": "https://www.matterbase.com/p/460",
+      "url": "https://www.matterbase.com/_next/static/chunks/1s5q54k53hx83.js",
+      "sha256": "7af82e10ec6a94ec6a501a8f8f66bb884d90dd3a0a758ce5cd48281bc25f10e2"
+    },
+    "pricing": {
+      "kind": "current_public_page_loaded_javascript",
+      "sourcePage": "https://www.matterbase.com/p/460",
+      "url": "https://www.matterbase.com/_next/static/chunks/005mnvdicamcg.js",
+      "sha256": "c5d0449641180851830dd5d3591a387f3df7396ed1949d70c4bd0a3679d8b0e6"
+    },
+    "routes": {
+      "kind": "current_public_page_loaded_javascript",
+      "sourcePage": "https://www.matterbase.com/p/460",
+      "url": "https://www.matterbase.com/_next/static/chunks/19fdw93f3kc-c.js",
+      "sha256": "7c2b1544143e63613e767b6caa0b3c1534ea2d050c1637873624b252da5002f3"
+    },
+    "renderer": {
+      "kind": "current_public_page_loaded_javascript",
+      "sourcePage": "https://www.matterbase.com/p/460",
+      "url": "https://www.matterbase.com/_next/static/chunks/2h1vcmtxvx5rk.js",
+      "sha256": "ac4f199ba0f302b8801c4d0049c7b1db455de9abaa7bd1043129784caef4e2ed"
+    },
+    "libraryMutations": {
+      "kind": "current_public_page_loaded_javascript",
+      "sourcePage": "https://www.matterbase.com/p/460",
+      "url": "https://www.matterbase.com/_next/static/chunks/109wlx-geqp8r.js",
+      "sha256": "1f9d03852351cb173a3da8929298da3af14c45ff7858717f47707b2f02f351a9"
+    },
+    "rootAuthenticatedSettings": {
+      "kind": "live_authenticated_ui_observed_by_root_agent",
+      "origin": "https://www.matterbase.com",
+      "surface": "Free account Menu and Settings overlays",
+      "observer": "root agent using its existing authenticated in-app browser",
+      "privacy": "Account name, email and identifiers omitted. No settings or credentials were changed."
+    }
+  },
+  "records": [
+    {
+      "id": "public-nav",
+      "area": "navigation",
+      "evidenceStatus": "live_public_ui_observed",
+      "labels": [
+        "Products",
+        "Explore"
+      ],
+      "behavior": "Public header exposes product catalog, features and resource navigation. Explore shows release v2.5.9.",
+      "source": "https://www.matterbase.com/",
+      "paths": [
+        "/catalog",
+        "/material-board",
+        "/schedule",
+        "/material-samples",
+        "/pricing",
+        "/articles"
+      ]
+    },
+    {
+      "id": "public-ai-search-preview",
+      "area": "search",
+      "evidenceStatus": "live_public_ui_advertisement",
+      "labels": [
+        "Agentic Search",
+        "Coming soon"
+      ],
+      "behavior": "Natural-language agentic search is advertised as forthcoming on the home page. This does not establish the behavior of any existing ordinary keyword search.",
+      "source": "https://www.matterbase.com/"
+    },
+    {
+      "id": "detail-f300",
+      "area": "product",
+      "evidenceStatus": "live_public_ui_observed",
+      "labels": [
+        "3D",
+        "Specification",
+        "Story",
+        "Files",
+        "Choose a board",
+        "Save"
+      ],
+      "behavior": "F300 SKU1216 detail has a gallery, expandable sections, board picker and Save. No authenticated save or contact action was submitted.",
+      "source": "https://www.matterbase.com/p/1216",
+      "observedFacts": {
+        "brand": "Gubi",
+        "variant": "Dunes, Sørensen Leather",
+        "variantCount": 6,
+        "galleryButtons": [
+          "Image 1",
+          "Image 2",
+          "Image 3",
+          "Image 4",
+          "Image 5",
+          "Image 6"
+        ],
+        "priceState": "Price on request",
+        "downloadName": "F300_Lounge_chair_by_Pierre_Paulin_Datasheet"
+      },
+      "variantPaths": [
+        "/product/furniture/gubi/f300-1213",
+        "/product/furniture/gubi/f300-1212",
+        "/product/furniture/gubi/f300-1211",
+        "/product/furniture/gubi/f300-1214",
+        "/product/furniture/gubi/f300-1216",
+        "/product/furniture/gubi/f300-1215"
+      ]
+    },
+    {
+      "id": "detail-sample-plane",
+      "area": "product3d",
+      "evidenceStatus": "live_public_ui_and_public_api_observed",
+      "labels": [
+        "3D"
+      ],
+      "behavior": "Selecting 3D replaces the product photograph with an interactive canvas displaying the source image sample. The source descriptor isUseAlphaPlane=true and modelUrl=null establishes that this SKU is an image plane, rather than a chair mesh. No additional named export or geometry-edit controls appeared in this product viewer.",
+      "source": "https://www.matterbase.com/p/1216",
+      "api": "https://api.matterbase.com/api/v1/product/single/1216?extra=false&withModel=true",
+      "notVerified": [
+        "Camera pointer interaction in this audit",
+        "Authenticated 3D board controls"
+      ]
+    },
+    {
+      "id": "detail-related-auth-gate",
+      "area": "product",
+      "evidenceStatus": "live_public_ui_observed",
+      "labels": [
+        "More products",
+        "See more like this",
+        "Sign Up",
+        "Log In"
+      ],
+      "behavior": "After hydration, a registration teaser limits further exploration of related products in the anonymous session. No account was created.",
+      "source": "https://www.matterbase.com/p/1216"
+    },
+    {
+      "id": "free-public-plan",
+      "area": "plans",
+      "evidenceStatus": "live_public_ui_observed",
+      "labels": [
+        "Free"
+      ],
+      "behavior": "The public plan card establishes one project, thirty products plus images, twenty daily refresh credits, unlimited boards and schedules, favorites, and watermarked exports.",
+      "source": "https://www.matterbase.com/pricing",
+      "limits": {
+        "project": 1,
+        "productsAndImages": 30,
+        "dailyCredits": 20,
+        "boards": "unlimited",
+        "schedules": "unlimited",
+        "watermark": true,
+        "monthlyPriceUSD": 0
+      }
+    },
+    {
+      "id": "starter-public-plan",
+      "area": "plans",
+      "evidenceStatus": "live_public_ui_observed",
+      "labels": [
+        "Starter"
+      ],
+      "behavior": "Starter raises projects to three and permits one library and project collaboration. Products and images are advertised as unlimited.",
+      "source": "https://www.matterbase.com/pricing",
+      "pricesUSD": {
+        "monthly": 8,
+        "annualTotal": 72,
+        "annualMonthlyEquivalent": 6
+      }
+    },
+    {
+      "id": "plus-public-plan",
+      "area": "plans",
+      "evidenceStatus": "live_public_ui_observed",
+      "labels": [
+        "Plus"
+      ],
+      "behavior": "Plus advertises 2500 monthly credits, unlimited projects and libraries, shared libraries, AI rendering and clean exports. A ten-day trial is displayed; its signup and payment flows were not entered.",
+      "source": "https://www.matterbase.com/pricing",
+      "pricesUSD": {
+        "monthly": 25,
+        "annualTotal": 252,
+        "annualMonthlyEquivalent": 21
+      },
+      "trialDays": 10
+    },
+    {
+      "id": "studio-coming-soon",
+      "area": "plans",
+      "evidenceStatus": "live_public_ui_observed_advertised_only",
+      "labels": [
+        "Studio",
+        "Coming soon"
+      ],
+      "behavior": "The Studio purchase button is disabled. Team roles, studio library, style-trained AI, 8000 monthly credits and priority support are advertised future-tier benefits, not verified generally available functions.",
+      "source": "https://www.matterbase.com/pricing",
+      "pricesUSD": {
+        "monthly": 60,
+        "annualTotal": 600,
+        "annualMonthlyEquivalent": 50
+      }
+    },
+    {
+      "id": "education-enterprise",
+      "area": "plans",
+      "evidenceStatus": "live_public_ui_observed",
+      "labels": [
+        "Enterprise"
+      ],
+      "behavior": "Enterprise inquiry and education pricing links are present. Neither external inquiry nor verification form was submitted.",
+      "source": "https://www.matterbase.com/pricing",
+      "educationPath": "/pricing/education",
+      "educationMonthlyUSD": 16
+    },
+    {
+      "id": "account-navigation",
+      "area": "navigation",
+      "evidenceStatus": "current_public_code_present_not_authenticated_ui",
+      "labels": [
+        "Create",
+        "Inbox",
+        "Projects",
+        "Menu",
+        "View Profile"
+      ],
+      "behavior": "Signed-in header code has create, inbox, project popover, avatar profile entry, and account menu. Their visibility for this particular Free account remains unobserved.",
+      "source": "navigation",
+      "menuLabels": [
+        "Upgrade plan",
+        "Settings",
+        "Getting Started",
+        "Log out"
+      ],
+      "paths": [
+        "/getting-started"
+      ]
+    },
+    {
+      "id": "global-app-navigation",
+      "area": "navigation",
+      "evidenceStatus": "current_public_code_present_not_authenticated_ui",
+      "labels": [
+        "Products",
+        "Spaces",
+        "Library",
+        "MatterAI"
+      ],
+      "behavior": "The current application navigation code includes these four destinations. Exact account-specific visibility is not established.",
+      "source": "navigation",
+      "knownPaths": {
+        "Spaces": "/spaces",
+        "MatterAI": "/chat"
+      }
+    },
+    {
+      "id": "create-menu",
+      "area": "creation",
+      "evidenceStatus": "current_public_code_present_not_authenticated_ui",
+      "labels": [
+        "Board",
+        "Schedule",
+        "Connect Pinterest",
+        "Chrome extension"
+      ],
+      "behavior": "Create menu code opens board and schedule dialogs in a selected creatable project. Pinterest connection entry appears conditionally when disconnected; web clipper is an external extension link. No creation, OAuth or installation action was performed.",
+      "source": "navigation"
+    },
+    {
+      "id": "settings-sections",
+      "area": "settings",
+      "evidenceStatus": "live_authenticated_ui_observed_by_root",
+      "labels": [
+        "Profile",
+        "Account & security",
+        "Plan & credits",
+        "Integrations",
+        "Appearance"
+      ],
+      "behavior": "Root observed these five Settings sections in the current authenticated Free account. Team was not rendered in this account. Public code still contains conditional Team and Appearance implementations.",
+      "source": "rootAuthenticatedSettings",
+      "flags": {
+        "Team": "team",
+        "Appearance": "darkMode"
+      },
+      "tabIds": [
+        "profile",
+        "security",
+        "plan",
+        "integrations",
+        "appearance"
+      ],
+      "legacyAliases": {
+        "account": "plan",
+        "usage": "plan",
+        "notifications": "profile"
+      },
+      "supportingCodeSource": "settings",
+      "notRenderedInObservedFreeAccount": [
+        "Team"
+      ]
+    },
+    {
+      "id": "profile-fields",
+      "area": "profile",
+      "evidenceStatus": "live_authenticated_ui_observed_by_root",
+      "labels": [
+        "Display name",
+        "Country",
+        "Username",
+        "Make my profile public"
+      ],
+      "behavior": "Root observed editable display name, country, username and public-profile toggle. The screen explains that a public profile does not publish projects; each project has its own sharing switch.",
+      "source": "rootAuthenticatedSettings",
+      "supportingCodeSource": "settings",
+      "codeOnlyFieldsNotSeparatelyConfirmed": [
+        "Profile photo"
+      ]
+    },
+    {
+      "id": "designer-verification",
+      "area": "profile",
+      "evidenceStatus": "live_authenticated_ui_observed_by_root",
+      "labels": [
+        "Professional designer verification",
+        "Get verified",
+        "Product request",
+        "Unlimited product libraries",
+        "Direct support"
+      ],
+      "behavior": "Root observed these verification benefits and the Get verified entry. No verification application was submitted, and pending/approved states remain source-code evidence only.",
+      "source": "rootAuthenticatedSettings",
+      "supportingCodeSource": "settings"
+    },
+    {
+      "id": "account-security",
+      "area": "security",
+      "evidenceStatus": "live_authenticated_ui_observed_by_root",
+      "labels": [
+        "Email",
+        "Managed by Google",
+        "Set password"
+      ],
+      "behavior": "The observed Free account used a Google-managed email and exposed Set password. No password or email change was started. Personal access tokens were not rendered.",
+      "source": "rootAuthenticatedSettings",
+      "supportingCodeSource": "settings",
+      "notRenderedInObservedFreeAccount": [
+        "Personal access tokens"
+      ],
+      "unverifiedFlows": [
+        "Set password submission",
+        "Email change verification",
+        "Password change verification"
+      ]
+    },
+    {
+      "id": "personal-access-tokens",
+      "area": "security",
+      "evidenceStatus": "feature_flagged_public_code_only",
+      "labels": [
+        "Personal access token",
+        "Create token",
+        "Expires after"
+      ],
+      "behavior": "A usePersonalAccessTokensEnabled flag gates token listing and creation. Token copy is one-time; declared scope covers upload, edit and deletion of Spaces photos and collections. Expiration and revocation mechanisms exist in code. Availability for Free is not established, and no token was requested.",
+      "source": "settings",
+      "flag": "usePersonalAccessTokensEnabled",
+      "observedFreeAccountState": "not_rendered",
+      "liveObservationSource": "rootAuthenticatedSettings",
+      "availabilityNote": "Personal access tokens were not rendered in the root-observed Free Account & security screen. Public code exists behind a feature flag; availability in other accounts remains unverified."
+    },
+    {
+      "id": "plan-credit-history",
+      "area": "credits",
+      "evidenceStatus": "current_public_code_present_not_authenticated_ui",
+      "labels": [
+        "Plan & credits",
+        "Credit history",
+        "All",
+        "Spent",
+        "Added"
+      ],
+      "behavior": "Credit-history code supports filtered, paginated activity, type, signed credit change and date, plus loading, empty, initial-error and next-page-error states. Daily/subscription/bonus balances are separated.",
+      "source": "settings"
+    },
+    {
+      "id": "subscription-management",
+      "area": "billing",
+      "evidenceStatus": "current_public_code_present_not_authenticated_ui",
+      "labels": [
+        "Manage Billing",
+        "Reactivate",
+        "Upgrade plan"
+      ],
+      "behavior": "Settings code contains subscription portal and reactivation actions. Their live account state and paid effects were not inspected or invoked.",
+      "source": "settings"
+    },
+    {
+      "id": "pinterest-integration",
+      "area": "integrations",
+      "evidenceStatus": "live_authenticated_ui_observed_by_root",
+      "labels": [
+        "Pinterest",
+        "Not connected",
+        "Connect"
+      ],
+      "behavior": "Root observed only Pinterest in the current Free Integrations screen, in Not connected state with Connect. No OAuth or import was initiated. SketchUp was not rendered.",
+      "source": "rootAuthenticatedSettings",
+      "supportingCodeSource": "settings",
+      "notRenderedInObservedFreeAccount": [
+        "SketchUp"
+      ]
+    },
+    {
+      "id": "sketchup-integration",
+      "area": "integrations",
+      "evidenceStatus": "feature_flagged_public_code_only",
+      "labels": [
+        "Connected devices"
+      ],
+      "behavior": "A SketchUp integration flag gates the extension-device list. Loading/error/retry, empty list and device management paths exist. No device was connected or revoked.",
+      "source": "settings",
+      "flag": "useSketchupPluginEnabled",
+      "observedFreeAccountState": "not_rendered",
+      "liveObservationSource": "rootAuthenticatedSettings",
+      "availabilityNote": "SketchUp was not rendered in the root-observed Free Integrations screen. Public code exists behind a feature flag; availability in other accounts remains unverified."
+    },
+    {
+      "id": "team-management",
+      "area": "team",
+      "evidenceStatus": "feature_flagged_public_code_only",
+      "labels": [
+        "Owner",
+        "Admin",
+        "Member",
+        "Send invitation",
+        "Leave team"
+      ],
+      "behavior": "Code supports organization members, role changes, removal, invitations and leaving. UI text restricts invitations to owners/admins and removal to owner. Feature flag and Studio forthcoming status prevent assuming current Free availability. No action was submitted.",
+      "source": "settings",
+      "observedFreeAccountState": "not_rendered",
+      "liveObservationSource": "rootAuthenticatedSettings",
+      "availabilityNote": "Team was not rendered among the root-observed Free Settings sections. Public code is conditional, and the public Studio plan remains Coming soon. Availability beyond this account is unverified."
+    },
+    {
+      "id": "appearance",
+      "area": "settings",
+      "evidenceStatus": "live_authenticated_ui_observed_by_root",
+      "labels": [
+        "Theme",
+        "Light",
+        "Dark",
+        "System"
+      ],
+      "behavior": "Root observed these appearance choices in the current Free account. None was changed during the audit.",
+      "source": "rootAuthenticatedSettings",
+      "supportingCodeSource": "settings"
+    },
+    {
+      "id": "free-code-limits",
+      "area": "limits",
+      "evidenceStatus": "current_public_code_present_not_authenticated_ui",
+      "labels": [],
+      "behavior": "Code uses 999 as its uncapped sentinel; caps below it are enforced by isCapped. Paper remains a legacy named quota and does not establish a current visible separate Paper feature.",
+      "source": "planLimits",
+      "limits": {
+        "Free": {
+          "board": 999,
+          "schedule": 999,
+          "paper": 1,
+          "project": 1,
+          "library": 0,
+          "productImage": 30
+        },
+        "Starter": {
+          "board": 999,
+          "schedule": 999,
+          "paper": 999,
+          "project": 3,
+          "library": 1,
+          "productImage": 999
+        }
+      }
+    },
+    {
+      "id": "library-entitlements",
+      "area": "library",
+      "evidenceStatus": "current_public_code_present_not_authenticated_ui",
+      "labels": [],
+      "behavior": "Free unverified users cannot create custom libraries. Starter and higher can use custom libraries. Verified designers can create unrestricted libraries independently of plan. Shared-library joining permits verified designers or Plus and higher; sharing requires Plus and higher. Super-admin exceptions are present.",
+      "source": "libraryAccess",
+      "distinction": "Verified status permits joining shared libraries but does not alone permit sharing a library."
+    },
+    {
+      "id": "locked-library-behavior",
+      "area": "library",
+      "evidenceStatus": "current_public_code_present_not_authenticated_ui",
+      "labels": [],
+      "behavior": "Library picker filters locked libraries and preserves Favorites separately from ordinary custom libraries. Removing a library product has an undo-token path in the current bundle. Exact current Free UI labels and menu placement remain unobserved.",
+      "source": "libraryMutations"
+    },
+    {
+      "id": "collaboration-plan-gate",
+      "area": "projects",
+      "evidenceStatus": "current_public_code_present_not_authenticated_ui",
+      "labels": [],
+      "behavior": "Code requires a project administrator with Starter entitlement to invite collaborators. An unavailable-collaboration state instructs the member to ask a project admin to upgrade. No invite was sent.",
+      "source": "planLimits"
+    },
+    {
+      "id": "source-map-rotation",
+      "area": "material",
+      "evidenceStatus": "current_public_code_verified",
+      "labels": [],
+      "behavior": "applyMaterialV2 sets texture repeat directly from positive x/y (optionally multiplied by scale), sets center to 0.5/0.5, and converts source mapping.rotation from degrees using MathUtils.degToRad. This confirms rotation units independently of UI assumptions.",
+      "source": "renderer",
+      "excerpt": "i.rotation=t.MathUtils.degToRad(r.rotation)"
+    },
+    {
+      "id": "source-pbr-types",
+      "area": "material",
+      "evidenceStatus": "current_public_code_verified",
+      "labels": [],
+      "behavior": "Current source renderer accepts numeric physical material settings, color fields and normalScale. The observed product API data subset was preserved in catalog enrichment; absent values are not invented source configuration.",
+      "source": "renderer",
+      "numericFields": [
+        "roughness",
+        "metalness",
+        "transmission",
+        "opacity",
+        "ior",
+        "bumpScale",
+        "aoMapIntensity",
+        "clearcoat",
+        "clearcoatRoughness",
+        "sheen",
+        "sheenRoughness",
+        "thickness",
+        "attenuationDistance",
+        "specularIntensity",
+        "reflectivity",
+        "iridescence",
+        "iridescenceIOR",
+        "emissiveIntensity",
+        "normalScale"
+      ],
+      "colorFields": [
+        "color",
+        "specularColor",
+        "sheenColor",
+        "attenuationColor",
+        "emissive"
+      ],
+      "otherFields": [
+        "iridescenceThicknessRange"
+      ]
+    },
+    {
+      "id": "account-menu-live",
+      "area": "navigation",
+      "evidenceStatus": "live_authenticated_ui_observed_by_root",
+      "labels": [
+        "Free Plan",
+        "Upgrade plan",
+        "Settings",
+        "Theme",
+        "Light",
+        "Dark",
+        "System",
+        "Getting Started",
+        "Log out"
+      ],
+      "behavior": "Root observed these account-menu entries in the current Free account. No logout, upgrade, theme change or other state-changing action was performed.",
+      "source": "rootAuthenticatedSettings"
+    }
+  ],
+  "unverified": [
+    {
+      "area": "Library/Projects/Style Passport and full route discovery",
+      "reason": "Settings and Menu were observed by root, but this is not a full audit of all account routes, entry paths and state transitions."
+    },
+    {
+      "area": "Style Passport",
+      "reason": "The phrase was not found in the 65 chunks loaded by the current public product page. This neither establishes removal nor absence; it may load on another route, be flagged or have a different label."
+    },
+    {
+      "area": "Paid features",
+      "reason": "No paid tier, trial acceptance, payment or subscription change was entered."
+    },
+    {
+      "area": "Private supplier workflows",
+      "reason": "No supplier role/account created or external inquiry submitted."
+    },
+    {
+      "area": "Personal access tokens, SketchUp and Team",
+      "reason": "Not rendered in the root-observed Free account. Their public-code flags and other-account availability remain unverified."
+    }
+  ],
+  "candidateFunctionsForLedgerReview": [
+    {
+      "name": "Personal access tokens for Spaces automation",
+      "evidenceStatus": "feature_flagged_public_code_only",
+      "doNotMarkImplementedFromThisAudit": true
+    },
+    {
+      "name": "SketchUp connected devices",
+      "evidenceStatus": "feature_flagged_public_code_only",
+      "doNotMarkImplementedFromThisAudit": true
+    },
+    {
+      "name": "Verified-designer library entitlement distinct from paid sharing",
+      "evidenceStatus": "current_public_code_present_not_authenticated_ui"
+    },
+    {
+      "name": "Library product removal undo token",
+      "evidenceStatus": "current_public_code_present_not_authenticated_ui"
+    },
+    {
+      "name": "Conditional Team and Appearance settings sections",
+      "evidenceStatus": "feature_flagged_public_code_only"
+    },
+    {
+      "name": "Studio tier Coming soon",
+      "evidenceStatus": "live_public_ui_observed_advertised_only"
+    },
+    {
+      "name": "Current board frame/shadow/name metadata",
+      "evidenceStatus": "public_code_protocol_only",
+      "note": "BoardV2 protocol includes frame, hideShadow, nameOverride and layerKey. These protocol fields alone do not establish visible controls or current account availability."
+    }
+  ],
+  "recordCount": 31,
+  "updatedAt": "2026-10-16T17:43:47.253308+00:00",
+  "rootAuthenticatedObservation": {
+    "settingsSections": [
+      "Profile",
+      "Account & security",
+      "Plan & credits",
+      "Integrations",
+      "Appearance"
+    ],
+    "absentInObservedFreeSurface": [
+      "Team",
+      "Personal access tokens",
+      "SketchUp"
+    ],
+    "projectPrivacyRule": "Publishing a profile does not publish projects; project sharing is separate.",
+    "PIIRedacted": true
+  },
+  "localImplementationVerification": [
+    {
+      "id": "integrated-3d-png-export",
+      "evidenceStatus": "actual_local_file_and_visual_verified_after_fix",
+      "notReferenceUiObservation": true,
+      "sequence": [
+        {
+          "status": "initial_failure",
+          "detail": "Direct data-URI download did not produce an observed browser download/file."
+        },
+        {
+          "status": "fixed_then_verified",
+          "detail": "PNG Blob/object URL and appended DOM anchor produced the actual file. The retained-image preview and Download again support repeated download."
+        }
+      ],
+      "proof": {
+        "downloadPath": "/Users/jinsoolee/Downloads/Original-product-models-verification-1200px.png",
+        "artifactPath": "/Users/jinsoolee/Downloads/_개발프로젝트/활성/matter_base/artifacts/monogram-3d-export-1200px.png",
+        "repositoryPath": "artifacts/monogram-3d-export-1200px.png",
+        "width": 1200,
+        "height": 1334,
+        "bytes": 206539,
+        "sha256": "f566d30588c460ac7510434800f9e2d2501243a3700dccde85193ccba5a49b95",
+        "contentVerification": "Root and documentation agent visually inspected the actual PNG: four board items are present, including the source F300 alpha-plane reference.",
+        "observers": [
+          "root agent actual integrated browser export and view_image",
+          "documentation agent local file signature, dimensions, byte equality, SHA-256 and view_image"
+        ]
+      },
+      "sourceEquivalenceCertified": false
+    }
+  ],
+  "pngExportProof": {
+    "downloadPath": "/Users/jinsoolee/Downloads/Original-product-models-verification-1200px.png",
+    "artifactPath": "/Users/jinsoolee/Downloads/_개발프로젝트/활성/matter_base/artifacts/monogram-3d-export-1200px.png",
+    "repositoryPath": "artifacts/monogram-3d-export-1200px.png",
+    "width": 1200,
+    "height": 1334,
+    "bytes": 206539,
+    "sha256": "f566d30588c460ac7510434800f9e2d2501243a3700dccde85193ccba5a49b95",
+    "contentVerification": "Root and documentation agent visually inspected the actual PNG: four board items are present, including the source F300 alpha-plane reference.",
+    "observers": [
+      "root agent actual integrated browser export and view_image",
+      "documentation agent local file signature, dimensions, byte equality, SHA-256 and view_image"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "monogram web clipper",
+  "version": "1.0.0",
+  "description": "Review a product from the current page and save it to your monogram workspace.",
+  "minimum_chrome_version": "110",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "action": {
+    "default_title": "Save a product to monogram",
+    "default_popup": "popup.html",
+    "default_icon": {"128": "icons/monogram.png"}
+  },
+  "icons": {"128": "icons/monogram.png"},
+  "content_security_policy": {"extension_pages": "script-src 'self'; object-src 'none'"}
+}

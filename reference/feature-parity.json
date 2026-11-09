@@ -1,0 +1,3176 @@
+{
+  "schemaVersion": "0.2",
+  "reference": "https://www.matterbase.com/",
+  "observedDate": "2026-10-17",
+  "target": "모든 기능과 사용 결과의 동등성. 사용자 승인 없이 기능 범위를 줄이지 않는다.",
+  "coverageStatus": "expanded_local_implementation_with_documented_open_parity_gaps",
+  "implementationStarted": true,
+  "completionDefinition": [
+    "전수 조사에서 발견한 기능마다 화면·입력·상태 전이·영속 데이터·출력·연동 결과를 대응시킨다.",
+    "공식 소개, 녹화 데모, 실제 앱 관찰, 실제 실행 검증을 서로 다른 증거로 관리한다.",
+    "버튼 노출이나 모의 데이터만으로 기능 완료로 판정하지 않는다.",
+    "독립 세션·새로고침·재접속·출력 파일·외부 연동 결과를 기능에 맞게 검증한다.",
+    "원본 기능 자체가 미확인인 항목은 추정 구현을 동일 구현으로 보고하지 않는다."
+  ],
+  "blockers": [
+    {
+      "id": "complete-reference-audit",
+      "status": "open",
+      "detail": "Current Free Settings/Menu and product/board subset observed. Complete route/menu/state audit, paid accounts and supplier-role screens remain unavailable or incomplete."
+    },
+    {
+      "id": "external-services",
+      "status": "open",
+      "detail": "AI, Google, mail, Stripe and Pinterest adapters exist; real external accounts/delivery/generation/charges are unverified. Original supplier directory and external approval workflows are unconnected."
+    },
+    {
+      "id": "complete-product-assets",
+      "status": "open",
+      "detail": "445 explicitly named source SKUs enriched with 1036 API assets, 25 unique GLBs reused by 412 SKUs and 33 source alpha planes. The complete source database, model/template catalog and all advertised file formats are not acquired."
+    },
+    {
+      "id": "remaining-commercial-flows",
+      "status": "open",
+      "detail": "Exact trial enrollment/500 credits/expiry/reminders, external designer/education/supplier approval, original organization memberships and account deletion remain incomplete."
+    },
+    {
+      "id": "reference-feature-flags",
+      "status": "open",
+      "detail": "PAT, SketchUp and Team code is present but was not rendered in observed Free Settings. Studio is Coming soon; no assumption of enabled paid/flagged functionality is made."
+    },
+    {
+      "id": "remaining-public-landing-parity",
+      "status": "open",
+      "detail": "Public landing is newly implemented, but source scroll animation/pixel parity, Chinese localization, original contact/demo delivery and booking, source editorial/customer content, and source legal-policy documents are not fully reproduced. These gaps are tracked rather than removed from the target."
+    }
+  ],
+  "discrepancies": [
+    {
+      "sources": [
+        "pricing",
+        "board"
+      ],
+      "detail": "공동 편집·역할 소개와 Studio 예고 권한 항목 사이의 실제 요금제 경계를 계정에서 검증해야 함."
+    },
+    {
+      "sources": [
+        "pricing",
+        "onboarding"
+      ],
+      "detail": "가격표는 Plus 월 2500 크레딧, 현재 가입 화면은 10일 체험 500 크레딧을 안내함. 정규·체험 정책을 구분해야 함."
+    },
+    {
+      "sources": [
+        "legacy_paper"
+      ],
+      "detail": "과거 Paper 검색 색인의 AI 세부 기능은 현행 경로가 리디렉트되므로 현행 제공 확정으로 취급하지 않음."
+    },
+    {
+      "sources": [
+        "current_free_audit",
+        "pricing"
+      ],
+      "detail": "Current Free Settings does not render Team/PAT/SketchUp. Public Studio remains Coming soon. Public code presence does not establish paid/free availability."
+    },
+    {
+      "sources": [
+        "current_board",
+        "board_demo"
+      ],
+      "detail": "The current source Board is an infinite 2D product/image canvas. The older recorded 3D material-board workflow is retained as a separate local mode; these surfaces are not treated as one identical current editor."
+    },
+    {
+      "sources": [
+        "public_product_api"
+      ],
+      "detail": "Actual source furniture descriptors can be alpha-plane image samples. F3001216 has no source chair mesh, while 412 other imported SKU records reuse 25 GLB files."
+    },
+    {
+      "sources": [
+        "home",
+        "landing_public_audit"
+      ],
+      "detail": "The original home has 35 observed hero products, customer logos and testimonials. Local hero assets are source-backed; customer claims are replaced by factual catalog brands and nine original workflow guides. English only, route-based signup, demo preview tabs and local policy notes are explicit differences."
+    }
+  ],
+  "previewFeatures": [
+    {
+      "name": "자연어 Agentic Search",
+      "source": "home",
+      "status": "coming_soon",
+      "parityRule": "제외하지 않고 예고 항목으로 추적. 실제 출시 동작이 확인될 때 검증 가능."
+    },
+    {
+      "name": "Studio 역할·권한·전용 라이브러리·스타일 학습 AI",
+      "source": "pricing",
+      "status": "coming_soon",
+      "parityRule": "범위 추적 유지. 현행 기능과 예고 기능을 혼동하지 않음."
+    }
+  ],
+  "sources": {
+    "home": {
+      "url": "https://www.matterbase.com/",
+      "kind": "official_public_page"
+    },
+    "catalog": {
+      "url": "https://www.matterbase.com/catalog",
+      "kind": "live_public_ui"
+    },
+    "product": {
+      "url": "https://www.matterbase.com/product/material/casalis/ondo-301",
+      "kind": "live_public_ui"
+    },
+    "board": {
+      "url": "https://www.matterbase.com/material-board",
+      "kind": "official_public_page"
+    },
+    "board_demo": {
+      "url": "https://demo.arcade.software/MDmqhdc4js2oYCwiMwPO",
+      "kind": "official_recorded_demo"
+    },
+    "schedule": {
+      "url": "https://www.matterbase.com/schedule",
+      "kind": "official_public_page"
+    },
+    "schedule_demo": {
+      "url": "https://demo.arcade.software/0quoM4RdLIWaC2UVjZly",
+      "kind": "official_recorded_demo"
+    },
+    "samples": {
+      "url": "https://www.matterbase.com/material-samples",
+      "kind": "official_public_page"
+    },
+    "pricing": {
+      "url": "https://www.matterbase.com/pricing",
+      "kind": "official_public_page"
+    },
+    "supplier": {
+      "url": "https://www.matterbase.com/virtual-showroom",
+      "kind": "official_public_page"
+    },
+    "login": {
+      "url": "https://www.matterbase.com/login",
+      "kind": "live_ui"
+    },
+    "onboarding": {
+      "url": "https://www.matterbase.com/onboarding",
+      "kind": "live_ui"
+    },
+    "session": {
+      "url": "https://www.matterbase.com/",
+      "kind": "authenticated_header_and_settings_ui"
+    },
+    "legacy_paper": {
+      "url": "https://www.matterbase.com/paper",
+      "kind": "conflicting_historical_index",
+      "currentObservation": "현재 직접 열면 material-board로 이동. 과거 색인만으로 현행 Paper 기능을 확정하지 않음."
+    },
+    "current_board": {
+      "url": "https://www.matterbase.com/file/board/",
+      "kind": "authenticated_live_ui",
+      "routePattern": "/file/board/:id",
+      "observation": "Current live editor uses an infinite image/product canvas, layers, minimap, arrows, sketches, comments and image generation controls. It differs from the recorded 3D material-board demo."
+    },
+    "current_free_audit": {
+      "url": "reference/current-free-audit.json",
+      "kind": "live_public_and_root_authenticated_observation_map"
+    },
+    "current_free_settings": {
+      "url": "reference/current-free-audit.json",
+      "kind": "authenticated_free_settings_observed_by_root"
+    },
+    "public_product_api": {
+      "url": "https://api.matterbase.com/api/v1/product/single/1216?extra=false&withModel=true",
+      "kind": "observed_unauthenticated_public_api",
+      "provenance": "reference/api-enrichment-provenance.json"
+    },
+    "current_public_code": {
+      "url": "reference/current-free-audit.json",
+      "kind": "current_public_page_loaded_code_not_all_features_enabled"
+    },
+    "local_catalog_support": {
+      "url": "reference/api-enrichment-provenance.json",
+      "kind": "local_data_recovery_support"
+    },
+    "source_environment": {
+      "url": "https://www.matterbase.com/hdri/studio_small_08_1k_highlight_compressed.hdr",
+      "kind": "observed_source_HDR_asset",
+      "provenance": "reference/environment-provenance.json"
+    },
+    "landing_public_audit": {
+      "url": "https://www.matterbase.com/",
+      "kind": "official_public_html_and_linked_static_code",
+      "auditFile": "reference/landing-audit.json",
+      "assetManifest": "data/landing-assets.json",
+      "assetProvenance": "reference/landing-assets-provenance.json"
+    }
+  },
+  "features": [
+    {
+      "id": "catalog-001",
+      "domain": "catalog",
+      "name": "제품 분류 탐색",
+      "source": "catalog",
+      "referenceEvidence": "live_ui_observed",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "browser_smoke_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "모든 노출 분류와 하위 분류의 경로·선택 결과를 원본과 대조한다.",
+      "implementationFiles": [
+        "src/components/Catalog.tsx"
+      ]
+    },
+    {
+      "id": "catalog-002",
+      "domain": "catalog",
+      "name": "조건별 제품 필터",
+      "source": "catalog",
+      "referenceEvidence": "live_ui_observed",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "source_review_only",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "필터 선택·해제와 조합에 따라 실제 검색 결과가 바뀌고 재진입 상태를 대조한다.",
+      "implementationFiles": [
+        "src/components/Catalog.tsx"
+      ]
+    },
+    {
+      "id": "catalog-003",
+      "domain": "catalog",
+      "name": "브랜드·가격·제품 속성 필터",
+      "source": "catalog",
+      "referenceEvidence": "live_ui_observed",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "source_review_only",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "브랜드, 가격 및 카테고리별 속성 선택지를 원본에서 전수 확인한다.",
+      "implementationFiles": [
+        "src/components/Catalog.tsx"
+      ]
+    },
+    {
+      "id": "catalog-004",
+      "domain": "catalog",
+      "name": "제품 목록과 상세 진입",
+      "source": "catalog",
+      "referenceEvidence": "live_ui_observed",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "browser_smoke_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "목록의 제품·브랜드·변형과 상세 화면의 식별자가 일치한다.",
+      "implementationFiles": [
+        "src/components/Catalog.tsx"
+      ]
+    },
+    {
+      "id": "catalog-005",
+      "domain": "catalog",
+      "name": "검색과 검색 제안",
+      "source": "home",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "partial",
+      "localAcceptanceStatus": "source_review_only",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "검색 입력·제안·결과·빈 결과·오류 상태를 원본과 대조한다.",
+      "implementationFiles": [
+        "src/components/Catalog.tsx"
+      ]
+    },
+    {
+      "id": "product-001",
+      "domain": "product",
+      "name": "브랜드·제품·색상·가격 정보",
+      "source": "product",
+      "referenceEvidence": "live_ui_observed",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "source_data_integrity_and_root_browser_evidence",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "선택한 제품의 실제 정보를 표시하고 목록과 일치시킨다.",
+      "implementationFiles": [
+        "src/components/Catalog.tsx",
+        "data/catalog.json",
+        "scripts/enrich-reference.mjs"
+      ],
+      "implementationNote": "Observed scope is 445 named SKUs from 47 directly observed IDs and their 42 public family responses. This is not the complete source product database.",
+      "verificationFiles": [
+        "tests/server.test.ts",
+        "tests/catalog-sync.test.ts"
+      ]
+    },
+    {
+      "id": "product-002",
+      "domain": "product",
+      "name": "색상과 마감 변형",
+      "source": "product",
+      "referenceEvidence": "live_ui_observed",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "source_data_integrity_and_root_browser_evidence",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "변형 선택 시 미리보기·사양·저장 대상이 동일 SKU를 가리킨다.",
+      "implementationFiles": [
+        "src/components/Catalog.tsx",
+        "data/catalog.json",
+        "scripts/enrich-reference.mjs"
+      ],
+      "implementationNote": "Observed scope is 445 named SKUs from 47 directly observed IDs and their 42 public family responses. This is not the complete source product database.",
+      "verificationFiles": [
+        "tests/server.test.ts",
+        "tests/catalog-sync.test.ts"
+      ]
+    },
+    {
+      "id": "product-003",
+      "domain": "product",
+      "name": "3D 샘플 표시",
+      "source": "product",
+      "referenceEvidence": "live_ui_observed",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "root_browser_smoke_observed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "샘플 메시와 재질이 로딩된 후 실제로 화면에 표시된다.",
+      "implementationFiles": [
+        "src/components/ProductPreview.tsx",
+        "src/components/ModelAsset.tsx",
+        "src/components/SampleAsset.tsx",
+        "src/lib/scene-math.ts"
+      ],
+      "implementationNote": "412 SKU records reference 25 distinct source GLB files; 33 SKUs are source alpha-plane samples. Draco, source PBR, per-map degree rotations and the observed HDR are supported. Root observed actual GLB display, orbit/zoom/reset and actual-SKU selection. Pixel-level camera and shading equivalence is not certified.",
+      "verificationFiles": [
+        "tests/model-material.test.ts",
+        "tests/scene.test.ts"
+      ]
+    },
+    {
+      "id": "product-004",
+      "domain": "product",
+      "name": "제품 사양 영역",
+      "source": "product",
+      "referenceEvidence": "live_ui_observed",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "source_data_integrity_and_root_browser_evidence",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "펼침 상태와 사양 데이터를 원본과 대조한다.",
+      "implementationFiles": [
+        "src/components/Catalog.tsx",
+        "data/catalog.json",
+        "scripts/enrich-reference.mjs"
+      ],
+      "implementationNote": "Observed scope is 445 named SKUs from 47 directly observed IDs and their 42 public family responses. This is not the complete source product database.",
+      "verificationFiles": [
+        "tests/server.test.ts",
+        "tests/catalog-sync.test.ts"
+      ]
+    },
+    {
+      "id": "product-005",
+      "domain": "product",
+      "name": "제품 설명 영역",
+      "source": "product",
+      "referenceEvidence": "live_ui_observed",
+      "implementationStatus": "partial",
+      "localAcceptanceStatus": "source_review_only",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "제품별 설명과 펼침 동작을 원본과 대조한다.",
+      "implementationFiles": [
+        "src/components/Catalog.tsx",
+        "src/components/ProductPreview.tsx"
+      ],
+      "implementationNote": "Expandable Story is implemented. Long creative source descriptions are intentionally not copied: short factual summaries and an original-story link are used."
+    },
+    {
+      "id": "product-006",
+      "domain": "product",
+      "name": "첨부파일 영역",
+      "source": "product",
+      "referenceEvidence": "live_ui_observed",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "source_data_integrity_and_root_browser_evidence",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "파일별 명칭·형식·접근 조건을 조사하고 실제 다운로드 내용을 검사한다.",
+      "implementationFiles": [
+        "src/components/Catalog.tsx",
+        "data/catalog.json",
+        "scripts/enrich-reference.mjs"
+      ],
+      "implementationNote": "Observed scope is 445 named SKUs from 47 directly observed IDs and their 42 public family responses. This is not the complete source product database.",
+      "verificationFiles": [
+        "tests/server.test.ts",
+        "tests/catalog-sync.test.ts"
+      ]
+    },
+    {
+      "id": "product-007",
+      "domain": "product",
+      "name": "즐겨찾기",
+      "source": "product",
+      "referenceEvidence": "live_ui_observed",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "browser_smoke_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "등록·해제와 새로고침 후 상태를 검증한다.",
+      "implementationFiles": [
+        "src/components/Catalog.tsx",
+        "src/components/ProductPreview.tsx"
+      ]
+    },
+    {
+      "id": "product-008",
+      "domain": "product",
+      "name": "보드 선택 후 제품 저장",
+      "source": "product",
+      "referenceEvidence": "live_ui_observed",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "browser_smoke_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "선택한 보드에 정확한 SKU가 저장되고 재접속해도 유지된다.",
+      "implementationFiles": [
+        "src/components/Catalog.tsx",
+        "src/components/ProductPreview.tsx"
+      ]
+    },
+    {
+      "id": "product-009",
+      "domain": "product",
+      "name": "공급사 연락 진입",
+      "source": "product",
+      "referenceEvidence": "live_ui_observed",
+      "implementationStatus": "partial",
+      "localAcceptanceStatus": "local_api_evidence_external_routing_unverified",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "요청 폼과 수신 대상·전송 결과를 별도 검증한다.",
+      "implementationFiles": [
+        "src/App.tsx",
+        "server/app.ts",
+        "src/components/SupplierConsole.tsx",
+        "server/supplier.ts"
+      ],
+      "implementationNote": "Original-catalog requests persist internally; optional email is limited to the configured operator mailbox. Published local showrooms have real private leads and requester inbox replies. Original supplier-directory delivery remains unconnected."
+    },
+    {
+      "id": "product-010",
+      "domain": "product",
+      "name": "전체 변형과 관련 제품",
+      "source": "product",
+      "referenceEvidence": "live_ui_observed",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "source_data_integrity_and_root_browser_evidence",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "전체 목록 펼침과 관련 제품 상세 진입을 원본과 대조한다.",
+      "implementationFiles": [
+        "src/components/Catalog.tsx",
+        "data/catalog.json",
+        "scripts/enrich-reference.mjs"
+      ],
+      "implementationNote": "Observed scope is 445 named SKUs from 47 directly observed IDs and their 42 public family responses. This is not the complete source product database.",
+      "verificationFiles": [
+        "tests/server.test.ts",
+        "tests/catalog-sync.test.ts"
+      ]
+    },
+    {
+      "id": "samples-001",
+      "domain": "samples",
+      "name": "재질 확대와 입체 검사",
+      "source": "samples",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "source_data_and_implementation_review",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "확대·시점 조작·로딩·오류 상태를 실제 원본과 대조한다.",
+      "implementationFiles": [
+        "src/components/Catalog.tsx",
+        "src/components/ProductPreview.tsx",
+        "src/components/ModelAsset.tsx",
+        "data/catalog.json"
+      ],
+      "implementationNote": "The imported subset has source gallery images, factual specifications and available technical downloads. Source 3D uses actual GLBs or source alpha planes, with explicit loading/error states; complete source coverage is not claimed."
+    },
+    {
+      "id": "samples-002",
+      "domain": "samples",
+      "name": "제품 사용 사례 이미지",
+      "source": "samples",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "source_data_and_implementation_review",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "갤러리 표시와 이미지 전환을 대조한다.",
+      "implementationFiles": [
+        "src/components/Catalog.tsx",
+        "src/components/ProductPreview.tsx",
+        "src/components/ModelAsset.tsx",
+        "data/catalog.json"
+      ],
+      "implementationNote": "The imported subset has source gallery images, factual specifications and available technical downloads. Source 3D uses actual GLBs or source alpha planes, with explicit loading/error states; complete source coverage is not claimed."
+    },
+    {
+      "id": "samples-003",
+      "domain": "samples",
+      "name": "인증 및 기술 자료",
+      "source": "samples",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "source_data_and_implementation_review",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "제품별 인증과 기술 정보의 연결을 검증한다.",
+      "implementationFiles": [
+        "src/components/Catalog.tsx",
+        "src/components/ProductPreview.tsx",
+        "src/components/ModelAsset.tsx",
+        "data/catalog.json"
+      ],
+      "implementationNote": "The imported subset has source gallery images, factual specifications and available technical downloads. Source 3D uses actual GLBs or source alpha planes, with explicit loading/error states; complete source coverage is not claimed."
+    },
+    {
+      "id": "samples-004",
+      "domain": "samples",
+      "name": "물리 샘플과 견적 요청",
+      "source": "samples",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "partial",
+      "localAcceptanceStatus": "local_api_evidence_external_fulfillment_unverified",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "요청 입력·검증·수신 확인과 상태 추적을 실제 연동으로 검증한다.",
+      "implementationFiles": [
+        "src/components/BoardEditor.tsx",
+        "src/components/Panels.tsx"
+      ],
+      "implementationNote": "Sample and quote requests persist and local showroom suppliers can follow up. Physical shipment, original supplier response and commercial fulfillment are unverified.",
+      "verificationFiles": [
+        "tests/supplier.test.ts",
+        "tests/server.test.ts"
+      ]
+    },
+    {
+      "id": "samples-005",
+      "domain": "samples",
+      "name": "텍스처·모델·BIM·PDF 제공",
+      "source": "samples",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "partial",
+      "localAcceptanceStatus": "asset_integrity_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "허용된 원본 자료를 확보하고 파일 형식과 열기 결과를 검증한다.",
+      "implementationFiles": [
+        "src/components/BoardEditor.tsx",
+        "src/components/Panels.tsx"
+      ],
+      "implementationNote": "1036 API-derived assets were downloaded and hashed, including 25 distinct GLBs and available source documents. 412 imported SKUs have download entries. The source does not provide every advertised BIM/model format for every product."
+    },
+    {
+      "id": "samples-006",
+      "domain": "samples",
+      "name": "사용자 모델 템플릿",
+      "source": "samples",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "partial",
+      "localAcceptanceStatus": "isolated_3d_browser_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "템플릿 선택 결과가 실제 편집 가능한 모델로 생성된다.",
+      "implementationFiles": [
+        "src/components/BoardEditor.tsx",
+        "src/components/Panels.tsx"
+      ],
+      "implementationNote": "Editable local parametric templates exist; the complete original template geometry and catalog are not reproduced."
+    },
+    {
+      "id": "samples-007",
+      "domain": "samples",
+      "name": "사용자 텍스처 업로드",
+      "source": "samples",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "source_review_only",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "지원 형식·용량·실패 처리와 모델 적용을 검증한다.",
+      "implementationFiles": [
+        "src/components/BoardEditor.tsx",
+        "src/components/Panels.tsx"
+      ]
+    },
+    {
+      "id": "samples-008",
+      "domain": "samples",
+      "name": "사용자 재질 물성 조절",
+      "source": "samples",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "source_review_only",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "반사·광택·요철 변경이 렌더와 저장·복원 결과에 반영된다.",
+      "implementationFiles": [
+        "src/components/BoardEditor.tsx",
+        "src/components/Panels.tsx"
+      ]
+    },
+    {
+      "id": "samples-009",
+      "domain": "samples",
+      "name": "사용자 제품 라이브러리 저장",
+      "source": "samples",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "isolated_3d_browser_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "생성한 제품이 다른 프로젝트에서도 재사용된다.",
+      "implementationFiles": [
+        "src/components/BoardEditor.tsx",
+        "src/components/Panels.tsx"
+      ]
+    },
+    {
+      "id": "board-001",
+      "domain": "board",
+      "name": "3D 보드와 재료 배치",
+      "source": "board",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "browser_smoke_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "라이브러리에서 샘플을 캔버스로 끌어 실제 모델을 배치한다.",
+      "implementationFiles": [
+        "src/components/CanvasBoard.tsx",
+        "src/components/BoardEditor.tsx"
+      ]
+    },
+    {
+      "id": "board-002",
+      "domain": "board",
+      "name": "위치·크기·회전 편집",
+      "source": "board",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "browser_smoke_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "편집 값·포인터 조작·렌더·저장 후 복원 상태를 원본과 대조한다.",
+      "implementationFiles": [
+        "src/components/CanvasBoard.tsx",
+        "src/components/BoardEditor.tsx"
+      ]
+    },
+    {
+      "id": "board-003",
+      "domain": "board",
+      "name": "소품과 배경 이미지",
+      "source": "board",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "source_review_only",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "추가·배치·제거·복원이 실제 화면과 출력에 반영된다.",
+      "implementationFiles": [
+        "src/components/CanvasBoard.tsx",
+        "src/components/BoardEditor.tsx"
+      ]
+    },
+    {
+      "id": "board-004",
+      "domain": "board",
+      "name": "빛의 강도와 색온도",
+      "source": "board",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "source_review_only",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "조명 값이 렌더와 출력에 반영되고 재진입 후 유지된다.",
+      "implementationFiles": [
+        "src/components/BoardEditor.tsx"
+      ],
+      "implementationNote": "Local lighting intensity and temperature controls plus the exact observed studio HDR are applied. Source render equivalence remains unverified."
+    },
+    {
+      "id": "board-005",
+      "domain": "board",
+      "name": "배경색",
+      "source": "board",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "source_review_only",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "보드·출력·저장 데이터가 동일한 색상을 유지한다.",
+      "implementationFiles": [
+        "src/components/CanvasBoard.tsx",
+        "src/components/BoardEditor.tsx"
+      ]
+    },
+    {
+      "id": "board-006",
+      "domain": "board",
+      "name": "그리드",
+      "source": "board",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "source_review_only",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "켜기·끄기·크기 기준 동작을 원본과 대조한다.",
+      "implementationFiles": [
+        "src/components/CanvasBoard.tsx",
+        "src/components/BoardEditor.tsx"
+      ]
+    },
+    {
+      "id": "board-007",
+      "domain": "board",
+      "name": "상단 시점과 중앙 복귀",
+      "source": "board",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "root_browser_and_isolated_3d_evidence",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "카메라가 원본과 동일한 방식으로 복귀한다.",
+      "implementationFiles": [
+        "src/components/BoardEditor.tsx",
+        "src/lib/scene-math.ts"
+      ],
+      "implementationNote": "Top/perspective framing and reset fit actual model bounds while retaining proportions and Y-up.",
+      "verificationFiles": [
+        "tests/scene.test.ts"
+      ]
+    },
+    {
+      "id": "board-008",
+      "domain": "board",
+      "name": "모델 잠금",
+      "source": "board",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "isolated_3d_browser_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "잠금 상태에서 허용·차단되는 조작을 원본과 대조한다.",
+      "implementationFiles": [
+        "src/components/CanvasBoard.tsx",
+        "src/components/BoardEditor.tsx"
+      ]
+    },
+    {
+      "id": "board-009",
+      "domain": "board",
+      "name": "텍스트",
+      "source": "board",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "isolated_3d_browser_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "생성·편집·배치·출력·저장 후 복원을 검증한다.",
+      "implementationFiles": [
+        "src/components/CanvasBoard.tsx",
+        "src/components/BoardEditor.tsx"
+      ]
+    },
+    {
+      "id": "board-010",
+      "domain": "board",
+      "name": "고해상도 이미지 출력",
+      "source": "board",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "integrated_png_file_and_visual_verified",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "해상도·구도·색상·워터마크와 실제 파일을 검증한다.",
+      "implementationFiles": [
+        "src/components/CanvasBoard.tsx",
+        "src/components/BoardEditor.tsx"
+      ],
+      "implementationNote": "High-resolution PNG rendering is implemented. The integrated data-URI download initially failed to produce an in-app-browser download/file. After changing to PNG Blob/object URL with an appended download anchor, the actual same-board 1200×1334 PNG was created and visually inspected. Export now displays Last exported image and Download again. A prior isolated fixture also produced a 2400px image; all resolution choices are not separately certified.",
+      "verificationArtifacts": [
+        "artifacts/monogram-3d-export-1200px.png"
+      ]
+    },
+    {
+      "id": "board-011",
+      "domain": "board",
+      "name": "공유 링크",
+      "source": "board",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "browser_smoke_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "허용된 이용자가 공유 결과를 볼 수 있고 접근 범위를 검증한다.",
+      "implementationFiles": [
+        "src/components/CanvasBoard.tsx",
+        "src/components/BoardEditor.tsx"
+      ]
+    },
+    {
+      "id": "board-012",
+      "domain": "board",
+      "name": "실시간 공동 편집",
+      "source": "board",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "local_api_and_browser_evidence",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "두 독립 세션의 편집과 충돌·재접속 결과를 검증한다.",
+      "implementationFiles": [
+        "src/lib/workspace.ts",
+        "src/lib/merge.ts",
+        "server/app.ts",
+        "src/components/BoardEditor.tsx",
+        "src/components/CanvasBoard.tsx"
+      ],
+      "implementationNote": "Revision checks, ID-based merge and SSE synchronize local sessions. Foreign snapshots clear stale history and cancel active gestures; own save echoes retain history. Source real-time presence/locking protocol is not certified equivalent.",
+      "verificationFiles": [
+        "tests/server.test.ts",
+        "tests/merge.test.ts"
+      ]
+    },
+    {
+      "id": "board_material-001",
+      "domain": "board_material",
+      "name": "기본색 텍스처 입력",
+      "source": "board_demo",
+      "referenceEvidence": "recorded_demo_observed",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "isolated_3d_browser_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "사용자 텍스처가 렌더에 실제 적용되고 저장·복원된다.",
+      "implementationFiles": [
+        "src/components/BoardEditor.tsx"
+      ]
+    },
+    {
+      "id": "board_material-002",
+      "domain": "board_material",
+      "name": "텍스처 가로·세로·회전",
+      "source": "board_demo",
+      "referenceEvidence": "recorded_demo_observed",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "isolated_3d_browser_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "텍스처 매핑 변화가 렌더와 저장 데이터에 일치한다.",
+      "implementationFiles": [
+        "src/components/BoardEditor.tsx"
+      ]
+    },
+    {
+      "id": "board_material-003",
+      "domain": "board_material",
+      "name": "색상·거칠기·금속성",
+      "source": "board_demo",
+      "referenceEvidence": "recorded_demo_observed",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "isolated_3d_browser_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "각 값을 따로 바꾸어 출력과 복원까지 검증한다.",
+      "implementationFiles": [
+        "src/components/BoardEditor.tsx"
+      ]
+    },
+    {
+      "id": "board_material-004",
+      "domain": "board_material",
+      "name": "굴절률",
+      "source": "board_demo",
+      "referenceEvidence": "recorded_demo_observed",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "isolated_3d_browser_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "굴절률 변경의 렌더 효과와 원본의 범위를 대조한다.",
+      "implementationFiles": [
+        "src/components/BoardEditor.tsx"
+      ]
+    },
+    {
+      "id": "board_material-005",
+      "domain": "board_material",
+      "name": "불투명도 텍스처",
+      "source": "board_demo",
+      "referenceEvidence": "recorded_demo_observed",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "isolated_3d_browser_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "텍스처와 매핑 값이 실제 투명도에 반영된다.",
+      "implementationFiles": [
+        "src/components/BoardEditor.tsx"
+      ]
+    },
+    {
+      "id": "board_material-006",
+      "domain": "board_material",
+      "name": "투과·두께·거리·감쇠색",
+      "source": "board_demo",
+      "referenceEvidence": "recorded_demo_observed",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "isolated_3d_browser_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "각 물성의 단위·범위·렌더 반응·복원을 대조한다.",
+      "implementationFiles": [
+        "src/components/BoardEditor.tsx"
+      ]
+    },
+    {
+      "id": "board_material-007",
+      "domain": "board_material",
+      "name": "노멀·범프",
+      "source": "board_demo",
+      "referenceEvidence": "recorded_demo_observed",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "source_review_only",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "활성화·텍스처·강도 등 실제 제공 제어를 원본에서 조사해 검증한다.",
+      "implementationFiles": [
+        "src/components/BoardEditor.tsx"
+      ]
+    },
+    {
+      "id": "board_material-008",
+      "domain": "board_material",
+      "name": "템플릿 제품 정보",
+      "source": "board_demo",
+      "referenceEvidence": "recorded_demo_observed",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "isolated_3d_browser_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "이름·브랜드·사양·추가 정보를 입력하고 저장 후 원래 값으로 복원한다.",
+      "implementationFiles": [
+        "src/components/BoardEditor.tsx"
+      ]
+    },
+    {
+      "id": "board_material-009",
+      "domain": "board_material",
+      "name": "프로젝트 제품 보관함",
+      "source": "board_demo",
+      "referenceEvidence": "recorded_demo_observed",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "isolated_3d_browser_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "추가한 제품을 보드와 다른 프로젝트 도구에서 찾아 재사용한다.",
+      "implementationFiles": [
+        "src/components/BoardEditor.tsx"
+      ]
+    },
+    {
+      "id": "schedule-001",
+      "domain": "schedule",
+      "name": "라이브러리 제품을 사양표에 추가",
+      "source": "schedule",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "browser_smoke_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "끌어놓은 제품의 SKU·사양이 실제 행과 연결된다.",
+      "implementationFiles": [
+        "src/components/ScheduleEditor.tsx",
+        "src/App.tsx"
+      ]
+    },
+    {
+      "id": "schedule-002",
+      "domain": "schedule",
+      "name": "개인 라이브러리 제품 재사용",
+      "source": "schedule",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "source_review_only",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "다른 프로젝트에서 동일 제품과 사양을 재사용한다.",
+      "implementationFiles": [
+        "src/components/ScheduleEditor.tsx",
+        "src/App.tsx"
+      ]
+    },
+    {
+      "id": "schedule-003",
+      "domain": "schedule",
+      "name": "사용자 지정 열과 속성",
+      "source": "schedule",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "source_review_only",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "열의 자료형·검증·순서·저장 동작을 원본과 대조한다.",
+      "implementationFiles": [
+        "src/components/ScheduleEditor.tsx",
+        "src/App.tsx"
+      ]
+    },
+    {
+      "id": "schedule-004",
+      "domain": "schedule",
+      "name": "치수·제품 특성 입력",
+      "source": "schedule",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "source_review_only",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "단위·빈 값·편집·연결된 제품 갱신 결과를 대조한다.",
+      "implementationFiles": [
+        "src/components/ScheduleEditor.tsx",
+        "src/App.tsx"
+      ]
+    },
+    {
+      "id": "schedule-005",
+      "domain": "schedule",
+      "name": "공유 사양표",
+      "source": "schedule",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "browser_smoke_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "고객 화면에서 허용된 정보만 표시하고 다양한 화면 크기를 검증한다.",
+      "implementationFiles": [
+        "src/components/ScheduleEditor.tsx",
+        "src/App.tsx"
+      ]
+    },
+    {
+      "id": "schedule-006",
+      "domain": "schedule",
+      "name": "승인·반려·주문 상태",
+      "source": "schedule",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "browser_smoke_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "허용된 전이와 동기화·이력·고객 표시를 검증한다.",
+      "implementationFiles": [
+        "src/components/ScheduleEditor.tsx",
+        "src/App.tsx"
+      ]
+    },
+    {
+      "id": "schedule-007",
+      "domain": "schedule",
+      "name": "공급사 견적 요청",
+      "source": "schedule",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "source_review_only",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "선택한 제품과 수신 대상이 실제 전송·응답과 일치한다.",
+      "implementationFiles": [
+        "src/components/ScheduleEditor.tsx",
+        "src/App.tsx"
+      ]
+    },
+    {
+      "id": "schedule-008",
+      "domain": "schedule",
+      "name": "공급사·메모·진행 상태",
+      "source": "schedule",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "source_review_only",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "편집·재접속·다른 세션의 값이 동기화된다.",
+      "implementationFiles": [
+        "src/components/ScheduleEditor.tsx",
+        "src/App.tsx"
+      ]
+    },
+    {
+      "id": "schedule-009",
+      "domain": "schedule",
+      "name": "출력 열 선택",
+      "source": "schedule",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "browser_smoke_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "선택한 열만 실제 출력 파일에 포함된다.",
+      "implementationFiles": [
+        "src/components/ScheduleEditor.tsx",
+        "src/App.tsx"
+      ]
+    },
+    {
+      "id": "schedule-010",
+      "domain": "schedule",
+      "name": "출력 로고·브랜딩",
+      "source": "schedule",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "source_review_only",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "설정한 로고와 레이아웃이 실제 출력에 반영된다.",
+      "implementationFiles": [
+        "src/components/ScheduleEditor.tsx",
+        "src/App.tsx"
+      ]
+    },
+    {
+      "id": "schedule-011",
+      "domain": "schedule",
+      "name": "열 구성 프리셋",
+      "source": "schedule",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "source_review_only",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "저장한 구성이 다른 프로젝트에서 동일하게 복원된다.",
+      "implementationFiles": [
+        "src/components/ScheduleEditor.tsx",
+        "src/App.tsx"
+      ]
+    },
+    {
+      "id": "schedule-012",
+      "domain": "schedule",
+      "name": "사양표 공동 편집",
+      "source": "schedule",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "local_api_and_browser_evidence",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "동시 수정·충돌·재접속 시 유실과 중복을 검사한다.",
+      "implementationFiles": [
+        "src/lib/workspace.ts",
+        "src/lib/merge.ts",
+        "server/app.ts",
+        "src/components/ScheduleEditor.tsx"
+      ],
+      "implementationNote": "Local SSE/revision merge and shared editor paths are implemented. Full original simultaneous-edit behavior is not certified.",
+      "verificationFiles": [
+        "tests/server.test.ts",
+        "tests/merge.test.ts",
+        "tests/collaboration.test.ts"
+      ]
+    },
+    {
+      "id": "account-001",
+      "domain": "account",
+      "name": "이메일 로그인",
+      "source": "login",
+      "referenceEvidence": "live_ui_observed",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "api_integration_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "성공·실패·세션 만료·로그아웃 동작을 대조한다.",
+      "implementationFiles": [
+        "src/components/Panels.tsx",
+        "src/components/ResetPassword.tsx",
+        "server/app.ts"
+      ]
+    },
+    {
+      "id": "account-002",
+      "domain": "account",
+      "name": "Google 로그인",
+      "source": "login",
+      "referenceEvidence": "live_ui_observed",
+      "implementationStatus": "requires_service_connection",
+      "localAcceptanceStatus": "source_review_only",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "실제 로그인 및 계정 연결 규칙을 대조한다.",
+      "implementationFiles": [
+        "src/components/Panels.tsx",
+        "src/components/ResetPassword.tsx",
+        "server/app.ts"
+      ]
+    },
+    {
+      "id": "account-003",
+      "domain": "account",
+      "name": "회원가입 진입",
+      "source": "login",
+      "referenceEvidence": "live_ui_observed",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "api_integration_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "이메일·소셜 가입과 인증·중복·오류 흐름을 조사한다.",
+      "implementationFiles": [
+        "src/components/Panels.tsx",
+        "src/components/ResetPassword.tsx",
+        "server/app.ts"
+      ]
+    },
+    {
+      "id": "account-004",
+      "domain": "account",
+      "name": "비밀번호 재설정 진입",
+      "source": "login",
+      "referenceEvidence": "live_ui_observed",
+      "implementationStatus": "requires_service_connection",
+      "localAcceptanceStatus": "adapter_contract_evidence",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "폼·발송·완료·만료 동작을 실제 테스트용 계정으로 검증한다.",
+      "implementationFiles": [
+        "src/components/Panels.tsx",
+        "src/components/ResetPassword.tsx",
+        "server/app.ts"
+      ],
+      "implementationNote": "Reset request and actual reset form use Better Auth and the configured mail gateway; missing mail is rejected explicitly. Real external delivery has not been run.",
+      "verificationFiles": [
+        "tests/server.test.ts"
+      ]
+    },
+    {
+      "id": "account-005",
+      "domain": "account",
+      "name": "무료 가입 진행 경로",
+      "source": "onboarding",
+      "referenceEvidence": "live_ui_observed",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "api_integration_previously_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "체험 안내 상단의 무료 계속 버튼으로 카드 없는 진입이 완료되는지 검증한다.",
+      "implementationFiles": [
+        "src/components/Panels.tsx",
+        "server/app.ts"
+      ],
+      "implementationNote": "Local visitor workspace and real email signup/signin persist data without requiring a payment card. The exact original onboarding screens and trial upsell flow are not duplicated.",
+      "verificationFiles": [
+        "tests/server.test.ts"
+      ]
+    },
+    {
+      "id": "account-006",
+      "domain": "account",
+      "name": "유료 체험 가입 경로",
+      "source": "onboarding",
+      "referenceEvidence": "live_ui_observed",
+      "implementationStatus": "partial",
+      "localAcceptanceStatus": "source_review_only",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "기간·갱신 금액·동의·결제·실패 동작을 원본과 대조한다.",
+      "implementationFiles": [
+        "src/components/Panels.tsx",
+        "src/components/ResetPassword.tsx",
+        "server/app.ts"
+      ],
+      "implementationNote": "The source advertises a 10-day Plus trial. Local paid checkout exists, but the exact source trial enrollment, 500 trial credits and expiry/reminder workflow are not implemented or externally verified."
+    },
+    {
+      "id": "account-007",
+      "domain": "account",
+      "name": "프로필 설정",
+      "source": "session",
+      "referenceEvidence": "live_authenticated_ui_observed_by_root",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "api_contract_and_root_source_ui_evidence",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "표시 이름·소개·공개 식별자·국가·프로필 이미지의 저장과 표시를 검증한다.",
+      "implementationFiles": [
+        "src/components/Panels.tsx",
+        "src/components/PublicProfile.tsx",
+        "server/profiles.ts"
+      ],
+      "implementationNote": "Profile editing and privacy are persistent. Public profile exposes a strict whitelist and an owner avatar only; publishing a profile does not publish projects.",
+      "verificationFiles": [
+        "tests/profiles.test.ts"
+      ]
+    },
+    {
+      "id": "account-008",
+      "domain": "account",
+      "name": "디자이너 인증",
+      "source": "session",
+      "referenceEvidence": "live_authenticated_ui_observed_by_root",
+      "implementationStatus": "partial",
+      "localAcceptanceStatus": "api_contract_suite_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "입력·심사·상태와 권한의 실제 규칙을 조사한다.",
+      "implementationFiles": [
+        "src/components/AccountFlows.tsx",
+        "server/account-flows.ts"
+      ],
+      "implementationNote": "Designer application submission/status/history persist with duplicate protection. There is no automatic verification and no external reviewer/approval workflow connection.",
+      "verificationFiles": [
+        "tests/server.test.ts"
+      ]
+    },
+    {
+      "id": "account-009",
+      "domain": "account",
+      "name": "프로젝트 탐색 메뉴",
+      "source": "session",
+      "referenceEvidence": "live_ui_observed",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "source_review_only",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "프로젝트 선택과 각 도구의 연결 상태를 조사한다.",
+      "implementationFiles": [
+        "src/components/Panels.tsx",
+        "src/components/ResetPassword.tsx",
+        "server/app.ts"
+      ]
+    },
+    {
+      "id": "account-010",
+      "domain": "account",
+      "name": "알림함",
+      "source": "session",
+      "referenceEvidence": "live_ui_observed",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "api_integration_previously_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "수신 조건·읽음·종류·동기화와 진입 경로를 조사한다.",
+      "implementationFiles": [
+        "src/App.tsx",
+        "server/app.ts",
+        "server/supplier.ts",
+        "server/account-flows.ts"
+      ],
+      "implementationNote": "Internal requests, application receipts, approvals and supplier replies create persistent inbox entries with read state. Original third-party notification infrastructure and every original notification type are not reproduced.",
+      "verificationFiles": [
+        "tests/server.test.ts",
+        "tests/supplier.test.ts"
+      ]
+    },
+    {
+      "id": "account-011",
+      "domain": "account",
+      "name": "웹 제품 수집 확장 기능",
+      "source": "session",
+      "referenceEvidence": "live_ui_observed",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "extension_tests_previously_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "일반 사이트에서 허용된 제품 정보와 이미지·치수를 수집해 라이브러리에 연결한다.",
+      "implementationFiles": [
+        "extension/",
+        "src/components/Catalog.tsx"
+      ],
+      "implementationNote": "User-triggered clipper extracts current-page data and opens a review flow before saving. External store publication and universal merchant-page extraction are unverified."
+    },
+    {
+      "id": "account-012",
+      "domain": "account",
+      "name": "Pinterest 연결",
+      "source": "session",
+      "referenceEvidence": "live_authenticated_ui_observed_by_root",
+      "implementationStatus": "requires_service_connection",
+      "localAcceptanceStatus": "mock_provider_contract_evidence",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "연결·가져오기·중복·재동기화·연결 해제의 실제 동작을 조사한다.",
+      "implementationFiles": [
+        "src/components/AccountFlows.tsx",
+        "server/account-flows.ts"
+      ],
+      "implementationNote": "Account-bound expiring single-use OAuth state, encrypted server credentials, token refresh, pagination, selected-pin import, deduplication and disconnect are implemented. Real Pinterest credentials/consent/import have not been exercised. Local disconnect preserves imported products, unlike the current source code path that may remove imported boards.",
+      "verificationFiles": [
+        "tests/server.test.ts"
+      ]
+    },
+    {
+      "id": "billing-001",
+      "domain": "billing",
+      "name": "월간·연간 요금 선택",
+      "source": "pricing",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "requires_service_connection",
+      "localAcceptanceStatus": "mock_provider_contract_evidence",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "가격·총 청구액·갱신 주기를 원본과 대조한다.",
+      "implementationFiles": [
+        "src/components/Panels.tsx",
+        "server/app.ts",
+        "server/store.ts"
+      ],
+      "implementationNote": "Monthly/annual price UI and Stripe checkout/portal adapters are implemented. Checkout alone grants no paid access; real billing is unconnected.",
+      "verificationFiles": [
+        "tests/server.test.ts"
+      ]
+    },
+    {
+      "id": "billing-002",
+      "domain": "billing",
+      "name": "Free 사용 한도",
+      "source": "pricing",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "api_contract_suite_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "프로젝트 1개와 제품·이미지 30개 등의 제한 시점을 조사해 검증한다.",
+      "implementationFiles": [
+        "shared/entitlements.ts",
+        "server/store.ts",
+        "src/components/AccountFlows.tsx"
+      ],
+      "implementationNote": "Project/library/saved-product quotas, verified-designer library exception, atomic refusal of increases and grandfathered edits are enforced locally. Exact original Favorites-vs-custom-library representation and every paid edge case remain a parity audit boundary.",
+      "verificationFiles": [
+        "tests/server.test.ts"
+      ]
+    },
+    {
+      "id": "billing-003",
+      "domain": "billing",
+      "name": "Starter 사용 한도",
+      "source": "pricing",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "api_contract_suite_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "프로젝트 3개·라이브러리 1개와 협업 범위를 조사한다.",
+      "implementationFiles": [
+        "shared/entitlements.ts",
+        "server/store.ts",
+        "src/components/AccountFlows.tsx"
+      ],
+      "implementationNote": "Project/library/saved-product quotas, verified-designer library exception, atomic refusal of increases and grandfathered edits are enforced locally. Exact original Favorites-vs-custom-library representation and every paid edge case remain a parity audit boundary.",
+      "verificationFiles": [
+        "tests/server.test.ts"
+      ]
+    },
+    {
+      "id": "billing-004",
+      "domain": "billing",
+      "name": "Plus 사용 한도",
+      "source": "pricing",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "api_contract_suite_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "프로젝트·라이브러리·공유·AI·출력 권한을 조사한다.",
+      "implementationFiles": [
+        "shared/entitlements.ts",
+        "server/store.ts",
+        "src/components/AccountFlows.tsx"
+      ],
+      "implementationNote": "Project/library/saved-product quotas, verified-designer library exception, atomic refusal of increases and grandfathered edits are enforced locally. Exact original Favorites-vs-custom-library representation and every paid edge case remain a parity audit boundary.",
+      "verificationFiles": [
+        "tests/server.test.ts"
+      ]
+    },
+    {
+      "id": "billing-005",
+      "domain": "billing",
+      "name": "일일 갱신 크레딧",
+      "source": "pricing",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "api_integration_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "일일 지급량·리셋 시각·미사용분 처리와 소모를 조사한다.",
+      "implementationFiles": [
+        "src/components/Panels.tsx",
+        "server/app.ts",
+        "server/store.ts"
+      ]
+    },
+    {
+      "id": "billing-006",
+      "domain": "billing",
+      "name": "월간 크레딧",
+      "source": "pricing",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "requires_service_connection",
+      "localAcceptanceStatus": "mock_provider_contract_evidence",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "월 지급량·청구 주기·모델별 차감·실패 환급을 조사한다.",
+      "implementationFiles": [
+        "server/billing.ts",
+        "server/billing-state.ts",
+        "server/app.ts"
+      ],
+      "implementationNote": "Verified signed subscription/invoice events control entitlements. Paid monthly and annual Plus schedules refresh monthly allowance without duplicate-event accumulation; expiry/cancellation rules are handled. Real provider charges have not been verified.",
+      "verificationFiles": [
+        "tests/server.test.ts"
+      ]
+    },
+    {
+      "id": "billing-007",
+      "domain": "billing",
+      "name": "유료 체험과 갱신 안내",
+      "source": "pricing",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "partial",
+      "localAcceptanceStatus": "source_review_only",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "체험 종료·자동 갱신·알림·취소 시점을 조사한다.",
+      "implementationFiles": [
+        "src/components/Panels.tsx",
+        "server/app.ts",
+        "server/store.ts"
+      ],
+      "implementationNote": "Paid subscription state is implemented; original 10-day/500-credit trial, renewal reminders and exact trial conversion rules are not implemented or externally verified."
+    },
+    {
+      "id": "billing-008",
+      "domain": "billing",
+      "name": "워터마크 정책",
+      "source": "pricing",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "api_contract_suite_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "요금제에 따른 실제 출력의 차이를 검증한다.",
+      "implementationFiles": [
+        "src/lib/export-branding.ts",
+        "src/components/BoardEditor.tsx",
+        "src/components/CanvasBoard.tsx",
+        "src/components/ScheduleEditor.tsx",
+        "server/app.ts",
+        "server/collaboration.ts"
+      ],
+      "implementationNote": "Free/Starter local PNG and PDF carry monogram branding; Plus/Studio clean-export policy and owner-plan entitlement apply on public shares. Original watermark artwork and exact position are not identical.",
+      "verificationFiles": [
+        "tests/server.test.ts",
+        "tests/collaboration.test.ts"
+      ]
+    },
+    {
+      "id": "billing-009",
+      "domain": "billing",
+      "name": "교육 요금",
+      "source": "pricing",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "partial",
+      "localAcceptanceStatus": "api_contract_suite_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "대상 인증·가격·가입 흐름을 조사한다.",
+      "implementationFiles": [
+        "src/components/AccountFlows.tsx",
+        "server/account-flows.ts"
+      ],
+      "implementationNote": "Education enquiry/application form validates and persists submitted status and history. This does not grant approved pricing or access; no external review/routing or commercial contract is connected.",
+      "verificationFiles": [
+        "tests/server.test.ts"
+      ]
+    },
+    {
+      "id": "billing-010",
+      "domain": "billing",
+      "name": "Enterprise 문의",
+      "source": "pricing",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "partial",
+      "localAcceptanceStatus": "api_contract_suite_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "문의 입력과 실제 수신·후속 상태를 조사한다.",
+      "implementationFiles": [
+        "src/components/AccountFlows.tsx",
+        "server/account-flows.ts"
+      ],
+      "implementationNote": "Enterprise enquiry/application form validates and persists submitted status and history. This does not grant approved pricing or access; no external review/routing or commercial contract is connected.",
+      "verificationFiles": [
+        "tests/server.test.ts"
+      ]
+    },
+    {
+      "id": "ai-001",
+      "domain": "ai",
+      "name": "AI 이미지 렌더링",
+      "source": "pricing",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "requires_service_connection",
+      "localAcceptanceStatus": "mock_provider_contract_evidence",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "실제 제공 진입점·모델·입력·품질·크레딧·결과 저장을 조사한다.",
+      "implementationFiles": [
+        "src/components/CanvasBoard.tsx",
+        "server/app.ts",
+        "server/media.ts"
+      ],
+      "implementationNote": "Configured HTTP image provider requests persist real returned results and charge only successful generation. Without a provider, the API rejects the request without deducting credits. Original Matter AI models, quality, agentic chat and paid generation are not connected.",
+      "verificationFiles": [
+        "tests/server.test.ts"
+      ]
+    },
+    {
+      "id": "supplier-001",
+      "domain": "supplier",
+      "name": "공급사 가입",
+      "source": "supplier",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "partial",
+      "localAcceptanceStatus": "supplier_api_integration_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "공식 등록 경로·심사·완료 상태를 조사한다.",
+      "implementationFiles": [
+        "src/components/SupplierConsole.tsx",
+        "shared/supplier.ts",
+        "server/supplier.ts"
+      ],
+      "implementationNote": "An owner-workspace supplier profile and showroom can be created and persisted locally. This is not enrollment/approval in the original supplier network.",
+      "verificationFiles": [
+        "tests/supplier.test.ts"
+      ]
+    },
+    {
+      "id": "supplier-002",
+      "domain": "supplier",
+      "name": "가상 쇼룸",
+      "source": "supplier",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "supplier_api_integration_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "브랜드·제품·컬렉션·프로젝트 갤러리를 노출한다.",
+      "implementationFiles": [
+        "src/components/SupplierConsole.tsx",
+        "shared/supplier.ts",
+        "server/supplier.ts"
+      ],
+      "implementationNote": "Anonymous published showroom with product detail, collections and gallery. Only published records and referenced owner uploads are public; contact details, notes, drafts and leads remain private.",
+      "verificationFiles": [
+        "tests/supplier.test.ts"
+      ]
+    },
+    {
+      "id": "supplier-003",
+      "domain": "supplier",
+      "name": "공급사 제품 데이터 관리",
+      "source": "supplier",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "supplier_api_integration_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "추가·수정·제품 자료 동기화·접근 권한을 조사한다.",
+      "implementationFiles": [
+        "src/components/SupplierConsole.tsx",
+        "shared/supplier.ts",
+        "server/supplier.ts"
+      ],
+      "implementationNote": "Owner-only product/specification/variant/file, collection and gallery CRUD persist in separate SQLite tables with baseRevision conflicts, validation and public field whitelists.",
+      "verificationFiles": [
+        "tests/supplier.test.ts"
+      ]
+    },
+    {
+      "id": "supplier-004",
+      "domain": "supplier",
+      "name": "샘플·견적 요청 수신",
+      "source": "supplier",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "supplier_api_integration_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "요청된 제품·지역·연락 정보와 처리 결과를 실제로 연결한다.",
+      "implementationFiles": [
+        "src/components/SupplierConsole.tsx",
+        "shared/supplier.ts",
+        "server/supplier.ts"
+      ],
+      "implementationNote": "Authenticated showroom sample/quote/general enquiries create supplier-private leads and requester request/inbox records. External email and physical sample fulfillment are not performed.",
+      "verificationFiles": [
+        "tests/supplier.test.ts"
+      ]
+    },
+    {
+      "id": "supplier-005",
+      "domain": "supplier",
+      "name": "디자이너 연결과 후속 관리",
+      "source": "supplier",
+      "referenceEvidence": "advertised",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "supplier_api_integration_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "리드·진행 상태·담당 연락처·후속 작업을 조사한다.",
+      "implementationFiles": [
+        "src/components/SupplierConsole.tsx",
+        "shared/supplier.ts",
+        "server/supplier.ts"
+      ],
+      "implementationNote": "Lead status, private notes, follow-up dates and replies persist. Showroom replies reach the original requester inbox; manual followups are recorded only. No external supplier-directory routing or email success is simulated.",
+      "verificationFiles": [
+        "tests/supplier.test.ts"
+      ]
+    },
+    {
+      "id": "discovery-001",
+      "domain": "discovery",
+      "name": "전체 앱 경로와 메뉴 전수 조사",
+      "source": "home",
+      "referenceEvidence": "reference_discovery_pending",
+      "implementationStatus": "reference_audit_pending",
+      "localAcceptanceStatus": "reference_audit_incomplete",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "접근 가능한 모든 요금제·역할의 메뉴와 하위 경로를 전수 수집한다.",
+      "implementationFiles": [],
+      "implementationNote": "Current Free Menu/Settings observed by root; Library/Projects/Style Passport and all paid/supplier paths are not completely audited."
+    },
+    {
+      "id": "discovery-002",
+      "domain": "discovery",
+      "name": "생성·복제·이름변경·삭제·복원",
+      "source": "home",
+      "referenceEvidence": "reference_discovery_pending",
+      "implementationStatus": "reference_audit_pending",
+      "localAcceptanceStatus": "reference_audit_incomplete",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "프로젝트·보드·사양표·제품·라이브러리별 제공 여부와 동작을 조사한다.",
+      "implementationFiles": [],
+      "implementationNote": "Local project/board/schedule/library creation, duplication, renaming, recoverable deletion and archive restore exist. Every original menu and recovery state remains unaudited."
+    },
+    {
+      "id": "discovery-003",
+      "domain": "discovery",
+      "name": "실행 취소·다시 실행·단축키",
+      "source": "home",
+      "referenceEvidence": "reference_discovery_pending",
+      "implementationStatus": "reference_audit_pending",
+      "localAcceptanceStatus": "reference_audit_incomplete",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "각 도구의 제공 여부·기록 단위·복구 범위를 조사한다.",
+      "implementationFiles": [],
+      "implementationNote": "Local Canvas/3D undo-redo, shortcuts, dialog guard and foreign-snapshot history protection are implemented and exercised. Full original shortcut inventory remains unaudited."
+    },
+    {
+      "id": "discovery-004",
+      "domain": "discovery",
+      "name": "자동 저장·오프라인·오류 복구",
+      "source": "home",
+      "referenceEvidence": "reference_discovery_pending",
+      "implementationStatus": "reference_audit_pending",
+      "localAcceptanceStatus": "reference_audit_incomplete",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "저장 시점·네트워크 실패·충돌·재접속 복구를 조사한다.",
+      "implementationFiles": [],
+      "implementationNote": "Local revision merge, autosave, SSE and retry exist. Pending changes are held in memory on save failure; durable offline/reload recovery is not established."
+    },
+    {
+      "id": "discovery-005",
+      "domain": "discovery",
+      "name": "권한·초대·탈퇴·공유 철회",
+      "source": "home",
+      "referenceEvidence": "reference_discovery_pending",
+      "implementationStatus": "reference_audit_pending",
+      "localAcceptanceStatus": "reference_audit_incomplete",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "프로젝트·라이브러리·공유 링크의 제공 범위와 경계를 조사한다.",
+      "implementationFiles": [],
+      "implementationNote": "Resource-scoped bearer links implement viewing/editing/revocation and prevent secret leakage. Full original account invitations, organization roles and leaving workflows are not reproduced."
+    },
+    {
+      "id": "discovery-006",
+      "domain": "discovery",
+      "name": "내보내기·가져오기 전체 형식",
+      "source": "home",
+      "referenceEvidence": "reference_discovery_pending",
+      "implementationStatus": "reference_audit_pending",
+      "localAcceptanceStatus": "reference_audit_incomplete",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "도구별 형식·해상도·품질·용량·가져오기 규칙을 전수 수집한다.",
+      "implementationFiles": [],
+      "implementationNote": "Local PNG/PDF/CSV and JSON import/export exist. Project import does not guarantee every optional new PBR/material override roundtrips; all source formats remain unaudited."
+    },
+    {
+      "id": "discovery-007",
+      "domain": "discovery",
+      "name": "계정·요금 변경과 탈퇴",
+      "source": "home",
+      "referenceEvidence": "reference_discovery_pending",
+      "implementationStatus": "reference_audit_pending",
+      "localAcceptanceStatus": "reference_audit_incomplete",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "제공되는 변경·취소·복구·자료 처리 동작을 조사한다.",
+      "implementationFiles": [],
+      "implementationNote": "Persistent signin/security settings and paid billing adapters exist. Account deletion and every original billing/trial transition remain unaudited/unimplemented."
+    },
+    {
+      "id": "discovery-008",
+      "domain": "discovery",
+      "name": "언어·기기별 동작",
+      "source": "home",
+      "referenceEvidence": "reference_discovery_pending",
+      "implementationStatus": "reference_audit_pending",
+      "localAcceptanceStatus": "reference_audit_incomplete",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "지원 언어와 데스크톱·태블릿·모바일의 실제 기능 차이를 조사한다.",
+      "implementationFiles": [],
+      "implementationNote": "Responsive styles and Light/Dark/System modes exist; full language/device/browser parity remains unaudited."
+    },
+    {
+      "id": "board-013",
+      "domain": "board",
+      "name": "라이브러리·캔버스·상세 패널 구성",
+      "source": "board_demo",
+      "referenceEvidence": "recorded_demo_observed",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "source_review_only",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "제품 선택 전후 패널·현재 보드·프로젝트 위치와 접기 동작을 대조한다.",
+      "implementationFiles": [
+        "src/components/CanvasBoard.tsx",
+        "src/components/BoardEditor.tsx"
+      ]
+    },
+    {
+      "id": "board-014",
+      "domain": "board",
+      "name": "인터랙티브 렌더링 전환",
+      "source": "board_demo",
+      "referenceEvidence": "recorded_demo_observed",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "source_review_only",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "실제 앱에서 토글의 효과·제한·출력과 품질 차이를 조사한다.",
+      "implementationFiles": [
+        "src/components/CanvasBoard.tsx",
+        "src/components/BoardEditor.tsx"
+      ]
+    },
+    {
+      "id": "board-015",
+      "domain": "board",
+      "name": "이미지 검색 진입",
+      "source": "board_demo",
+      "referenceEvidence": "recorded_demo_observed",
+      "implementationStatus": "partial",
+      "localAcceptanceStatus": "source_review_only",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "이미지 입력과 검색 결과·오류·지원 형식을 원본에서 조사한다.",
+      "implementationFiles": [
+        "src/components/CanvasBoard.tsx",
+        "src/components/BoardEditor.tsx"
+      ],
+      "implementationNote": "The 3D board supports reference-image upload. Catalog has local average-colour similarity search, but no corresponding 3D-board image-search entry/provider has been implemented. The old implemented-local status overstated this item."
+    },
+    {
+      "id": "board-016",
+      "domain": "board",
+      "name": "지역별 제품 필터",
+      "source": "board_demo",
+      "referenceEvidence": "recorded_demo_observed",
+      "implementationStatus": "not_implemented",
+      "localAcceptanceStatus": "source_review_only",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "지역·제품 종류·카테고리·브랜드를 조합한 실제 결과를 대조한다.",
+      "implementationFiles": [
+        "src/components/CanvasBoard.tsx",
+        "src/components/BoardEditor.tsx"
+      ],
+      "implementationNote": "Current 3D board filter panel has product type, category and brand. Region/country filtering and complete source region metadata are not implemented. The old implemented-local status was unsupported."
+    },
+    {
+      "id": "board-017",
+      "domain": "board",
+      "name": "보드 내 SKU 교체",
+      "source": "board_demo",
+      "referenceEvidence": "recorded_demo_observed",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "root_browser_smoke_observed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "색상 변경 시 선택 모델과 상세 패널 및 저장된 SKU가 함께 바뀐다.",
+      "implementationFiles": [
+        "src/components/CanvasBoard.tsx",
+        "src/components/BoardEditor.tsx"
+      ],
+      "implementationNote": "Choosing an available source variant updates actual SKU, model, images and material data; it does not only recolor the original SKU."
+    },
+    {
+      "id": "board-018",
+      "domain": "board",
+      "name": "템플릿 모델 목록",
+      "source": "board_demo",
+      "referenceEvidence": "recorded_demo_observed",
+      "implementationStatus": "partial",
+      "localAcceptanceStatus": "source_review_only",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "실제 제공 모든 템플릿과 선택 결과를 조사하고 대응 모델을 확보한다.",
+      "implementationFiles": [
+        "src/components/CanvasBoard.tsx",
+        "src/components/BoardEditor.tsx"
+      ],
+      "implementationNote": "Local model/template library exists. Original complete template catalog and geometry remain unverified."
+    },
+    {
+      "id": "board_material-010",
+      "domain": "board_material",
+      "name": "거칠기 텍스처와 매핑",
+      "source": "board_demo",
+      "referenceEvidence": "recorded_demo_observed",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "isolated_3d_browser_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "수치 거칠기와 텍스처·매핑 제어가 실제 렌더와 저장 결과에 반영된다.",
+      "implementationFiles": [
+        "src/components/BoardEditor.tsx"
+      ]
+    },
+    {
+      "id": "schedule-013",
+      "domain": "schedule",
+      "name": "사양표 탭 추가와 전환",
+      "source": "schedule_demo",
+      "referenceEvidence": "recorded_demo_observed",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "source_review_only",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "같은 프로젝트의 여러 사양표와 새 사양표 진입 동작을 조사한다.",
+      "implementationFiles": [
+        "src/components/ScheduleEditor.tsx",
+        "src/App.tsx"
+      ]
+    },
+    {
+      "id": "schedule-014",
+      "domain": "schedule",
+      "name": "항목 그룹",
+      "source": "schedule_demo",
+      "referenceEvidence": "recorded_demo_observed",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "source_review_only",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "그룹명·개수·새 항목·그룹 추가와 실제 저장·복원을 검증한다.",
+      "implementationFiles": [
+        "src/components/ScheduleEditor.tsx",
+        "src/App.tsx"
+      ]
+    },
+    {
+      "id": "schedule-015",
+      "domain": "schedule",
+      "name": "행의 기본 정보 구조",
+      "source": "schedule_demo",
+      "referenceEvidence": "recorded_demo_observed",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "browser_smoke_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "코드·이미지·제품·위치·메모·공급사·진행 상태와 하위 제품 정보를 원본과 대조한다.",
+      "implementationFiles": [
+        "src/components/ScheduleEditor.tsx",
+        "src/App.tsx"
+      ]
+    },
+    {
+      "id": "schedule-016",
+      "domain": "schedule",
+      "name": "공급사 담당자 정보",
+      "source": "schedule_demo",
+      "referenceEvidence": "recorded_demo_observed",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "source_review_only",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "담당자·연락 수단·소속 정보의 편집·공유·출력 범위를 검증한다.",
+      "implementationFiles": [
+        "src/components/ScheduleEditor.tsx",
+        "src/App.tsx"
+      ]
+    },
+    {
+      "id": "schedule-017",
+      "domain": "schedule",
+      "name": "프로젝트 보관함 연결",
+      "source": "schedule_demo",
+      "referenceEvidence": "recorded_demo_observed",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "source_review_only",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "다른 도구에서 보관한 항목을 사양표에 추가해 연결을 검증한다.",
+      "implementationFiles": [
+        "src/components/ScheduleEditor.tsx",
+        "src/App.tsx"
+      ]
+    },
+    {
+      "id": "schedule-018",
+      "domain": "schedule",
+      "name": "행 순서 변경",
+      "source": "schedule_demo",
+      "referenceEvidence": "recorded_demo_observed",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "source_review_only",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "실제 끌기 조작과 새로고침·출력 후 순서가 일치한다.",
+      "implementationFiles": [
+        "src/components/ScheduleEditor.tsx",
+        "src/App.tsx"
+      ]
+    },
+    {
+      "id": "schedule-019",
+      "domain": "schedule",
+      "name": "행 선택과 삭제",
+      "source": "schedule_demo",
+      "referenceEvidence": "recorded_demo_observed",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "source_review_only",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "선택 상태·선택 수·삭제 결과·복구 제공 여부를 대조한다.",
+      "implementationFiles": [
+        "src/components/ScheduleEditor.tsx",
+        "src/App.tsx"
+      ]
+    },
+    {
+      "id": "schedule-020",
+      "domain": "schedule",
+      "name": "열 삽입·이름변경·좌우 이동·제거",
+      "source": "schedule_demo",
+      "referenceEvidence": "recorded_demo_observed",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "source_review_only",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "각 변경이 표·저장·공유·출력에 일관되게 반영된다.",
+      "implementationFiles": [
+        "src/components/ScheduleEditor.tsx",
+        "src/App.tsx"
+      ]
+    },
+    {
+      "id": "schedule-021",
+      "domain": "schedule",
+      "name": "열 자료형 선택",
+      "source": "schedule_demo",
+      "referenceEvidence": "recorded_demo_observed",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "source_review_only",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "문자·뱃지·제품 속성·선택형 등 실제 형식별 입력과 검증을 대조한다.",
+      "implementationFiles": [
+        "src/components/ScheduleEditor.tsx",
+        "src/App.tsx"
+      ]
+    },
+    {
+      "id": "schedule-022",
+      "domain": "schedule",
+      "name": "제품 속성 검색과 자동 연결",
+      "source": "schedule_demo",
+      "referenceEvidence": "recorded_demo_observed",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "source_review_only",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "선택한 속성이 각 제품의 실제 값과 연결된다.",
+      "implementationFiles": [
+        "src/components/ScheduleEditor.tsx",
+        "src/App.tsx"
+      ]
+    },
+    {
+      "id": "schedule-023",
+      "domain": "schedule",
+      "name": "세부 진행 상태 목록",
+      "source": "schedule_demo",
+      "referenceEvidence": "recorded_demo_observed",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "browser_smoke_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "원본 상태값·색상·전이·공유 결과를 대조한다.",
+      "details": {
+        "observedStates": [
+          "빈 상태",
+          "초안",
+          "견적 중",
+          "고객 검토",
+          "반려",
+          "제외",
+          "승인",
+          "주문",
+          "배송 완료"
+        ]
+      },
+      "implementationFiles": [
+        "src/components/ScheduleEditor.tsx",
+        "src/App.tsx"
+      ]
+    },
+    {
+      "id": "schedule-024",
+      "domain": "schedule",
+      "name": "라이브러리 수정의 표 반영",
+      "source": "schedule",
+      "referenceEvidence": "official_faq_advertised",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "source_review_only",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "원본과 같은 범위와 시점에 연결된 사양표 값이 바뀐다.",
+      "implementationFiles": [
+        "src/components/ScheduleEditor.tsx",
+        "src/App.tsx"
+      ]
+    },
+    {
+      "id": "schedule-025",
+      "domain": "schedule",
+      "name": "공간·분류·공급사 기준 구성",
+      "source": "schedule",
+      "referenceEvidence": "official_faq_advertised",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "source_review_only",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "원본의 분류·그룹·뷰와 변경 저장을 조사한다.",
+      "implementationFiles": [
+        "src/components/ScheduleEditor.tsx",
+        "src/App.tsx"
+      ]
+    },
+    {
+      "id": "schedule-026",
+      "domain": "schedule",
+      "name": "합계 계산과 PDF 출력",
+      "source": "schedule",
+      "referenceEvidence": "official_faq_advertised",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "browser_smoke_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "숫자·빈 값·단위·합계와 실제 PDF의 형식·페이지 나눔을 검증한다.",
+      "implementationFiles": [
+        "src/components/ScheduleEditor.tsx",
+        "src/App.tsx"
+      ]
+    },
+    {
+      "id": "schedule-027",
+      "domain": "schedule",
+      "name": "고객 승인과 알림",
+      "source": "schedule",
+      "referenceEvidence": "official_faq_advertised",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "browser_smoke_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "공유 고객의 항목별 승인·반려가 상태와 알림에 반영된다.",
+      "implementationFiles": [
+        "src/components/ScheduleEditor.tsx",
+        "src/App.tsx"
+      ]
+    },
+    {
+      "id": "account-013",
+      "domain": "account",
+      "name": "연동 관리",
+      "source": "session",
+      "referenceEvidence": "live_authenticated_ui_observed_by_root",
+      "implementationStatus": "partial",
+      "localAcceptanceStatus": "root_source_ui_and_adapter_review",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "Pinterest 등 제공 연동의 연결 상태·해제·권한을 조사한다.",
+      "implementationFiles": [
+        "src/components/Panels.tsx",
+        "src/components/AccountFlows.tsx",
+        "server/account-flows.ts"
+      ],
+      "implementationNote": "Pinterest and provider configuration status are implemented. Current source Free Settings shows only Pinterest; local additional Google/AI/mail integration rows are implementation-specific. Source SketchUp is not visible in this Free account."
+    },
+    {
+      "id": "account-014",
+      "domain": "account",
+      "name": "이메일 비밀번호 추가 진입",
+      "source": "session",
+      "referenceEvidence": "live_authenticated_ui_observed_by_root",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "api_contract_suite_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "소셜 계정의 비밀번호 추가 조건과 안전한 사용자 직접 입력 흐름을 대조한다.",
+      "implementationFiles": [
+        "src/components/AccountFlows.tsx",
+        "server/app.ts"
+      ],
+      "implementationNote": "Existing-password replacement requires current secret; adding a password to social-only accounts requires recent authentication and other sessions are revoked. The original emailed-code flow is not identical. Real Google OAuth remains unconnected.",
+      "verificationFiles": [
+        "tests/server.test.ts"
+      ]
+    },
+    {
+      "id": "billing-011",
+      "domain": "billing",
+      "name": "구독·보너스·일일 잔액 구분",
+      "source": "session",
+      "referenceEvidence": "live_ui_observed",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "api_integration_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "각 잔액의 차감 순서·표시·초기화 시각을 조사한다.",
+      "implementationFiles": [
+        "src/components/Panels.tsx",
+        "server/app.ts",
+        "server/store.ts"
+      ]
+    },
+    {
+      "id": "billing-012",
+      "domain": "billing",
+      "name": "크레딧 사용 이력",
+      "source": "session",
+      "referenceEvidence": "live_ui_observed",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "api_integration_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "추가·사용 필터, 작업·유형·증감·시각의 표시와 실제 작업을 연결한다.",
+      "implementationFiles": [
+        "src/components/Panels.tsx",
+        "server/app.ts",
+        "server/store.ts"
+      ]
+    },
+    {
+      "id": "canvas-001",
+      "domain": "canvas",
+      "name": "제품·이미지 캔버스 배치",
+      "source": "current_board",
+      "referenceEvidence": "live_ui_observed",
+      "implementationFiles": [
+        "src/components/CanvasBoard.tsx"
+      ],
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "browser_smoke_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "원본의 실제 입력·편집·저장·출력 결과와 항목별 대조가 필요함."
+    },
+    {
+      "id": "canvas-002",
+      "domain": "canvas",
+      "name": "화살표·스케치·댓글",
+      "source": "current_board",
+      "referenceEvidence": "live_ui_observed",
+      "implementationFiles": [
+        "src/components/CanvasBoard.tsx"
+      ],
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "source_review_only",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "원본의 실제 입력·편집·저장·출력 결과와 항목별 대조가 필요함."
+    },
+    {
+      "id": "canvas-003",
+      "domain": "canvas",
+      "name": "레이어 목록·카드·숨김·잠금",
+      "source": "current_board",
+      "referenceEvidence": "live_ui_observed",
+      "implementationFiles": [
+        "src/components/CanvasBoard.tsx"
+      ],
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "source_review_only",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "원본의 실제 입력·편집·저장·출력 결과와 항목별 대조가 필요함."
+    },
+    {
+      "id": "canvas-004",
+      "domain": "canvas",
+      "name": "미니맵·줌·패닝",
+      "source": "current_board",
+      "referenceEvidence": "live_ui_observed",
+      "implementationFiles": [
+        "src/components/CanvasBoard.tsx"
+      ],
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "source_review_only",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "원본의 실제 입력·편집·저장·출력 결과와 항목별 대조가 필요함."
+    },
+    {
+      "id": "canvas-005",
+      "domain": "canvas",
+      "name": "AI 참조 이미지·모델·해상도·비율·복수 이미지 제어",
+      "source": "current_board",
+      "referenceEvidence": "live_ui_observed",
+      "implementationFiles": [
+        "src/components/CanvasBoard.tsx"
+      ],
+      "implementationStatus": "requires_service_connection",
+      "localAcceptanceStatus": "mock_provider_contract_evidence",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "원본의 실제 입력·편집·저장·출력 결과와 항목별 대조가 필요함.",
+      "implementationNote": "Prompt, reference image, model/resolution/aspect/count controls feed the configured local image adapter. Original Nano Banana provider/model behavior and multiple-output fidelity remain unverified.",
+      "verificationFiles": [
+        "tests/server.test.ts"
+      ]
+    },
+    {
+      "id": "catalog-006",
+      "domain": "catalog",
+      "name": "확보된 원본 카탈로그 동기화·명시적 복구",
+      "source": "local_catalog_support",
+      "referenceEvidence": "local_supporting_function",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "root_browser_smoke_observed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "실제 입력·저장·접근 범위·출력과 원본 관찰 범위를 구분해 검증한다.",
+      "implementationFiles": [
+        "src/components/CatalogSync.tsx",
+        "server/catalog.ts",
+        "server/store.ts"
+      ],
+      "implementationNote": "Root main UI observed 398 additions and 47 refreshes, preserving custom/private work. The explicit restore action first offers a backup; automatic conservative synchronization does not resurrect known deleted records.",
+      "verificationFiles": [
+        "tests/catalog-sync.test.ts",
+        "tests/server.test.ts"
+      ]
+    },
+    {
+      "id": "account-015",
+      "domain": "account",
+      "name": "공개 프로필과 아바타 접근 범위",
+      "source": "current_free_settings",
+      "referenceEvidence": "live_authenticated_ui_observed_by_root",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "api_contract_suite_passed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "실제 입력·저장·접근 범위·출력과 원본 관찰 범위를 구분해 검증한다.",
+      "implementationFiles": [
+        "src/components/PublicProfile.tsx",
+        "server/profiles.ts"
+      ],
+      "implementationNote": "Public whitelist and username uniqueness; making profile private immediately denies its page/avatar, without publishing projects.",
+      "verificationFiles": [
+        "tests/profiles.test.ts"
+      ]
+    },
+    {
+      "id": "account-016",
+      "domain": "account",
+      "name": "테마 Light·Dark·System 저장",
+      "source": "current_free_settings",
+      "referenceEvidence": "live_authenticated_ui_observed_by_root",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "root_browser_smoke_observed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "실제 입력·저장·접근 범위·출력과 원본 관찰 범위를 구분해 검증한다.",
+      "implementationFiles": [
+        "src/components/Theme.tsx",
+        "src/components/theme.css"
+      ],
+      "implementationNote": "Persistent theme selection and system preference changes are supported. Full visual parity in every screen is unverified."
+    },
+    {
+      "id": "account-017",
+      "domain": "account",
+      "name": "Personal access token 기능 플래그 조사",
+      "source": "current_free_audit",
+      "referenceEvidence": "current_public_code_present",
+      "implementationStatus": "reference_audit_pending",
+      "localAcceptanceStatus": "reference_feature_flag_unverified",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "실제 입력·저장·접근 범위·출력과 원본 관찰 범위를 구분해 검증한다.",
+      "implementationFiles": [],
+      "implementationNote": "Present in public code behind a flag, but not rendered in the root-observed Free account. No token feature was implemented or invoked."
+    },
+    {
+      "id": "account-018",
+      "domain": "account",
+      "name": "SketchUp 연결 기기 기능 플래그 조사",
+      "source": "current_free_audit",
+      "referenceEvidence": "current_public_code_present",
+      "implementationStatus": "reference_audit_pending",
+      "localAcceptanceStatus": "reference_feature_flag_unverified",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "실제 입력·저장·접근 범위·출력과 원본 관찰 범위를 구분해 검증한다.",
+      "implementationFiles": [],
+      "implementationNote": "Present in public code behind a flag, but not rendered in the root-observed Free Integrations. Device registration/management is not implemented."
+    },
+    {
+      "id": "account-019",
+      "domain": "account",
+      "name": "Team 및 Studio 예고 기능 조사",
+      "source": "current_free_audit",
+      "referenceEvidence": "current_public_code_present",
+      "implementationStatus": "reference_audit_pending",
+      "localAcceptanceStatus": "reference_feature_flag_unverified",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "실제 입력·저장·접근 범위·출력과 원본 관찰 범위를 구분해 검증한다.",
+      "implementationFiles": [],
+      "implementationNote": "Team is absent from the observed Free Settings, and public Studio purchase remains disabled Coming soon. Organization role flows and style-trained AI are not claimed as implemented."
+    },
+    {
+      "id": "library-001",
+      "domain": "library",
+      "name": "라이브러리 이름·복제·삭제·복원·제품 편집",
+      "source": "current_public_code",
+      "referenceEvidence": "current_public_code_present",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "source_review_only",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "실제 입력·저장·접근 범위·출력과 원본 관찰 범위를 구분해 검증한다.",
+      "implementationFiles": [
+        "src/components/LibraryActions.tsx",
+        "src/App.tsx"
+      ],
+      "implementationNote": "Local management actions persist with quota guards and current-list membership merge. Every current source menu path has not been audited."
+    },
+    {
+      "id": "collaboration-001",
+      "domain": "collaboration",
+      "name": "프로젝트 보기·편집 링크",
+      "source": "current_public_code",
+      "referenceEvidence": "current_public_code_present",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "api_contract_and_root_browser_evidence",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "실제 입력·저장·접근 범위·출력과 원본 관찰 범위를 구분해 검증한다.",
+      "implementationFiles": [
+        "src/components/Collaboration.tsx",
+        "server/collaboration.ts"
+      ],
+      "implementationNote": "Viewer/editor bearer access is scoped to one project and product allowlist; owner fields and private members/tokens are protected. It is not an emailed membership invitation system.",
+      "verificationFiles": [
+        "tests/collaboration.test.ts"
+      ]
+    },
+    {
+      "id": "collaboration-002",
+      "domain": "collaboration",
+      "name": "유료 라이브러리 공유와 독립 사본",
+      "source": "current_public_code",
+      "referenceEvidence": "current_public_code_present",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "api_contract_and_root_browser_evidence",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "실제 입력·저장·접근 범위·출력과 원본 관찰 범위를 구분해 검증한다.",
+      "implementationFiles": [
+        "src/components/Collaboration.tsx",
+        "server/collaboration.ts",
+        "server/media.ts"
+      ],
+      "implementationNote": "Paid sharing gate, scoped edits, explicit independent product/file copies and revocation are implemented; owner secrets are not copied.",
+      "verificationFiles": [
+        "tests/collaboration.test.ts",
+        "tests/server.test.ts"
+      ]
+    },
+    {
+      "id": "collaboration-003",
+      "domain": "collaboration",
+      "name": "공유 철회·리소스 보관과 미디어 보호",
+      "source": "current_public_code",
+      "referenceEvidence": "current_public_code_present",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "api_contract_and_root_browser_evidence",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "실제 입력·저장·접근 범위·출력과 원본 관찰 범위를 구분해 검증한다.",
+      "implementationFiles": [
+        "server/collaboration.ts",
+        "server/media.ts"
+      ],
+      "implementationNote": "Only owner can enumerate/revoke links. Deleted/archived resources deny access and exact referenced uploads require active scope.",
+      "verificationFiles": [
+        "tests/collaboration.test.ts",
+        "tests/server.test.ts"
+      ]
+    },
+    {
+      "id": "board_material-011",
+      "domain": "board_material",
+      "name": "원본 PBR·ORM·맵별 매핑·재질 복원",
+      "source": "public_product_api",
+      "referenceEvidence": "public_api_and_asset_observed",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "root_browser_and_material_contract_evidence",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "실제 입력·저장·접근 범위·출력과 원본 관찰 범위를 구분해 검증한다.",
+      "implementationFiles": [
+        "src/components/ModelAsset.tsx",
+        "src/lib/useTextureMap.ts",
+        "shared/types.ts"
+      ],
+      "implementationNote": "External PBR applies to source target material while other embedded materials remain preserved. ORM uses correct channels; normal/clearcoat/sheen/source color and map-specific direct repeats/degree rotations are retained. Manual overrides and clears are reversible. Only physical material keys actually supplied by the 445 observed API records are covered; additional source shader keys absent from that subset are an explicit unverified contract boundary.",
+      "verificationFiles": [
+        "tests/model-material.test.ts"
+      ]
+    },
+    {
+      "id": "board-019",
+      "domain": "board",
+      "name": "원본 GLB·Draco·비율과 카메라 맞춤",
+      "source": "public_product_api",
+      "referenceEvidence": "public_api_and_asset_observed",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "root_browser_smoke_observed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "실제 입력·저장·접근 범위·출력과 원본 관찰 범위를 구분해 검증한다.",
+      "implementationFiles": [
+        "src/components/ModelAsset.tsx",
+        "src/components/ProductPreview.tsx",
+        "src/lib/scene-math.ts"
+      ],
+      "implementationNote": "Actual imported meshes preserve proportions and nested transforms, center/ground, fit portrait/landscape cameras, and report load errors. Raw source GLBs are reused across source SKUs.",
+      "verificationFiles": [
+        "tests/scene.test.ts"
+      ]
+    },
+    {
+      "id": "board-020",
+      "domain": "board",
+      "name": "원본 HDR 환경 조명",
+      "source": "source_environment",
+      "referenceEvidence": "observed_source_asset",
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "asset_hash_verified",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "실제 입력·저장·접근 범위·출력과 원본 관찰 범위를 구분해 검증한다.",
+      "implementationFiles": [
+        "src/components/BoardEditor.tsx",
+        "src/components/ProductPreview.tsx",
+        "public/environments/studio.hdr"
+      ],
+      "implementationNote": "The exact observed source HDR file is locally bundled and hash verified. Matching environment alone does not certify identical lighting or rendering."
+    },
+    {
+      "id": "landing-001",
+      "domain": "landing",
+      "name": "공개 랜딩·작업 공간 진입 분리",
+      "source": "landing_public_audit",
+      "referenceEvidence": "public_html_and_referenced_code_observed",
+      "referenceEvidenceFiles": [
+        "reference/landing-audit.json",
+        "reference/landing-assets-provenance.json"
+      ],
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "root_static_backend_off_cold_load_and_route_contract_evidence",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "/와 /landing은 공개 소개를 표시하고 /catalog는 작업 공간을 열며, 랜딩이 작업 공간 API나 인증을 기다리지 않는지 확인한다.",
+      "implementationFiles": [
+        "src/components/LandingPage.tsx",
+        "src/components/landing.css",
+        "src/App.tsx",
+        "src/lib/site-routes.ts"
+      ],
+      "implementationNote": "Initially absent public landing was added. Marketing paths render before workspace loading/auth and skip workspace bootstrap; /products and /app remain catalog aliases. This does not make the workspace API-independent. Root verified the built dist in a fresh browser served without API:35 hero images, heading, zero broken images, zero console errors/warnings and zero API requests.",
+      "verificationFiles": [
+        "tests/site-navigation.test.ts"
+      ]
+    },
+    {
+      "id": "landing-002",
+      "domain": "landing",
+      "name": "랜딩 헤더·푸터와 소개 페이지 연결",
+      "source": "landing_public_audit",
+      "referenceEvidence": "public_html_and_referenced_code_observed",
+      "referenceEvidenceFiles": [
+        "reference/landing-audit.json",
+        "reference/landing-assets-provenance.json"
+      ],
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "root_browser_subset_and_route_source_review",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "노출된 메뉴·CTA가 실제 로컬 페이지나 작업 공간 목적지로 연결되는지 대조한다.",
+      "implementationFiles": [
+        "src/components/LandingPage.tsx",
+        "src/components/landing.css",
+        "src/components/SitePages.tsx",
+        "src/lib/site-routes.ts",
+        "src/App.tsx"
+      ],
+      "implementationNote": "Products, Explore/workflow, pricing, board, schedule, samples, supplier overview, about, guides, login/signup and local policy destinations are connected. Source URL aliases are retained where implemented; this is not a certification of every source menu/state."
+    },
+    {
+      "id": "landing-003",
+      "domain": "landing",
+      "name": "원본 35개 hero 자산과 제품 진입",
+      "source": "landing_public_audit",
+      "referenceEvidence": "public_html_and_referenced_code_observed",
+      "referenceEvidenceFiles": [
+        "reference/landing-audit.json",
+        "reference/landing-assets-provenance.json"
+      ],
+      "implementationStatus": "partial",
+      "localAcceptanceStatus": "root_browser_smoke_observed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "관찰한 제품 이미지·수량·링크를 확인하고 원본 스크롤·시각 동작 차이를 기록한다.",
+      "implementationFiles": [
+        "src/components/LandingPage.tsx",
+        "src/components/landing.css",
+        "data/landing-assets.json"
+      ],
+      "implementationNote": "All 35 observed floating product images are bundled and displayed. Named local product matches open actual product queries; unmatched items fall back to a name search. Original scroll choreography, animation timing and pixel-level geometry are not exhaustively matched or certified."
+    },
+    {
+      "id": "landing-004",
+      "domain": "landing",
+      "name": "랜딩 검색·분류·제품 의도의 인증 후 복원",
+      "source": "landing_public_audit",
+      "referenceEvidence": "public_html_and_referenced_code_observed",
+      "referenceEvidenceFiles": [
+        "reference/landing-audit.json",
+        "reference/landing-assets-provenance.json"
+      ],
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "root_browser_and_route_contract_evidence",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "검색어·분류·제품 식별자를 카탈로그로 전달하고 로그인 이후에도 유지하며 외부 복귀 주소는 차단한다.",
+      "implementationFiles": [
+        "src/components/LandingPage.tsx",
+        "src/components/landing.css",
+        "src/App.tsx",
+        "src/lib/site-routes.ts",
+        "src/components/Panels.tsx"
+      ],
+      "implementationNote": "Root observed Ceragni search reaching the catalog query with 192 matching results, all Ceragni. Catalog q/type/product parsing and same-origin workspace returnTo validation are covered by three navigation tests. Lexical search does not claim the source semantic/Agentic Search behavior.",
+      "verificationFiles": [
+        "tests/site-navigation.test.ts"
+      ]
+    },
+    {
+      "id": "landing-005",
+      "domain": "landing",
+      "name": "로그인·가입 실제 폼 진입",
+      "source": "landing_public_audit",
+      "referenceEvidence": "public_html_and_referenced_code_observed",
+      "referenceEvidenceFiles": [
+        "reference/landing-audit.json",
+        "reference/landing-assets-provenance.json"
+      ],
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "root_browser_entry_observed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "/login은 로그인, /signup과 /register는 계정 생성 폼으로 연결되는지 확인한다.",
+      "implementationFiles": [
+        "src/components/LandingPage.tsx",
+        "src/components/landing.css",
+        "src/App.tsx",
+        "src/components/Panels.tsx"
+      ],
+      "implementationNote": "Signup opens the actual Create account form; root inspected the form without entering data or creating an account during this landing QA. Existing authentication APIs remain in use. The source desktop registration dialog is not identically reproduced."
+    },
+    {
+      "id": "landing-006",
+      "domain": "landing",
+      "name": "Explore 이동과 모바일 메뉴",
+      "source": "landing_public_audit",
+      "referenceEvidence": "public_html_and_referenced_code_observed",
+      "referenceEvidenceFiles": [
+        "reference/landing-audit.json",
+        "reference/landing-assets-provenance.json"
+      ],
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "root_browser_smoke_observed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "Explore가 workflow 위치로 이동하고 작은 화면의 메뉴가 실제로 열리는지 확인한다.",
+      "implementationFiles": [
+        "src/components/LandingPage.tsx",
+        "src/components/landing.css"
+      ],
+      "implementationNote": "Root observed the #workflow destination, mobile navigation opening at 390px, and zero horizontal overflow at that viewport. Other screen sizes, source menu state transitions and exact responsive equality are not exhaustively certified. Root additionally verified Escape closes the mobile navigation and restores focus to Open navigation; document width390 equals the390px viewport."
+    },
+    {
+      "id": "landing-007",
+      "domain": "landing",
+      "name": "고객사·후기 섹션의 사실 기반 대체",
+      "source": "landing_public_audit",
+      "referenceEvidence": "public_html_and_referenced_code_observed",
+      "referenceEvidenceFiles": [
+        "reference/landing-audit.json",
+        "reference/landing-assets-provenance.json"
+      ],
+      "implementationStatus": "partial",
+      "localAcceptanceStatus": "source_review_and_root_browser_subset",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "원본 고객 실적을 로컬 서비스 실적으로 오인하지 않도록 콘텐츠와 출처를 구분한다.",
+      "implementationFiles": [
+        "src/components/LandingPage.tsx",
+        "src/components/landing.css"
+      ],
+      "implementationNote": "Original customer logos and testimonials were excluded. The local page uses factual catalog brands and nine original workflow guides. These are deliberate substitutions, not replicated endorsements or source testimonial parity."
+    },
+    {
+      "id": "landing-008",
+      "domain": "landing",
+      "name": "보드·사양표·샘플 소개와 작업 공간 CTA",
+      "source": "landing_public_audit",
+      "referenceEvidence": "public_html_and_referenced_code_observed",
+      "referenceEvidenceFiles": [
+        "reference/landing-audit.json",
+        "reference/landing-assets-provenance.json"
+      ],
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "route_and_implementation_review",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "기능 소개에서 실제 보드·사양표·제품 탐색 진입으로 이어지는지 확인한다.",
+      "implementationFiles": [
+        "src/components/SitePages.tsx",
+        "src/components/site-pages.css",
+        "src/lib/site-routes.ts",
+        "src/App.tsx"
+      ],
+      "implementationNote": "/material-board, /schedule, /material-samples and /virtual-samples provide local workflow descriptions and existing product screenshots with working workspace CTAs. Source legal/marketing long-form text is not copied; source layout and every FAQ are not certified identical."
+    },
+    {
+      "id": "landing-009",
+      "domain": "landing",
+      "name": "공개 요금표와 설정 진입",
+      "source": "landing_public_audit",
+      "referenceEvidence": "public_html_and_referenced_code_observed",
+      "referenceEvidenceFiles": [
+        "reference/landing-audit.json",
+        "reference/landing-assets-provenance.json"
+      ],
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "root_browser_and_implementation_review",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "월간·연간 선택과 요금 표시를 확인하고 실제 플랜 설정 진입 및 미연결 상태를 구분한다.",
+      "implementationFiles": [
+        "src/components/SitePages.tsx",
+        "src/components/site-pages.css",
+        "src/lib/site-routes.ts"
+      ],
+      "implementationNote": "/pricing switches monthly/annual values and routes available plans to /catalog?settings=plan. Studio is disabled as Coming soon. Visiting the page grants no plan or trial; actual external billing remains subject to the existing service-connection boundary. Root verified annual Free0/Starter6/Plus21/Studio50 USD per month and the disabled Studio Coming soon control."
+    },
+    {
+      "id": "landing-010",
+      "domain": "landing",
+      "name": "공급사·회사·자료 소개 페이지",
+      "source": "landing_public_audit",
+      "referenceEvidence": "public_html_and_referenced_code_observed",
+      "referenceEvidenceFiles": [
+        "reference/landing-audit.json",
+        "reference/landing-assets-provenance.json"
+      ],
+      "implementationStatus": "partial",
+      "localAcceptanceStatus": "route_and_implementation_review",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "소개 링크가 유효한 콘텐츠와 실제 기능 진입을 제공하고 원본과 다른 자료를 구분한다.",
+      "implementationFiles": [
+        "src/components/SitePages.tsx",
+        "src/components/site-pages.css",
+        "src/lib/site-routes.ts"
+      ],
+      "implementationNote": "/virtual-showroom links to the local supplier console; /about and /articles provide local product descriptions and original workspace guides. The source company narrative, entire editorial archive and third-party supplier enrollment are not replicated."
+    },
+    {
+      "id": "landing-011",
+      "domain": "landing",
+      "name": "데모 요청 목적지와 workflow 미리보기",
+      "source": "landing_public_audit",
+      "referenceEvidence": "public_html_and_referenced_code_observed",
+      "referenceEvidenceFiles": [
+        "reference/landing-audit.json",
+        "reference/landing-assets-provenance.json"
+      ],
+      "implementationStatus": "partial",
+      "localAcceptanceStatus": "root_browser_preview_controls_external_submission_unverified",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "/request-demo의 실제 제공 기능과 원본 영업 제출·예약 연결 여부를 구분한다.",
+      "implementationFiles": [
+        "src/components/SitePages.tsx",
+        "src/components/site-pages.css",
+        "src/lib/site-routes.ts"
+      ],
+      "implementationNote": "The local page has three interactive workflow preview tabs and a workspace CTA. Original required sales-form fields, source submission delivery and external Calendly booking are not implemented or connected; the page explicitly discloses the missing booking service. No form or booking was submitted. Root verified ArrowRight selects Build a board and the selected tab matches the tabpanel accessible name."
+    },
+    {
+      "id": "landing-012",
+      "domain": "landing",
+      "name": "쿠키 설정 모달",
+      "source": "landing_public_audit",
+      "referenceEvidence": "public_html_and_referenced_code_observed",
+      "referenceEvidenceFiles": [
+        "reference/landing-audit.json",
+        "reference/landing-assets-provenance.json"
+      ],
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "root_browser_smoke_observed",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "Cookie settings가 실제 모달을 열고 Escape로 닫히며 설치의 실제 추적 설정을 설명하는지 확인한다.",
+      "implementationFiles": [
+        "src/components/LandingPage.tsx",
+        "src/components/landing.css",
+        "src/components/UI.tsx"
+      ],
+      "implementationNote": "Root observed the cookie dialog and Escape dismissal. It documents required session cookies and unconfigured analytics/advertising. No optional tracker or source consent-platform preference storage is claimed."
+    },
+    {
+      "id": "landing-013",
+      "domain": "landing",
+      "name": "개인정보·약관 목적지의 로컬 안내",
+      "source": "landing_public_audit",
+      "referenceEvidence": "public_html_and_referenced_code_observed",
+      "referenceEvidenceFiles": [
+        "reference/landing-audit.json",
+        "reference/landing-assets-provenance.json"
+      ],
+      "implementationStatus": "partial",
+      "localAcceptanceStatus": "route_and_implementation_review",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "정책 링크가 열리고 로컬 preview notes를 원본 법률 계약이나 승인된 운영 약관으로 표시하지 않는지 확인한다.",
+      "implementationFiles": [
+        "src/components/SitePages.tsx",
+        "src/components/site-pages.css",
+        "src/lib/site-routes.ts"
+      ],
+      "implementationNote": "/privacy and /privacy-statement, /terms and /terms-of-use display original local-preview notes about storage, sharing and optional services. Source legal prose and operator identity are not copied. These are not the source legal documents or approved production policies."
+    },
+    {
+      "id": "landing-014",
+      "domain": "landing",
+      "name": "원본 Contact us 폼·외부 전송",
+      "source": "landing_public_audit",
+      "referenceEvidence": "public_html_and_referenced_code_observed",
+      "referenceEvidenceFiles": [
+        "reference/landing-audit.json",
+        "reference/landing-assets-provenance.json"
+      ],
+      "implementationStatus": "not_implemented",
+      "localAcceptanceStatus": "not_implemented_no_external_send",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "원본 연락 폼의 입력·제출·실제 수신을 구현·검증하기 전까지 미구현으로 유지한다.",
+      "implementationFiles": [],
+      "implementationNote": "The observed source footer contact modal posts to api/v1/contact/submit. No corresponding monogram contact form, source endpoint call or delivery adapter is implemented/connected. The demo preview does not stand in for a successfully delivered sales request."
+    },
+    {
+      "id": "landing-015",
+      "domain": "landing",
+      "name": "원본 중국어 랜딩 전환",
+      "source": "landing_public_audit",
+      "referenceEvidence": "public_html_and_referenced_code_observed",
+      "referenceEvidenceFiles": [
+        "reference/landing-audit.json",
+        "reference/landing-assets-provenance.json"
+      ],
+      "implementationStatus": "not_implemented",
+      "localAcceptanceStatus": "not_implemented",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "원본 영어·중국어 전환과 번역 경로를 대응시키고 실제 지원 언어를 표시한다.",
+      "implementationFiles": [],
+      "implementationNote": "The source exposes English and Simplified Chinese and a /zh path. This local landing is English-only; no translated Chinese route, menu or language switch is implemented."
+    },
+    {
+      "id": "landing-016",
+      "domain": "landing",
+      "name": "공개 랜딩 자산의 출처·해시 보존",
+      "source": "landing_public_audit",
+      "referenceEvidence": "public_html_and_referenced_code_observed",
+      "referenceEvidenceFiles": [
+        "reference/landing-audit.json",
+        "reference/landing-assets-provenance.json"
+      ],
+      "implementationStatus": "implemented_local",
+      "localAcceptanceStatus": "all_46_asset_hashes_and_sizes_verified",
+      "referenceComparisonStatus": "not_certified_equivalent",
+      "acceptance": "관찰한 URL에서 받은 자산의 목록·수량·파일 크기·SHA-256을 확인하고 카탈로그를 보존한다.",
+      "implementationFiles": [
+        "data/landing-assets.json",
+        "reference/landing-assets-provenance.json",
+        "public/landing-assets",
+        "scripts/collect-landing-assets.mjs"
+      ],
+      "implementationNote": "46 observed assets (35 hero, 8 features, 3 backgrounds) exist locally and match recorded byte counts and SHA-256. Source customer logos/testimonials are excluded. The 445-product catalog hash remained unchanged."
+    }
+  ],
+  "authenticatedAuditBoundary": "Root observed current Free Menu, Profile, Account & security, Plan & credits, Integrations and Appearance. Team, PAT and SketchUp were not rendered in that account. Full Library/Projects/Style Passport, paid tiers and supplier-role source flows remain unaudited.",
+  "excludedFalsePositives": [
+    "Arcade의 전체화면·재생·링크복사·워터마크는 데모 플레이어 기능이며 원본 서비스 기능으로 집계하지 않음.",
+    "과거 녹화의 Paper 항목과 현재 공개 경로의 존재를 동일하게 취급하지 않음."
+  ],
+  "featureCount": 153,
+  "applicationName": "monogram",
+  "implementationSummary": {
+    "implemented_local": 112,
+    "partial": 20,
+    "requires_service_connection": 7,
+    "reference_audit_pending": 11,
+    "not_implemented": 3
+  },
+  "verification": {
+    "build": {
+      "status": "passed",
+      "observer": "root agent",
+      "scope": "Final npm run build: TypeScript and Vite after landing/routing quality changes and the latest 445-product catalog screenshot asset refresh",
+      "lastPassed": {
+        "status": "passed",
+        "observer": "root agent",
+        "scope": "TypeScript and Vite production build after the PNG Blob/object-URL download fix",
+        "latestPngDownloadChange": "Build passed after the completed fix."
+      },
+      "note": "Root confirmed final build34586. Prior PNG-fix build and intermediate landing build9717 remain separately attributed. Static-production cold-load verification also completed after this build.",
+      "latestCompletedLandingBuild": {
+        "status": "passed",
+        "observer": "root agent",
+        "runId": "9717",
+        "scope": "TypeScript and Vite after landing/routing quality changes; before final screenshot-only asset rebuild"
+      },
+      "runId": "34586"
+    },
+    "automatedTests": {
+      "observer": "root agent reported execution",
+      "fullSuite": {
+        "passed": 76,
+        "total": 76,
+        "timing": "Root confirmed full suite after landing/auth routing integration, including the three new navigation tests.",
+        "observer": "root agent reported execution"
+      },
+      "targetedAfterLast3DChanges": {
+        "passed": 10,
+        "total": 10,
+        "includedInFullSuite": true,
+        "note": "Historical material/camera subset. These 10 tests are included in the earlier 73 and current 76; do not sum them as distinct extra tests."
+      },
+      "clipper": {
+        "passed": 4,
+        "total": 4,
+        "timing": "Earlier separate clipper run"
+      },
+      "notClaimed": "Real external AI/mail/OAuth/billing/contact/booking execution is not inferred from these tests. The separately confirmed final build is recorded under verification.build.",
+      "previousFullSuite": {
+        "passed": 73,
+        "total": 73,
+        "timing": "Full run before the last 3D adjustments"
+      },
+      "landingNavigation": {
+        "passed": 3,
+        "total": 3,
+        "includedInFullSuite": true,
+        "files": [
+          "tests/site-navigation.test.ts"
+        ],
+        "covers": [
+          "Catalog search/type/product intent and authentication return URL",
+          "External/protocol-relative redirect rejection",
+          "Marketing/workspace bootstrap boundary"
+        ],
+        "independentSubagentRun": "The documentation/review agent separately ran the same 3-test file successfully before this documentation update; it is not an additional three tests."
+      }
+    },
+    "browserEvidence": [
+      "Favorite filter returns chosen product",
+      "Product to board save, pointer drag and reload preserve positions",
+      "Share link survives reopening and reload",
+      "View-only shared board disables editing",
+      "Schedule quantity2 and unit price120 produce total240",
+      "CSV file contains actual row values",
+      "Shared review approves/rejects and owner receives SSE update",
+      "Brand title and logo read monogram; no original-brand visible text in catalog",
+      "3D and canvas shortcuts are blocked by dialogs",
+      "Own save echo preserves undo history; remote updates clear stale history and cancel active drag",
+      "Root main UI restored the current 445-SKU source catalog: 398 additions and 47 refreshed records.",
+      "Root observed actual source GLB display, actual-SKU variant selection, orbit, drag/zoom/reset and corrected product preview clipping.",
+      "Root observed current authenticated Free Menu and Settings; no Team/PAT/SketchUp rendered.",
+      "Shared project viewer kept schedule fields disabled; editor rename persisted on reload; revoking the link changed an already-open view to unavailable. Temporary test links were revoked.",
+      "Source finish 730 Azul selected actual SKU471 (source variant.productId), applied blue PBR, and Save to library retained source size and material in a local verification harness.",
+      "Root observed removal of shadow acne in the main product-detail ProductPreview after adding normalBias. The 3D Board already had normalBias before that fix.",
+      "Integrated PNG export failed with direct data URI, was fixed to Blob/object URL plus DOM anchor, then produced a 1200×1334 file containing all four board items. Last exported image and Download again are available.",
+      "Root observed the new public landing with all 35 floating source hero images and zero broken images.",
+      "Landing header search Ceragni reached /catalog?q=Ceragni with 192 results, all bearing the Ceragni brand.",
+      "Signup opened the actual Create account form without entering data or creating a new account during this QA.",
+      "Explore reached the workflow section; Cookie settings opened its real dialog and Escape closed it.",
+      "At 390px root observed zero horizontal overflow and a working open mobile navigation menu.",
+      "After final build34586, root served dist alone without API on an independent static server and opened a fresh browser at /. All 35 hero images and heading rendered; broken images0, console errors/warnings0, /api requests0, and no404/500 were observed across46 GET requests.",
+      "At390x844, document width390 confirmed no horizontal overflow; Escape closed the mobile menu and returned focus to Open navigation.",
+      "ArrowRight selected Build a board in the demo; selected-tab state and tabpanel accessible name matched.",
+      "Annual pricing showed Free0/Starter6/Plus21/Studio50 USD per month; Studio Coming soon remained disabled.",
+      "The public catalog-preview.jpg refreshed from the actual445-product catalog matches the final dist asset by SHA-256."
+    ],
+    "isolated3dEvidence": [
+      "Actual mesh movement by pointer",
+      "Numeric scale and rotation modify rendered geometry",
+      "Material parameters and custom product roundtrip",
+      "Lock, duplicate, undo and redo",
+      "Historical isolated fixture: 2400px PNG file produced; later integrated 1200×1334 file was also created and visually verified"
+    ],
+    "unverified": [
+      "Pixel-by-pixel visuals and every original interaction/state transition",
+      "Complete Library/Projects/Style Passport and all paid/supplier reference paths",
+      "Real external AI generation, email/supplier delivery, Google/Pinterest OAuth and Stripe charges",
+      "Original trial, approval/review, organization invite/leave and account-deletion workflows",
+      "Complete source product/template database and every advertised BIM/model/file format",
+      "PAT/SketchUp/Team availability outside the observed Free account",
+      "Source shader keys absent from all 445 observed materialValues (reflectivity, iridescence, iridescenceIOR, emissiveIntensity, specularColor, emissive and iridescenceThicknessRange) are present in source code but not covered by the local current MaterialSettings contract.",
+      "Original landing scroll/animation/pixel equality and Simplified Chinese routes",
+      "Source Contact us/demo sales delivery and external consultation booking; local demo tabs provide a preview only",
+      "Original customer endorsements, editorial archive and legal-policy text are not reproduced; local factual guides and preview notes are substitutions"
+    ],
+    "assetEvidence": {
+      "catalog": "reference/api-enrichment-provenance.json",
+      "environment": "reference/environment-provenance.json",
+      "integrity": "All 1036 API-derived assets were previously checked against recorded SHA-256; all 25 distinct GLBs have valid version-2 headers and contained resources. HDR SHA-256 verified during this documentation update.",
+      "landing": {
+        "manifest": "data/landing-assets.json",
+        "provenance": "reference/landing-assets-provenance.json",
+        "assetCount": 46,
+        "groups": {
+          "hero": 35,
+          "features": 8,
+          "backgrounds": 3
+        },
+        "integrity": "Documentation agent verified all 46 local files against provenance byte counts and SHA-256.",
+        "catalogPreserved": {
+          "products": 445,
+          "sha256": "ee88387923d07c5d60f615af14833cf127e75e650d2dfa2745d142df34669c56"
+        }
+      }
+    },
+    "browserArtifacts": [
+      "artifacts/monogram-account-usage.jpg",
+      "artifacts/monogram-project-viewer.jpg",
+      "artifacts/monogram-product-3d.jpg",
+      "artifacts/monogram-3d-finish-save.png",
+      "artifacts/monogram-3d-export-1200px.png",
+      "artifacts/monogram-landing-mobile.jpg",
+      "artifacts/monogram-landing-desktop.jpg"
+    ],
+    "currentPngExport": {
+      "status": "verified_after_fix",
+      "subject": "Local integrated 3D board export, not source-service export parity",
+      "steps": [
+        {
+          "sequence": 1,
+          "status": "failed_before_fix",
+          "method": "Direct data-URI anchor download",
+          "evidence": "In-app-browser download event timed out and no output file was found."
+        },
+        {
+          "sequence": 2,
+          "status": "fixed_and_verified",
+          "method": "PNG Blob/object URL, anchor appended to DOM; retained exported-image preview and Download again",
+          "proof": {
+            "downloadPath": "/Users/jinsoolee/Downloads/Original-product-models-verification-1200px.png",
+            "artifactPath": "/Users/jinsoolee/Downloads/_개발프로젝트/활성/matter_base/artifacts/monogram-3d-export-1200px.png",
+            "repositoryPath": "artifacts/monogram-3d-export-1200px.png",
+            "width": 1200,
+            "height": 1334,
+            "bytes": 206539,
+            "sha256": "f566d30588c460ac7510434800f9e2d2501243a3700dccde85193ccba5a49b95",
+            "contentVerification": "Root and documentation agent visually inspected the actual PNG: four board items are present, including the source F300 alpha-plane reference.",
+            "observers": [
+              "root agent actual integrated browser export and view_image",
+              "documentation agent local file signature, dimensions, byte equality, SHA-256 and view_image"
+            ]
+          }
+        }
+      ],
+      "historicalEvidence": "An earlier isolated 2400px PNG was created.",
+      "remainingBoundary": "Other export resolutions and source pixel-level output equivalence are not all separately verified.",
+      "equivalenceClaim": false
+    },
+    "staticProductionLanding": {
+      "status": "passed",
+      "observer": "root agent integrated fresh-browser QA",
+      "buildRunId": "34586",
+      "serving": "Independent Python HTTP server on port4325 serving dist only, without the API backend",
+      "entryPath": "/",
+      "freshBrowserColdLoad": true,
+      "heroProductImages": 35,
+      "headingVisible": true,
+      "brokenImages": 0,
+      "consoleErrors": 0,
+      "consoleWarnings": 0,
+      "serverGETRequests": 46,
+      "apiRequests": 0,
+      "http404Or500": 0,
+      "mobileViewport": {
+        "width": 390,
+        "height": 844,
+        "documentWidth": 390,
+        "horizontalOverflow": false,
+        "menuOpenObserved": true,
+        "escapeClosesMenu": true,
+        "focusReturnsTo": "Open navigation"
+      },
+      "demoTabs": {
+        "arrowRightSelects": "Build a board",
+        "selectedTabAndPanelAccessibleNameMatch": true
+      },
+      "annualPriceUSDPerMonth": {
+        "Free": 0,
+        "Starter": 6,
+        "Plus": 21,
+        "Studio": 50
+      },
+      "studioComingSoonDisabled": true,
+      "cookieModalAndEscapeVerified": true,
+      "noRegistrationBookingPaymentOrContactSubmission": true,
+      "sourcePixelOrFullFunctionalEquivalenceCertified": false,
+      "fileProof": {
+        "public/marketing/catalog-preview.jpg": {
+          "bytes": 104307,
+          "sha256": "f14891c306c65e786d0c872442872442c2c7a5e2ccc6ef6816d02506f6863fe0"
+        },
+        "dist/marketing/catalog-preview.jpg": {
+          "bytes": 104307,
+          "sha256": "f14891c306c65e786d0c872442872442c2c7a5e2ccc6ef6816d02506f6863fe0"
+        },
+        "artifacts/monogram-landing-desktop.jpg": {
+          "bytes": 71071,
+          "sha256": "a630035735af12d2183512dd2ea63001671f52522751396b32de5106ce7a37eb"
+        },
+        "artifacts/monogram-landing-mobile.jpg": {
+          "bytes": 29022,
+          "sha256": "c3dcdc86db950d11b67247539dd406f4e81bd3b836aa6be2df5034d8b7a13654"
+        }
+      },
+      "screenshotDimensions": {
+        "artifacts/monogram-landing-desktop.jpg": {
+          "width": 1218,
+          "height": 788
+        },
+        "artifacts/monogram-landing-mobile.jpg": {
+          "width": 390,
+          "height": 844
+        }
+      }
+    }
+  },
+  "updatedAt": "2026-10-16T19:05:11.980849+00:00",
+  "catalogEvidence": {
+    "products": 445,
+    "originalDirectlyObservedProducts": 47,
+    "namedAdditionalVariants": 398,
+    "families": 42,
+    "modelSkuRecords": 412,
+    "alphaPlaneSkuRecords": 33,
+    "distinctGLBFiles": 25,
+    "apiDerivedAssetFiles": 1036,
+    "completeSourceCatalog": false,
+    "provenance": "reference/api-enrichment-provenance.json",
+    "descriptionPolicy": "Short factual summaries and original-story links; source creative long-form prose not copied.",
+    "modelPolicy": "F3001216 is a source alpha-plane reference with no source chair mesh. No chair model is invented for it."
+  },
+  "implementationHistory": [
+    {
+      "recordedAt": "2026-10-16T19:03:08.592098+00:00",
+      "change": "Added the initially missing public landing, route boundary and local informational pages.",
+      "addedFeatureIds": [
+        "landing-001",
+        "landing-002",
+        "landing-003",
+        "landing-004",
+        "landing-005",
+        "landing-006",
+        "landing-007",
+        "landing-008",
+        "landing-009",
+        "landing-010",
+        "landing-011",
+        "landing-012",
+        "landing-013",
+        "landing-014",
+        "landing-015",
+        "landing-016"
+      ],
+      "sourceEquivalentCertified": false,
+      "remainingLandingGaps": [
+        "Source animation/pixel equality",
+        "Customer logos/testimonials intentionally replaced with factual brands and original guides",
+        "Original contact/demo submission and booking",
+        "Source legal documents replaced with local-preview notes",
+        "Simplified Chinese route and language switching"
+      ]
+    }
+  ],
+  "landingEvidence": {
+    "sourceAudit": "reference/landing-audit.json",
+    "assetProvenance": "reference/landing-assets-provenance.json",
+    "manifest": "data/landing-assets.json",
+    "publicEntryPaths": [
+      "/",
+      "/landing"
+    ],
+    "workspaceEntryPaths": [
+      "/catalog",
+      "/products",
+      "/app"
+    ],
+    "signupPaths": [
+      "/signup",
+      "/register"
+    ],
+    "loginPath": "/login",
+    "informationPaths": [
+      "/material-board",
+      "/schedule",
+      "/material-samples",
+      "/virtual-samples",
+      "/pricing",
+      "/virtual-showroom",
+      "/about",
+      "/articles",
+      "/request-demo",
+      "/privacy",
+      "/privacy-statement",
+      "/terms",
+      "/terms-of-use"
+    ],
+    "workspaceBootstrapOnMarketingPaths": false,
+    "apiResponseRequiredToRenderLanding": false,
+    "registrationDuringLandingQA": false,
+    "formsOrBookingsSubmitted": false,
+    "paidActionsInvoked": false,
+    "browserObservationAttribution": "Root agent integrated browser QA; this documentation agent performed file/source review, 46-asset hash verification and the same 3 navigation tests.",
+    "originalContentSubstitutions": {
+      "customerLogosAndTestimonials": "Factual catalog brands and nine original workflow guides; no claimed monogram customer endorsements.",
+      "salesDemo": "Interactive workflow preview and workspace CTA, missing booking explicitly disclosed.",
+      "legal": "Local-preview notes, no source legal prose copied.",
+      "languages": "English only; source Simplified Chinese is not implemented."
+    },
+    "sourcePixelOrFunctional100PercentClaim": false,
+    "staticProductionVerification": "verification.staticProductionLanding",
+    "latestBuild": {
+      "status": "passed",
+      "runId": "34586",
+      "scope": "TypeScript and Vite after final catalog screenshot refresh"
+    }
+  }
+}
